@@ -1,0 +1,12 @@
+{
+    "require": {
+        "doctrine/orm": "^2.5",
+        "mledoze/countries": "^1.8"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Elector\\": "app/"
+        }
+    }
+}

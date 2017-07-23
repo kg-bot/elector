@@ -1,0 +1,15 @@
+{
+  "name": "elector",
+  "version": "1.0.0",
+  "description": "Online Electing Application",
+  "main": "/public/index.php",
+  "dependencies": {
+    "bootstrap-material-design": "^0.5.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stefan Ninic",
+  "license": "ISC"
+}

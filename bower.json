@@ -1,0 +1,20 @@
+{
+  "name": "elector",
+  "description": "Online Electing Application",
+  "main": "/public/index.php",
+  "authors": [
+    "Stefan Ninic"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-material-design": "0.5.10"
+  }
+}

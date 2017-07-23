@@ -1,0 +1,4 @@
+vendor/
+*.sublime*
+app/config/database.php
+app/config/doctrine.php
