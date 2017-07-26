@@ -1,4 +1,4 @@
-<div class="col-xs-12 col-sm-6 col-sm-offset-3">
+<div class="col-xs-12 col-sm-6 col-sm-offset-3 margin-top-5-percent">
     <div class="well">
         <div class="row">
             <div class="col-xs-12 col-sm-8 col-sm-offset-2">

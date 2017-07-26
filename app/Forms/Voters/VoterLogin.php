@@ -33,7 +33,7 @@ class VoterLogin extends Form
 
         echo '<div class="form-group label-floating">';
         
-        echo '<label class="control-label padding-10" for="', $element->getName(), '">', $element->getLabel(), '</label>';
+        echo '<label class="control-label" for="', $element->getName(), '">', $element->getLabel(), '</label>';
 
         echo $element;
         

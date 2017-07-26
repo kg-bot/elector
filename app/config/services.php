@@ -123,6 +123,22 @@ $di->setShared('doctrineEM', function() {
 
     return $entityManager;
 });
+/**
+ * Register Doctrine DBAL connection
+ */
+$di->setShared('doctrineDBALConnection', function() {
+    require __DIR__ . '/doctrine.php';
+
+    return $dbalConnection;
+});
+
+$di->setShared('doctrineQB', function() {
+    require __DIR__ . '/doctrine.php';
+
+    $qb = $dbalConnection->createQueryBuilder();
+
+    return $qb;
+});
 
 $di['forms'] = function() {
     return new FormsManager();

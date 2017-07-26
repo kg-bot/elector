@@ -1,40 +1,18 @@
 <?php
 namespace Elector\Forms\Voters;
 
-use Phalcon\Forms\Form;
-use Elector\Forms\Elements\Email;
+use Elector\Forms\ElectorForm;
+use Phalcon\Forms\Element\Submit;
 
-use Phalcon\Forms\Element\Text;
-use Phalcon\Forms\Element\Password;
-
-
-class VoterLogin extends Form
+class VoterRegister extends ElectorForm
 {
+
     public function initialize()
     {
 
-        $email = new Email('voterEmail', ['class' => 'form-control']);
-        $email->setLabel('Email address');
+        $formElements = $this->initializeRegisterForm('voter');
 
-        $firstName = new Text('voterFirstName', ['class' => 'form-control']);
-        $firstName->setLabel('First name');
-
-        $lastName = new Text('voterLastName', ['class' => 'form-control']);
-        $lastName->setLabel('Last name');
-
-        $password = new Password('voterPassword', ['class' => 'form-control']);
-        $password->setLabel('Password');
-
-        $passwordConfirm = new Password('voterPasswordConfirm', ['class' => 'form-control']);
-        $passwordConfirm->setLabel('Confirm password');
-
-        $submit = new Submit('Login', ['class' => 'btn btn-primary btn-raised']);
-
-        $this->add($email);
-        $this->add($firstName);
-        $this->add($lastName);
-        $this->add($password);
-        $this->add($passwordConfirm);
+        $submit = new Submit('Register', ['class' => 'btn btn-primary btn-raised']);
 
         $this->add($submit);
     }
@@ -45,7 +23,37 @@ class VoterLogin extends Form
 
         echo '<div class="form-group label-floating">';
         
-        echo '<label class="control-label padding-10" for="', $element->getName(), '">', $element->getLabel(), '</label>';
+        echo '<label class="control-label" for="', $element->getName(), '">', $element->getLabel(), '</label>';
+
+        echo $element;
+        
+
+        // Get any generated messages for the current element
+        $messages = $this->getMessagesFor(
+            $element->getName()
+        );
+
+        if (count($messages)) {
+            // Print each element
+            echo "<div class='messages'>";
+
+            foreach ($messages as $message) {
+                echo $this->flash->error($message);
+            }
+
+            echo '</div>';
+        }
+
+        echo '</div>';
+    }
+
+    public function renderImage($name, $placeholder)
+    {
+        $element  = $this->get($name);
+
+        echo '<div class="form-group label-floating">';
+        
+        echo '<input type="text" readonly="" class="form-control" placeholder="' . $placeholder . '"></label>';
 
         echo $element;
         

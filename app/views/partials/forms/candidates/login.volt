@@ -7,6 +7,6 @@
         {{ candidateLogin.renderDecorated('candidatePassword') }}
         {{ candidateLogin.renderDecorated('Login') }}
 
-        {{ link_to(config.application.urls.candidates.register, "Don't have an account yet?")}}
+        {{ link_to(config.application.urls.register, "Don't have an account yet?")}}
     </fieldset>
 {{ end_form() }}

@@ -10,8 +10,10 @@
         {{ assets.outputCss() }}
     </head>
     <body>
+        {% include 'partials/header/navbar.volt' %}
         {# If user is logged in we don't need to show him intro jumbotron #}
-        {% if session.has('auth') === false %}
+        {# Also, jumbotron is only visible at home page #}
+        {% if session.has('auth') === false and router.getRewriteUri() === url('/') %}
             {% include 'partials/home/intro/jumbotron.volt' %}
         {% endif %}
         <div class="container-fluid">

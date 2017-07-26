@@ -26,6 +26,8 @@ class ControllerBase extends Controller
         $this->assets->addJs('/assets/bootstrap-material-design/scripts/ripples.js');
         // IE10 viewport hack for Surface/desktop Windows 8 bug
         $this->assets->addJs('https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js', false);
+        // Main js file
+        $this->assets->addJs('/js/main.js');
     }
 
     public function onInitialize()

@@ -4,14 +4,8 @@
         <p>This is online voting application. You can register as ordinary voter or as a candidate, it's up to you.</p>
         <p>
             {{ link_to(
-                config.application.urls.voters.register,
-                'Voter Register',
-                'class': 'btn btn-raised btn-default btn-lg'
-                )
-            }}
-            {{ link_to(
-                config.application.urls.candidates.register,
-                'Candidate Register',
+                config.application.urls.register,
+                'Register New Account',
                 'class': 'btn btn-raised btn-primary btn-lg'
                 )
             }}

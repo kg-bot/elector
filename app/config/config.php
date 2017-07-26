@@ -39,7 +39,8 @@ return new \Phalcon\Config([
                 'login'         => '/candidates/login',
             ],
 
-            'login'     => '/index/login/',
+            'login'     => '/login/',
+            'register'  => '/register/'
         ],
     ]
 ]);

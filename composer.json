@@ -1,7 +1,8 @@
 {
     "require": {
         "doctrine/orm": "^2.5",
-        "mledoze/countries": "^1.8"
+        "rinvex/country": "^3.1",
+        "mauricesvay/php-facedetection": "^0.1.0"
     },
 
     "autoload": {

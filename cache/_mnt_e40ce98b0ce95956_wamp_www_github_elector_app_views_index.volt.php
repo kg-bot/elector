@@ -10,15 +10,32 @@
         <?= $this->assets->outputCss() ?>
     </head>
     <body>
+        <div class="navbar navbar-info">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="<?= $this->url->get('/') ?>"><?= $this->config->application->app_name ?></a>
+    </div>
+    <div class="navbar-collapse collapse navbar-responsive-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="<?= $this->url->get('/') ?>">Home</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
         
-        <?php if ($this->session->has('auth') === false) { ?>
+        
+        <?php if ($this->session->has('auth') === false && $this->router->getRewriteUri() === $this->url->get('/')) { ?>
             <div class="jumbotron text-center home_jumbotron">
     <div class="container-fluid bg-info">
         <h1>Welcome</h1>
         <p>This is online voting application. You can register as ordinary voter or as a candidate, it's up to you.</p>
         <p>
-            <?= $this->tag->linkTo([$this->config->application->urls->voters->register, 'Voter Register', 'class' => 'btn btn-raised btn-default btn-lg']) ?>
-            <?= $this->tag->linkTo([$this->config->application->urls->candidates->register, 'Candidate Register', 'class' => 'btn btn-raised btn-primary btn-lg']) ?>
+            <?= $this->tag->linkTo([$this->config->application->urls->register, 'Register New Account', 'class' => 'btn btn-raised btn-primary btn-lg']) ?>
         </p>
         <p>
             <?= $this->tag->linkTo([$this->config->application->urls->login, 'Already have an account?']) ?>

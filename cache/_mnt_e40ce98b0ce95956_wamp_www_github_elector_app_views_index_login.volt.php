@@ -1,4 +1,4 @@
-<div class="col-xs-12 col-sm-6 col-sm-offset-3">
+<div class="col-xs-12 col-sm-6 col-sm-offset-3 margin-top-5-percent">
     <div class="well">
         <div class="row">
             <div class="col-xs-12 col-sm-8 col-sm-offset-2">
@@ -15,14 +15,14 @@
                             <div class="panel-body padding-50">
                                 <?php $voterLogin = $this->forms->get('voterLogin'); ?>
 
-<?= $this->tag->form(['/voters/login', 'method' => 'post', 'class' => 'form-horizontal']) ?>
+<?= $this->tag->form([$this->config->application->urls->voters->login, 'method' => 'post', 'class' => 'form-horizontal']) ?>
     <fieldset>
     
         <?= $voterLogin->renderDecorated('voterEmail') ?>
         <?= $voterLogin->renderDecorated('voterPassword') ?>
         <?= $voterLogin->renderDecorated('Login') ?>
 
-        <?= $this->tag->linkTo([$this->config->application->urls->voters->register, 'Don\'t have an account yet?']) ?>
+        <?= $this->tag->linkTo([$this->config->application->urls->register, 'Don\'t have an account yet?']) ?>
     </fieldset>
 <?= $this->tag->endForm() ?>
 
@@ -48,7 +48,7 @@
         <?= $candidateLogin->renderDecorated('candidatePassword') ?>
         <?= $candidateLogin->renderDecorated('Login') ?>
 
-        <?= $this->tag->linkTo([$this->config->application->urls->candidates->register, 'Don\'t have an account yet?']) ?>
+        <?= $this->tag->linkTo([$this->config->application->urls->register, 'Don\'t have an account yet?']) ?>
     </fieldset>
 <?= $this->tag->endForm() ?>
 
