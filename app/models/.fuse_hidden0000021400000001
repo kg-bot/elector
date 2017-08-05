@@ -1,0 +1,316 @@
+<?php
+
+
+
+/**
+ * Cities
+ */
+class Cities
+{
+    /**
+     * @var integer
+     */
+    private $countryid;
+
+    /**
+     * @var integer
+     */
+    private $regionid;
+
+    /**
+     * @var string
+     */
+    private $city;
+
+    /**
+     * @var float
+     */
+    private $latitude;
+
+    /**
+     * @var float
+     */
+    private $longitude;
+
+    /**
+     * @var string
+     */
+    private $timezone;
+
+    /**
+     * @var integer
+     */
+    private $dmaid;
+
+    /**
+     * @var string
+     */
+    private $code;
+
+    /**
+     * @var integer
+     */
+    private $cityid;
+
+    /**
+     * @var \Countries
+     */
+    private $country;
+
+    /**
+     * @var \Regions
+     */
+    private $region;
+
+
+    /**
+     * Set countryid
+     *
+     * @param integer $countryid
+     *
+     * @return Cities
+     */
+    public function setCountryid($countryid)
+    {
+        $this->countryid = $countryid;
+
+        return $this;
+    }
+
+    /**
+     * Get countryid
+     *
+     * @return integer
+     */
+    public function getCountryid()
+    {
+        return $this->countryid;
+    }
+
+    /**
+     * Set regionid
+     *
+     * @param integer $regionid
+     *
+     * @return Cities
+     */
+    public function setRegionid($regionid)
+    {
+        $this->regionid = $regionid;
+
+        return $this;
+    }
+
+    /**
+     * Get regionid
+     *
+     * @return integer
+     */
+    public function getRegionid()
+    {
+        return $this->regionid;
+    }
+
+    /**
+     * Set city
+     *
+     * @param string $city
+     *
+     * @return Cities
+     */
+    public function setCity($city)
+    {
+        $this->city = $city;
+
+        return $this;
+    }
+
+    /**
+     * Get city
+     *
+     * @return string
+     */
+    public function getCity()
+    {
+        return $this->city;
+    }
+
+    /**
+     * Set latitude
+     *
+     * @param float $latitude
+     *
+     * @return Cities
+     */
+    public function setLatitude($latitude)
+    {
+        $this->latitude = $latitude;
+
+        return $this;
+    }
+
+    /**
+     * Get latitude
+     *
+     * @return float
+     */
+    public function getLatitude()
+    {
+        return $this->latitude;
+    }
+
+    /**
+     * Set longitude
+     *
+     * @param float $longitude
+     *
+     * @return Cities
+     */
+    public function setLongitude($longitude)
+    {
+        $this->longitude = $longitude;
+
+        return $this;
+    }
+
+    /**
+     * Get longitude
+     *
+     * @return float
+     */
+    public function getLongitude()
+    {
+        return $this->longitude;
+    }
+
+    /**
+     * Set timezone
+     *
+     * @param string $timezone
+     *
+     * @return Cities
+     */
+    public function setTimezone($timezone)
+    {
+        $this->timezone = $timezone;
+
+        return $this;
+    }
+
+    /**
+     * Get timezone
+     *
+     * @return string
+     */
+    public function getTimezone()
+    {
+        return $this->timezone;
+    }
+
+    /**
+     * Set dmaid
+     *
+     * @param integer $dmaid
+     *
+     * @return Cities
+     */
+    public function setDmaid($dmaid)
+    {
+        $this->dmaid = $dmaid;
+
+        return $this;
+    }
+
+    /**
+     * Get dmaid
+     *
+     * @return integer
+     */
+    public function getDmaid()
+    {
+        return $this->dmaid;
+    }
+
+    /**
+     * Set code
+     *
+     * @param string $code
+     *
+     * @return Cities
+     */
+    public function setCode($code)
+    {
+        $this->code = $code;
+
+        return $this;
+    }
+
+    /**
+     * Get code
+     *
+     * @return string
+     */
+    public function getCode()
+    {
+        return $this->code;
+    }
+
+    /**
+     * Get cityid
+     *
+     * @return integer
+     */
+    public function getCityid()
+    {
+        return $this->cityid;
+    }
+
+    /**
+     * Set country
+     *
+     * @param \Countries $country
+     *
+     * @return Cities
+     */
+    public function setCountry(\Countries $country = null)
+    {
+        $this->country = $country;
+
+        return $this;
+    }
+
+    /**
+     * Get country
+     *
+     * @return \Countries
+     */
+    public function getCountry()
+    {
+        return $this->country;
+    }
+
+    /**
+     * Set region
+     *
+     * @param \Regions $region
+     *
+     * @return Cities
+     */
+    public function setRegion(\Regions $region = null)
+    {
+        $this->region = $region;
+
+        return $this;
+    }
+
+    /**
+     * Get region
+     *
+     * @return \Regions
+     */
+    public function getRegion()
+    {
+        return $this->region;
+    }
+}
+

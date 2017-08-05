@@ -3,16 +3,28 @@
 use Elector\Forms\Voters\VoterLogin;
 use Elector\Forms\Candidates\CandidateLogin;
 
-use Elector\Forms\Voters\VoterRegister;
-use Elector\Forms\Candidates\CandidateRegister;
+// Register form
+use Elector\Forms\Register;
 
 use Rinvex\Country\CountryLoader;
 
 use Elector\library\Cities\Cities;
 use Elector\library\Regions\Regions;
 
+use Phalcon\Validation;
+use Phalcon\Validation\Validator\File;
+use Phalcon\Validation\Validator\PresenceOf;
+use Elector\Validation\FaceDetection;
+
 class IndexController extends ControllerBase
 {
+    public function initialize()
+    {
+        // We need to show voter and candidate login forms
+        $this->forms->set('login', new VoterLogin());
+        // We need to set register form in FormsManager
+        $this->forms->set('register', new Register());
+    }
 
     public function indexAction()
     {
@@ -21,16 +33,27 @@ class IndexController extends ControllerBase
 
     public function loginAction()
     {
-        // We need to show voter and candidate login forms
-        $this->forms->set('voterLogin', new VoterLogin());
-        $this->forms->set('candidateLogin', new CandidateLogin());
+        
     }
 
     public function registerAction()
     {
-        // We need to show voter and candidate register forms
-        $this->forms->set('voterRegister', new VoterRegister());
-        $this->forms->set('candidateRegister', new CandidateRegister());
+        // If method is POST we need to try and register user
+        if($this->request->isPost()) {
+
+            $register_form = $this->forms->get('register');
+
+            if($register_form->isValid(array_merge($this->request->getPost(), $_FILES))) {
+                // TODO: Implement register new user and adding it to database logic
+                var_dump('Valid');
+                die();
+            }
+        }
+        // If method is GET we need to show register form
+        elseif(!$this->request->isGet()) {
+            throw new Exception("Error Processing Request", 1);
+            
+        }
     }
 
     /**

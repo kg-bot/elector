@@ -2,3 +2,4 @@ vendor/
 *.sublime*
 app/config/database.php
 app/config/doctrine.php
+app/config/kairo.php

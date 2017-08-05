@@ -1,0 +1,202 @@
+<html>
+    <head>
+        <script
+            type="text/javascript"
+            src="../../js/jquery-1.4.2.min.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shCore.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shBrushJScript.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shBrushPhp.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shBrushXml.js">
+        </script>
+        <link
+            href="../../syntax_highlighter/styles/shCore.css" rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="../../syntax_highlighter/styles/shCoreEclipse.css"
+            rel="stylesheet" type="text/css"
+        />
+        <link
+            href="../../syntax_highlighter/styles/shThemeWordpress.css"
+            rel="stylesheet" type="text/css"
+        />
+    </head>
+    <body>
+        <pre class="brush: php">&lt;?php
+
+/**
+ * @Entity
+ * @Table(name=&quot;candidates&quot;)
+ */
+class Candidates
+{
+    /**
+     * @Id
+     * @Column(type=&quot;integer&quot;)
+     * @GeneratedValue
+     */
+    private $id;
+
+    /**
+     * @Column(type=&quot;string&quot;)
+     */
+    private $name;
+
+    /**
+     * @Column(type=&quot;text&quot;)
+     */
+    private $about;
+
+    /**
+     * @Column(type=&quot;datetime&quot;, nullable=true, options={&quot;default&quot;:0})
+     */
+    private $created_at;
+
+    /**
+     * Holds name of the avatar image, avatars are uploaded to special folder
+     * @Column(type=&quot;string&quot;, nullable=true)
+     */
+    private $avatar_name;
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this-&gt;id;
+    }
+
+    /**
+     * Set name
+     *
+     * @param string $name
+     *
+     * @return Candidates
+     */
+    public function setName($name)
+    {
+        $this-&gt;name = $name;
+
+        return $this;
+    }
+
+    /**
+     * Get name
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return $this-&gt;name;
+    }
+
+    /**
+     * Set about
+     *
+     * @param string $about
+     *
+     * @return Candidates
+     */
+    public function setAbout($about)
+    {
+        $this-&gt;about = $about;
+
+        return $this;
+    }
+
+    /**
+     * Get about
+     *
+     * @return string
+     */
+    public function getAbout()
+    {
+        return $this-&gt;about;
+    }
+
+    /**
+     * Set createdAt
+     *
+     * @param \DateTime $createdAt
+     *
+     * @return Candidates
+     */
+    public function setCreatedAt($createdAt)
+    {
+        $this-&gt;created_at = $createdAt;
+
+        return $this;
+    }
+
+    /**
+     * Get createdAt
+     *
+     * @return \DateTime
+     */
+    public function getCreatedAt()
+    {
+        return $this-&gt;created_at;
+    }
+
+    /**
+     * Set avatarName
+     *
+     * @param string $avatarName
+     *
+     * @return Candidates
+     */
+    public function setAvatarName($avatarName)
+    {
+        $this-&gt;avatar_name = $avatarName;
+
+        return $this;
+    }
+
+    /**
+     * Get avatarName
+     *
+     * @return string
+     */
+    public function getAvatarName()
+    {
+        return $this-&gt;avatar_name;
+    }
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name=&quot;created_at&quot;, type=&quot;datetime&quot;, nullable=true)
+     */
+    private $createdAt = 'CURRENT_TIMESTAMP';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name=&quot;avatar_name&quot;, type=&quot;string&quot;, length=255, nullable=true)
+     */
+    private $avatarName;
+
+
+}
+</pre>
+        <script type="text/javascript">
+             SyntaxHighlighter.all();
+             jQuery('.gutter div').each(function(key, data){
+                jQuery(data).prepend('<a name="L'+jQuery(data).text()+'"/>');
+             });
+        </script>
+    </body>
+</html>

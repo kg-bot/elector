@@ -2,7 +2,9 @@
     "require": {
         "doctrine/orm": "^2.5",
         "rinvex/country": "^3.1",
-        "mauricesvay/php-facedetection": "^0.1.0"
+        "mauricesvay/php-facedetection": "^0.1.0",
+        "doctrine/migrations": "^1.5",
+        "ympons/phpkairos": "dev-master"
     },
 
     "autoload": {

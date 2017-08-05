@@ -13,3 +13,10 @@ $loader->registerDirs(
         $config->application->formsDir,
     ]
 )->register();
+
+/**
+ * We need to register some classes to be available everywhere
+ */
+$loader->registerClasses([
+    'Helpers'   => __DIR__ . '/../Helpers/Helpers.php'
+])->register();

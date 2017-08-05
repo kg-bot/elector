@@ -1,0 +1,190 @@
+<html>
+    <head>
+        <script
+            type="text/javascript"
+            src="../../js/jquery-1.4.2.min.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shCore.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shBrushJScript.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shBrushPhp.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shBrushXml.js">
+        </script>
+        <link
+            href="../../syntax_highlighter/styles/shCore.css" rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="../../syntax_highlighter/styles/shCoreEclipse.css"
+            rel="stylesheet" type="text/css"
+        />
+        <link
+            href="../../syntax_highlighter/styles/shThemeWordpress.css"
+            rel="stylesheet" type="text/css"
+        />
+    </head>
+    <body>
+        <pre class="brush: php">&lt;?php
+
+use Phalcon\Mvc\View;
+use Phalcon\Mvc\View\Engine\Php as PhpEngine;
+use Phalcon\Mvc\Url as UrlResolver;
+use Phalcon\Mvc\View\Engine\Volt as VoltEngine;
+use Phalcon\Mvc\Model\Metadata\Memory as MetaDataAdapter;
+use Phalcon\Session\Adapter\Files as SessionAdapter;
+use Phalcon\Flash\Direct as Flash;
+
+use Phalcon\Tag;
+use Phalcon\Forms\Manager as FormsManager;
+
+/**
+ * Shared configuration service
+ */
+$di-&gt;setShared('config', function () {
+    return include APP_PATH . &quot;/config/config.php&quot;;
+});
+
+/**
+ * The URL component is used to generate all kind of urls in the application
+ */
+$di-&gt;setShared('url', function () {
+    $config = $this-&gt;getConfig();
+
+    $url = new UrlResolver();
+    $url-&gt;setBaseUri($config-&gt;application-&gt;baseUri);
+
+    return $url;
+});
+
+/**
+ * Setting up the view component
+ */
+$di-&gt;setShared('view', function () {
+    $config = $this-&gt;getConfig();
+
+    $view = new View();
+    $view-&gt;setDI($this);
+    $view-&gt;setViewsDir($config-&gt;application-&gt;viewsDir);
+
+    $view-&gt;registerEngines([
+        '.volt' =&gt; function ($view) use ($config){
+
+            $volt = new VoltEngine($view, $this);
+
+            $volt-&gt;setOptions([
+                'compiledPath' =&gt; $config-&gt;application-&gt;cacheDir,
+                'compiledSeparator' =&gt; '_',
+                // TODO: enable cache
+                'compileAlways' =&gt; true
+            ]);
+
+            return $volt;
+        },
+        '.phtml' =&gt; PhpEngine::class
+
+    ]);
+
+    return $view;
+});
+
+/**
+ * Database connection is created based in the parameters defined in the configuration file
+ */
+$di-&gt;setShared('db', function () {
+    $config = $this-&gt;getConfig();
+
+    $class = 'Phalcon\Db\Adapter\Pdo\\' . $config-&gt;database-&gt;adapter;
+    $params = [
+        'host'     =&gt; $config-&gt;database-&gt;host,
+        'username' =&gt; $config-&gt;database-&gt;username,
+        'password' =&gt; $config-&gt;database-&gt;password,
+        'dbname'   =&gt; $config-&gt;database-&gt;dbname,
+        'charset'  =&gt; $config-&gt;database-&gt;charset
+    ];
+
+    if ($config-&gt;database-&gt;adapter == 'Postgresql') {
+        unset($params['charset']);
+    }
+
+    $connection = new $class($params);
+
+    return $connection;
+});
+
+
+/**
+ * If the configuration specify the use of metadata adapter use it or use memory otherwise
+ */
+$di-&gt;setShared('modelsMetadata', function () {
+    return new MetaDataAdapter();
+});
+
+/**
+ * Register the session flash service with the Twitter Bootstrap classes
+ */
+$di-&gt;set('flash', function () {
+    return new Flash([
+        'error'   =&gt; 'alert alert-danger',
+        'success' =&gt; 'alert alert-success',
+        'notice'  =&gt; 'alert alert-info',
+        'warning' =&gt; 'alert alert-warning'
+    ]);
+});
+
+/**
+ * Start the session the first time some component request the session service
+ */
+$di-&gt;setShared('session', function () {
+    $session = new SessionAdapter();
+    $session-&gt;start();
+
+    return $session;
+});
+
+/**
+ * Register Doctrine EntityManager
+ */
+$di-&gt;setShared('doctrineEM', function() {
+    require __DIR__ . '/doctrine.php';
+
+    return $entityManager;
+});
+/**
+ * Register Doctrine DBAL connection
+ */
+$di-&gt;setShared('doctrineDBALConnection', function() {
+    require __DIR__ . '/doctrine.php';
+
+    return $dbalConnection;
+});
+
+$di-&gt;setShared('doctrineQB', function() {
+    require __DIR__ . '/doctrine.php';
+
+    $qb = $dbalConnection-&gt;createQueryBuilder();
+
+    return $qb;
+});
+
+$di['forms'] = function() {
+    return new FormsManager();
+};
+</pre>
+        <script type="text/javascript">
+             SyntaxHighlighter.all();
+             jQuery('.gutter div').each(function(key, data){
+                jQuery(data).prepend('<a name="L'+jQuery(data).text()+'"/>');
+             });
+        </script>
+    </body>
+</html>

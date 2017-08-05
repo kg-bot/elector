@@ -14,7 +14,7 @@ class Image extends Element
             $attrs['name'] = $attrs[0];
         }
         if(!isset($attrs['id'])) {
-            $attrs['id'] = $attrs['name'];
+            $attrs['id'] = $attrs[0];
         }
         // This is used in Bootstrap Material Design help block
         if(isset($attrs['help-block'])) {
@@ -22,7 +22,7 @@ class Image extends Element
             unset($attrs['help-block']);
         }
         $html = Tag::renderAttributes('<input type="file"', $attrs);
-        $html .= 'accept="image/*">';
+        $html .= 'accept="image/jpeg">';
 
         if(isset($helpBlock)) {
             $html .= '<p class="help-block">' . $helpBlock . '</p>';

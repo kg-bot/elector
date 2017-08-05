@@ -1,0 +1,943 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>API Documentation » \Countries</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">API Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Elector.html"><i class="icon-th"></i> Elector</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">115</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div xmlns:php="http://php.net/xsl" class="btn-toolbar">
+<div class="btn-group visibility" data-toggle="buttons-checkbox">
+<button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button>
+</div>
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+</div>
+<ul xmlns:php="http://php.net/xsl" class="side-nav nav nav-list">
+<li class="nav-header">
+<i title="Methods" class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct() :: "><span class="description">__construct()
+        </span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_addCity" title="addCity() :: Add city"><span class="description">Add city</span><pre>addCity()</pre></a></li>
+<li class="method public "><a href="#method_addRegion" title="addRegion() :: Add region"><span class="description">Add region</span><pre>addRegion()</pre></a></li>
+<li class="method public "><a href="#method_getCapital" title="getCapital() :: Get capital"><span class="description">Get capital</span><pre>getCapital()</pre></a></li>
+<li class="method public "><a href="#method_getCities" title="getCities() :: Get cities"><span class="description">Get cities</span><pre>getCities()</pre></a></li>
+<li class="method public "><a href="#method_getComment" title="getComment() :: Get comment"><span class="description">Get comment</span><pre>getComment()</pre></a></li>
+<li class="method public "><a href="#method_getCountry" title="getCountry() :: Get country"><span class="description">Get country</span><pre>getCountry()</pre></a></li>
+<li class="method public "><a href="#method_getCountryid" title="getCountryid() :: Get countryid"><span class="description">Get countryid</span><pre>getCountryid()</pre></a></li>
+<li class="method public "><a href="#method_getCurrency" title="getCurrency() :: Get currency"><span class="description">Get currency</span><pre>getCurrency()</pre></a></li>
+<li class="method public "><a href="#method_getCurrencycode" title="getCurrencycode() :: Get currencycode"><span class="description">Get currencycode</span><pre>getCurrencycode()</pre></a></li>
+<li class="method public "><a href="#method_getFips104" title="getFips104() :: Get fips104"><span class="description">Get fips104</span><pre>getFips104()</pre></a></li>
+<li class="method public "><a href="#method_getInternet" title="getInternet() :: Get internet"><span class="description">Get internet</span><pre>getInternet()</pre></a></li>
+<li class="method public "><a href="#method_getIso2" title="getIso2() :: Get iso2"><span class="description">Get iso2</span><pre>getIso2()</pre></a></li>
+<li class="method public "><a href="#method_getIso3" title="getIso3() :: Get iso3"><span class="description">Get iso3</span><pre>getIso3()</pre></a></li>
+<li class="method public "><a href="#method_getIson" title="getIson() :: Get ison"><span class="description">Get ison</span><pre>getIson()</pre></a></li>
+<li class="method public "><a href="#method_getMapreference" title="getMapreference() :: Get mapreference"><span class="description">Get mapreference</span><pre>getMapreference()</pre></a></li>
+<li class="method public "><a href="#method_getNationalityplural" title="getNationalityplural() :: Get nationalityplural"><span class="description">Get nationalityplural</span><pre>getNationalityplural()</pre></a></li>
+<li class="method public "><a href="#method_getNationalitysingular" title="getNationalitysingular() :: Get nationalitysingular"><span class="description">Get nationalitysingular</span><pre>getNationalitysingular()</pre></a></li>
+<li class="method public "><a href="#method_getPopulation" title="getPopulation() :: Get population"><span class="description">Get population</span><pre>getPopulation()</pre></a></li>
+<li class="method public "><a href="#method_getRegions" title="getRegions() :: Get regions"><span class="description">Get regions</span><pre>getRegions()</pre></a></li>
+<li class="method public "><a href="#method_getTitle" title="getTitle() :: Get title"><span class="description">Get title</span><pre>getTitle()</pre></a></li>
+<li class="method public "><a href="#method_removeCity" title="removeCity() :: Remove city"><span class="description">Remove city</span><pre>removeCity()</pre></a></li>
+<li class="method public "><a href="#method_removeRegion" title="removeRegion() :: Remove region"><span class="description">Remove region</span><pre>removeRegion()</pre></a></li>
+<li class="method public "><a href="#method_setCapital" title="setCapital() :: Set capital"><span class="description">Set capital</span><pre>setCapital()</pre></a></li>
+<li class="method public "><a href="#method_setComment" title="setComment() :: Set comment"><span class="description">Set comment</span><pre>setComment()</pre></a></li>
+<li class="method public "><a href="#method_setCountry" title="setCountry() :: Set country"><span class="description">Set country</span><pre>setCountry()</pre></a></li>
+<li class="method public "><a href="#method_setCurrency" title="setCurrency() :: Set currency"><span class="description">Set currency</span><pre>setCurrency()</pre></a></li>
+<li class="method public "><a href="#method_setCurrencycode" title="setCurrencycode() :: Set currencycode"><span class="description">Set currencycode</span><pre>setCurrencycode()</pre></a></li>
+<li class="method public "><a href="#method_setFips104" title="setFips104() :: Set fips104"><span class="description">Set fips104</span><pre>setFips104()</pre></a></li>
+<li class="method public "><a href="#method_setInternet" title="setInternet() :: Set internet"><span class="description">Set internet</span><pre>setInternet()</pre></a></li>
+<li class="method public "><a href="#method_setIso2" title="setIso2() :: Set iso2"><span class="description">Set iso2</span><pre>setIso2()</pre></a></li>
+<li class="method public "><a href="#method_setIso3" title="setIso3() :: Set iso3"><span class="description">Set iso3</span><pre>setIso3()</pre></a></li>
+<li class="method public "><a href="#method_setIson" title="setIson() :: Set ison"><span class="description">Set ison</span><pre>setIson()</pre></a></li>
+<li class="method public "><a href="#method_setMapreference" title="setMapreference() :: Set mapreference"><span class="description">Set mapreference</span><pre>setMapreference()</pre></a></li>
+<li class="method public "><a href="#method_setNationalityplural" title="setNationalityplural() :: Set nationalityplural"><span class="description">Set nationalityplural</span><pre>setNationalityplural()</pre></a></li>
+<li class="method public "><a href="#method_setNationalitysingular" title="setNationalitysingular() :: Set nationalitysingular"><span class="description">Set nationalitysingular</span><pre>setNationalitysingular()</pre></a></li>
+<li class="method public "><a href="#method_setPopulation" title="setPopulation() :: Set population"><span class="description">Set population</span><pre>setPopulation()</pre></a></li>
+<li class="method public "><a href="#method_setTitle" title="setTitle() :: Set title"><span class="description">Set title</span><pre>setTitle()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i title="Properties" class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="property private "><a href="#property_capital" title="$capital() :: "><span class="description"></span><pre>$capital</pre></a></li>
+<li class="property private "><a href="#property_cities" title="$cities() :: "><span class="description">One Country has many Cities</span><pre>$cities</pre></a></li>
+<li class="property private "><a href="#property_comment" title="$comment() :: "><span class="description"></span><pre>$comment</pre></a></li>
+<li class="property private "><a href="#property_country" title="$country() :: "><span class="description"></span><pre>$country</pre></a></li>
+<li class="property private "><a href="#property_countryid" title="$countryid() :: "><span class="description"></span><pre>$countryid</pre></a></li>
+<li class="property private "><a href="#property_currency" title="$currency() :: "><span class="description"></span><pre>$currency</pre></a></li>
+<li class="property private "><a href="#property_currencycode" title="$currencycode() :: "><span class="description"></span><pre>$currencycode</pre></a></li>
+<li class="property private "><a href="#property_fips104" title="$fips104() :: "><span class="description"></span><pre>$fips104</pre></a></li>
+<li class="property private "><a href="#property_internet" title="$internet() :: "><span class="description"></span><pre>$internet</pre></a></li>
+<li class="property private "><a href="#property_iso2" title="$iso2() :: "><span class="description"></span><pre>$iso2</pre></a></li>
+<li class="property private "><a href="#property_iso3" title="$iso3() :: "><span class="description"></span><pre>$iso3</pre></a></li>
+<li class="property private "><a href="#property_ison" title="$ison() :: "><span class="description"></span><pre>$ison</pre></a></li>
+<li class="property private "><a href="#property_mapreference" title="$mapreference() :: "><span class="description"></span><pre>$mapreference</pre></a></li>
+<li class="property private "><a href="#property_nationalityplural" title="$nationalityplural() :: "><span class="description"></span><pre>$nationalityplural</pre></a></li>
+<li class="property private "><a href="#property_nationalitysingular" title="$nationalitysingular() :: "><span class="description"></span><pre>$nationalitysingular</pre></a></li>
+<li class="property private "><a href="#property_population" title="$population() :: "><span class="description"></span><pre>$population</pre></a></li>
+<li class="property private "><a href="#property_regions" title="$regions() :: "><span class="description">One Country has many Regions</span><pre>$regions</pre></a></li>
+<li class="property private "><a href="#property_title" title="$title() :: "><span class="description"></span><pre>$title</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a xmlns:php="http://php.net/xsl" id="\Countries"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
+<li>
+<a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Countries.html">Countries</a>
+</li>
+</ul>
+<div xmlns:php="http://php.net/xsl" class="element class">
+<p class="short_description">Countries</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>Table</th>
+<td>(name="Countries")</td>
+</tr>
+<tr>
+<th>Entity</th>
+<td></td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr>
+</table>
+<h3>
+<i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct " data-toggle="collapse" data-target=".method___construct .collapse" title="public">
+<h2>__construct()
+        </h2>
+<pre>__construct() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_addCity"></a><div class="element clickable method public method_addCity " data-toggle="collapse" data-target=".method_addCity .collapse" title="public">
+<h2>Add city</h2>
+<pre>addCity(\Cities $city) : \Countries</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$city</h4>
+<code>\Cities</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Countries</code></div>
+</div></div>
+</div>
+<a id="method_addRegion"></a><div class="element clickable method public method_addRegion " data-toggle="collapse" data-target=".method_addRegion .collapse" title="public">
+<h2>Add region</h2>
+<pre>addRegion(\Regions $region) : \Countries</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$region</h4>
+<code>\Regions</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Countries</code></div>
+</div></div>
+</div>
+<a id="method_getCapital"></a><div class="element clickable method public method_getCapital " data-toggle="collapse" data-target=".method_getCapital .collapse" title="public">
+<h2>Get capital</h2>
+<pre>getCapital() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getCities"></a><div class="element clickable method public method_getCities " data-toggle="collapse" data-target=".method_getCities .collapse" title="public">
+<h2>Get cities</h2>
+<pre>getCities() : \Doctrine\Common\Collections\Collection</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Doctrine\Common\Collections\Collection</code></div>
+</div></div>
+</div>
+<a id="method_getComment"></a><div class="element clickable method public method_getComment " data-toggle="collapse" data-target=".method_getComment .collapse" title="public">
+<h2>Get comment</h2>
+<pre>getComment() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getCountry"></a><div class="element clickable method public method_getCountry " data-toggle="collapse" data-target=".method_getCountry .collapse" title="public">
+<h2>Get country</h2>
+<pre>getCountry() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getCountryid"></a><div class="element clickable method public method_getCountryid " data-toggle="collapse" data-target=".method_getCountryid .collapse" title="public">
+<h2>Get countryid</h2>
+<pre>getCountryid() : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>integer</code></div>
+</div></div>
+</div>
+<a id="method_getCurrency"></a><div class="element clickable method public method_getCurrency " data-toggle="collapse" data-target=".method_getCurrency .collapse" title="public">
+<h2>Get currency</h2>
+<pre>getCurrency() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getCurrencycode"></a><div class="element clickable method public method_getCurrencycode " data-toggle="collapse" data-target=".method_getCurrencycode .collapse" title="public">
+<h2>Get currencycode</h2>
+<pre>getCurrencycode() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getFips104"></a><div class="element clickable method public method_getFips104 " data-toggle="collapse" data-target=".method_getFips104 .collapse" title="public">
+<h2>Get fips104</h2>
+<pre>getFips104() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getInternet"></a><div class="element clickable method public method_getInternet " data-toggle="collapse" data-target=".method_getInternet .collapse" title="public">
+<h2>Get internet</h2>
+<pre>getInternet() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getIso2"></a><div class="element clickable method public method_getIso2 " data-toggle="collapse" data-target=".method_getIso2 .collapse" title="public">
+<h2>Get iso2</h2>
+<pre>getIso2() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getIso3"></a><div class="element clickable method public method_getIso3 " data-toggle="collapse" data-target=".method_getIso3 .collapse" title="public">
+<h2>Get iso3</h2>
+<pre>getIso3() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getIson"></a><div class="element clickable method public method_getIson " data-toggle="collapse" data-target=".method_getIson .collapse" title="public">
+<h2>Get ison</h2>
+<pre>getIson() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getMapreference"></a><div class="element clickable method public method_getMapreference " data-toggle="collapse" data-target=".method_getMapreference .collapse" title="public">
+<h2>Get mapreference</h2>
+<pre>getMapreference() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getNationalityplural"></a><div class="element clickable method public method_getNationalityplural " data-toggle="collapse" data-target=".method_getNationalityplural .collapse" title="public">
+<h2>Get nationalityplural</h2>
+<pre>getNationalityplural() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getNationalitysingular"></a><div class="element clickable method public method_getNationalitysingular " data-toggle="collapse" data-target=".method_getNationalitysingular .collapse" title="public">
+<h2>Get nationalitysingular</h2>
+<pre>getNationalitysingular() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getPopulation"></a><div class="element clickable method public method_getPopulation " data-toggle="collapse" data-target=".method_getPopulation .collapse" title="public">
+<h2>Get population</h2>
+<pre>getPopulation() : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>integer</code></div>
+</div></div>
+</div>
+<a id="method_getRegions"></a><div class="element clickable method public method_getRegions " data-toggle="collapse" data-target=".method_getRegions .collapse" title="public">
+<h2>Get regions</h2>
+<pre>getRegions() : \Doctrine\Common\Collections\Collection</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Doctrine\Common\Collections\Collection</code></div>
+</div></div>
+</div>
+<a id="method_getTitle"></a><div class="element clickable method public method_getTitle " data-toggle="collapse" data-target=".method_getTitle .collapse" title="public">
+<h2>Get title</h2>
+<pre>getTitle() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_removeCity"></a><div class="element clickable method public method_removeCity " data-toggle="collapse" data-target=".method_removeCity .collapse" title="public">
+<h2>Remove city</h2>
+<pre>removeCity(\Cities $city) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$city</h4>
+<code>\Cities</code>
+</div>
+</div></div>
+</div>
+<a id="method_removeRegion"></a><div class="element clickable method public method_removeRegion " data-toggle="collapse" data-target=".method_removeRegion .collapse" title="public">
+<h2>Remove region</h2>
+<pre>removeRegion(\Regions $region) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$region</h4>
+<code>\Regions</code>
+</div>
+</div></div>
+</div>
+<a id="method_setCapital"></a><div class="element clickable method public method_setCapital " data-toggle="collapse" data-target=".method_setCapital .collapse" title="public">
+<h2>Set capital</h2>
+<pre>setCapital(string $capital) : \Countries</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$capital</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Countries</code></div>
+</div></div>
+</div>
+<a id="method_setComment"></a><div class="element clickable method public method_setComment " data-toggle="collapse" data-target=".method_setComment .collapse" title="public">
+<h2>Set comment</h2>
+<pre>setComment(string $comment) : \Countries</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$comment</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Countries</code></div>
+</div></div>
+</div>
+<a id="method_setCountry"></a><div class="element clickable method public method_setCountry " data-toggle="collapse" data-target=".method_setCountry .collapse" title="public">
+<h2>Set country</h2>
+<pre>setCountry(string $country) : \Countries</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$country</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Countries</code></div>
+</div></div>
+</div>
+<a id="method_setCurrency"></a><div class="element clickable method public method_setCurrency " data-toggle="collapse" data-target=".method_setCurrency .collapse" title="public">
+<h2>Set currency</h2>
+<pre>setCurrency(string $currency) : \Countries</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$currency</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Countries</code></div>
+</div></div>
+</div>
+<a id="method_setCurrencycode"></a><div class="element clickable method public method_setCurrencycode " data-toggle="collapse" data-target=".method_setCurrencycode .collapse" title="public">
+<h2>Set currencycode</h2>
+<pre>setCurrencycode(string $currencycode) : \Countries</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$currencycode</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Countries</code></div>
+</div></div>
+</div>
+<a id="method_setFips104"></a><div class="element clickable method public method_setFips104 " data-toggle="collapse" data-target=".method_setFips104 .collapse" title="public">
+<h2>Set fips104</h2>
+<pre>setFips104(string $fips104) : \Countries</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$fips104</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Countries</code></div>
+</div></div>
+</div>
+<a id="method_setInternet"></a><div class="element clickable method public method_setInternet " data-toggle="collapse" data-target=".method_setInternet .collapse" title="public">
+<h2>Set internet</h2>
+<pre>setInternet(string $internet) : \Countries</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$internet</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Countries</code></div>
+</div></div>
+</div>
+<a id="method_setIso2"></a><div class="element clickable method public method_setIso2 " data-toggle="collapse" data-target=".method_setIso2 .collapse" title="public">
+<h2>Set iso2</h2>
+<pre>setIso2(string $iso2) : \Countries</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$iso2</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Countries</code></div>
+</div></div>
+</div>
+<a id="method_setIso3"></a><div class="element clickable method public method_setIso3 " data-toggle="collapse" data-target=".method_setIso3 .collapse" title="public">
+<h2>Set iso3</h2>
+<pre>setIso3(string $iso3) : \Countries</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$iso3</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Countries</code></div>
+</div></div>
+</div>
+<a id="method_setIson"></a><div class="element clickable method public method_setIson " data-toggle="collapse" data-target=".method_setIson .collapse" title="public">
+<h2>Set ison</h2>
+<pre>setIson(string $ison) : \Countries</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$ison</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Countries</code></div>
+</div></div>
+</div>
+<a id="method_setMapreference"></a><div class="element clickable method public method_setMapreference " data-toggle="collapse" data-target=".method_setMapreference .collapse" title="public">
+<h2>Set mapreference</h2>
+<pre>setMapreference(string $mapreference) : \Countries</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mapreference</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Countries</code></div>
+</div></div>
+</div>
+<a id="method_setNationalityplural"></a><div class="element clickable method public method_setNationalityplural " data-toggle="collapse" data-target=".method_setNationalityplural .collapse" title="public">
+<h2>Set nationalityplural</h2>
+<pre>setNationalityplural(string $nationalityplural) : \Countries</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$nationalityplural</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Countries</code></div>
+</div></div>
+</div>
+<a id="method_setNationalitysingular"></a><div class="element clickable method public method_setNationalitysingular " data-toggle="collapse" data-target=".method_setNationalitysingular .collapse" title="public">
+<h2>Set nationalitysingular</h2>
+<pre>setNationalitysingular(string $nationalitysingular) : \Countries</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$nationalitysingular</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Countries</code></div>
+</div></div>
+</div>
+<a id="method_setPopulation"></a><div class="element clickable method public method_setPopulation " data-toggle="collapse" data-target=".method_setPopulation .collapse" title="public">
+<h2>Set population</h2>
+<pre>setPopulation(integer $population) : \Countries</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$population</h4>
+<code>integer</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Countries</code></div>
+</div></div>
+</div>
+<a id="method_setTitle"></a><div class="element clickable method public method_setTitle " data-toggle="collapse" data-target=".method_setTitle .collapse" title="public">
+<h2>Set title</h2>
+<pre>setTitle(string $title) : \Countries</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$title</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Countries</code></div>
+</div></div>
+</div>
+<h3>
+<i title="Properties" class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_capital"> </a><div class="element clickable property private property_capital" data-toggle="collapse" data-target=".property_capital .collapse" title="private">
+<h2>$capital</h2>
+<pre>$capital : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>Column</th>
+<td>(name="Capital", type="string", length=25, nullable=true)</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_cities"> </a><div class="element clickable property private property_cities" data-toggle="collapse" data-target=".property_cities .collapse" title="private">
+<h2>One Country has many Cities</h2>
+<pre>$cities : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>OneToMany</th>
+<td>(targetEntity="Cities", mappedBy="country")</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_comment"> </a><div class="element clickable property private property_comment" data-toggle="collapse" data-target=".property_comment .collapse" title="private">
+<h2>$comment</h2>
+<pre>$comment : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>Column</th>
+<td>(name="Comment", type="string", length=255, nullable=true)</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_country"> </a><div class="element clickable property private property_country" data-toggle="collapse" data-target=".property_country .collapse" title="private">
+<h2>$country</h2>
+<pre>$country : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>Column</th>
+<td>(name="Country", type="string", length=50, nullable=false)</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_countryid"> </a><div class="element clickable property private property_countryid" data-toggle="collapse" data-target=".property_countryid .collapse" title="private">
+<h2>$countryid</h2>
+<pre>$countryid : integer</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>Column</th>
+<td>(name="CountryId", type="smallint")</td>
+</tr>
+<tr>
+<th>Id</th>
+<td></td>
+</tr>
+<tr>
+<th>GeneratedValue</th>
+<td>(strategy="IDENTITY")</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_currency"> </a><div class="element clickable property private property_currency" data-toggle="collapse" data-target=".property_currency .collapse" title="private">
+<h2>$currency</h2>
+<pre>$currency : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>Column</th>
+<td>(name="Currency", type="string", length=30, nullable=true)</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_currencycode"> </a><div class="element clickable property private property_currencycode" data-toggle="collapse" data-target=".property_currencycode .collapse" title="private">
+<h2>$currencycode</h2>
+<pre>$currencycode : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>Column</th>
+<td>(name="CurrencyCode", type="string", length=3, nullable=true)</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_fips104"> </a><div class="element clickable property private property_fips104" data-toggle="collapse" data-target=".property_fips104 .collapse" title="private">
+<h2>$fips104</h2>
+<pre>$fips104 : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>Column</th>
+<td>(name="FIPS104", type="string", length=2, nullable=false)</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_internet"> </a><div class="element clickable property private property_internet" data-toggle="collapse" data-target=".property_internet .collapse" title="private">
+<h2>$internet</h2>
+<pre>$internet : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>Column</th>
+<td>(name="Internet", type="string", length=2, nullable=false)</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_iso2"> </a><div class="element clickable property private property_iso2" data-toggle="collapse" data-target=".property_iso2 .collapse" title="private">
+<h2>$iso2</h2>
+<pre>$iso2 : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>Column</th>
+<td>(name="ISO2", type="string", length=2, nullable=false)</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_iso3"> </a><div class="element clickable property private property_iso3" data-toggle="collapse" data-target=".property_iso3 .collapse" title="private">
+<h2>$iso3</h2>
+<pre>$iso3 : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>Column</th>
+<td>(name="ISO3", type="string", length=3, nullable=false)</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_ison"> </a><div class="element clickable property private property_ison" data-toggle="collapse" data-target=".property_ison .collapse" title="private">
+<h2>$ison</h2>
+<pre>$ison : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>Column</th>
+<td>(name="ISON", type="string", length=4, nullable=false)</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_mapreference"> </a><div class="element clickable property private property_mapreference" data-toggle="collapse" data-target=".property_mapreference .collapse" title="private">
+<h2>$mapreference</h2>
+<pre>$mapreference : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>Column</th>
+<td>(name="MapReference", type="string", length=50, nullable=true)</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_nationalityplural"> </a><div class="element clickable property private property_nationalityplural" data-toggle="collapse" data-target=".property_nationalityplural .collapse" title="private">
+<h2>$nationalityplural</h2>
+<pre>$nationalityplural : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>Column</th>
+<td>(name="NationalityPlural", type="string", length=35, nullable=true)</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_nationalitysingular"> </a><div class="element clickable property private property_nationalitysingular" data-toggle="collapse" data-target=".property_nationalitysingular .collapse" title="private">
+<h2>$nationalitysingular</h2>
+<pre>$nationalitysingular : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>Column</th>
+<td>(name="NationalitySingular", type="string", length=35, nullable=true)</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_population"> </a><div class="element clickable property private property_population" data-toggle="collapse" data-target=".property_population .collapse" title="private">
+<h2>$population</h2>
+<pre>$population : integer</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>Column</th>
+<td>(name="Population", type="bigint", nullable=true)</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_regions"> </a><div class="element clickable property private property_regions" data-toggle="collapse" data-target=".property_regions .collapse" title="private">
+<h2>One Country has many Regions</h2>
+<pre>$regions : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>OneToMany</th>
+<td>(targetEntity="Regions", mappedBy="country")</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_title"> </a><div class="element clickable property private property_title" data-toggle="collapse" data-target=".property_title .collapse" title="private">
+<h2>$title</h2>
+<pre>$title : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>Column</th>
+<td>(name="Title", type="string", length=50, nullable=true)</td>
+</tr></table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2017-07-28T00:59:26+02:00.<br></footer></div>
+</div>
+</body>
+</html>

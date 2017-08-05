@@ -1,0 +1,217 @@
+<html>
+    <head>
+        <script
+            type="text/javascript"
+            src="../../js/jquery-1.4.2.min.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shCore.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shBrushJScript.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shBrushPhp.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shBrushXml.js">
+        </script>
+        <link
+            href="../../syntax_highlighter/styles/shCore.css" rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="../../syntax_highlighter/styles/shCoreEclipse.css"
+            rel="stylesheet" type="text/css"
+        />
+        <link
+            href="../../syntax_highlighter/styles/shThemeWordpress.css"
+            rel="stylesheet" type="text/css"
+        />
+    </head>
+    <body>
+        <pre class="brush: php">&lt;?php
+
+namespace Elector\Forms;
+
+use Phalcon\Forms\Form;
+
+use Phalcon\Forms\Element\Email;
+use Phalcon\Forms\Element\Text;
+use Phalcon\Forms\Element\Password;
+use Phalcon\Forms\Element\Submit;
+use Phalcon\Forms\Element\Select;
+
+use Elector\Forms\Elements\Image;
+use Elector\Forms\Elements\Countries as SelectCountry;
+use Elector\Forms\Elements\Blank\Cities as SelectCity;
+use Elector\Forms\Elements\Blank\Regions as SelectRegion;
+
+use Elector\library\Countries\Countries;
+
+class ElectorForm extends Form
+{
+    /**
+     * This method creates register Phalcon Form Elements
+     * @param  string $userType Used for element id and name generator
+     * @param  bool $finish Indicates should form be finished with generic submit button
+     */
+    protected function initializeRegisterForm($userType = 'voter', $finish = false)
+    {
+        $email = new Email($userType . 'Email', ['class' =&gt; 'form-control']);
+        $email-&gt;setLabel('Email address');
+
+        $firstName = new Text($userType . 'FirstName', ['class' =&gt; 'form-control']);
+        $firstName-&gt;setLabel('First name');
+
+        $lastName = new Text($userType . 'LastName', ['class' =&gt; 'form-control']);
+        $lastName-&gt;setLabel('Last name');
+
+        $password = new Password($userType . 'Password', ['class' =&gt; 'form-control']);
+        $password-&gt;setLabel('Password');
+
+        $passwordConfirm = new Password($userType . 'PasswordConfirm', ['class' =&gt; 'form-control']);
+        $passwordConfirm-&gt;setLabel('Confirm password');
+
+
+        $profileImage = new Image($userType . 'ProfileImage', ['help-block' =&gt; 'We need your image so we can validate it\'s acctually you.']);
+
+        $idImage = new Image($userType . 'IdImage', ['help-block' =&gt; 'We need your id card image so we can validate it\'s acctually you.']);
+
+        // We need to get all countries available
+        $countries = Countries::getAllCountries();
+
+        $selectCountry = new SelectCountry($userType . 'SelectCountry', [
+            'class' =&gt; 'form-control select-country select-country ' . $userType, 
+            'data-type' =&gt; $userType,
+            'help-block' =&gt; 'Please select country that is showed on your ID card citizenship', 
+            'countries' =&gt; $countries]);
+        $selectCountry-&gt;setLabel('Select Your Country');
+
+        // This element will be empty and populated with JavaScript
+        $selectRegion = new SelectRegion($userType . 'SelectRegion', [
+            'class' =&gt; 'form-control visible-help-block select-region ' . $userType, 
+            'data-type' =&gt; $userType,
+            'disabled' =&gt; true, 
+            'help-block' =&gt; 'Please first choose your country']);
+        $selectRegion-&gt;setLabel(&quot;Select Your Region&quot;);
+
+        // This element will be empty and populated with JavaScript
+        $selectCity = new SelectCity($userType . 'SelectCity', [
+            'class' =&gt; 'form-control visible-help-block select-city ' . $userType, 
+            'data-type' =&gt; $userType,
+            'disabled' =&gt; true, 
+            'help-block' =&gt; 'Please first choose your region']);
+        $selectCity-&gt;setLabel(&quot;Select Your City&quot;);
+
+        $this-&gt;add($email);
+
+        $this-&gt;add($firstName);
+        $this-&gt;add($lastName);
+
+        $this-&gt;add($password);
+        $this-&gt;add($passwordConfirm);
+
+        $this-&gt;add($profileImage);
+        $this-&gt;add($idImage);
+
+        $this-&gt;add($selectCountry);
+        $this-&gt;add($selectRegion);
+        $this-&gt;add($selectCity);
+
+        if($finish) {
+            // This should always be called last
+            self::submitButton();
+        }
+    }
+
+    protected function submitButton($name = 'Register')
+    {
+        $submit = new Submit($name, ['class' =&gt; 'btn btn-primary btn-raised']);
+
+        $this-&gt;add($submit);
+    }
+
+    /**
+     * Method used to render file chooser input fields
+     * @param  $name Name of the element
+     * @param  $placeholder What description should we show to user
+     */
+    public function renderFileChooser($name, $placeholder)
+    {
+        $element  = $this-&gt;get($name);
+
+        echo '&lt;div class=&quot;form-group label-floating&quot;&gt;';
+        
+        echo '&lt;input type=&quot;text&quot; readonly=&quot;&quot; class=&quot;form-control&quot; placeholder=&quot;' . $placeholder . '&quot;&gt;';
+
+        echo $element;
+        
+
+        // Get any generated messages for the current element
+        $messages = $this-&gt;getMessagesFor(
+            $element-&gt;getName()
+        );
+
+        if (count($messages)) {
+            // Print each element
+            echo &quot;&lt;div class='messages'&gt;&quot;;
+
+            foreach ($messages as $message) {
+                echo $this-&gt;flash-&gt;error($message);
+            }
+
+            echo '&lt;/div&gt;';
+        }
+
+        echo '&lt;/div&gt;';
+    }
+
+    /**
+     * Overiding default Phalcon\Forms\Form::renderDecorated()
+     * @param  string $name Name of the element
+     */
+    public function renderDecorated($name)
+    {
+        $element  = $this-&gt;get($name);
+
+        echo '&lt;div class=&quot;form-group label-floating&quot;&gt;';
+
+        if($element-&gt;getLabel() != '') {
+            echo $element-&gt;label(['class' =&gt; 'control-label']);
+        }
+
+        echo $element;
+        
+
+        // Get any generated messages for the current element
+        $messages = $this-&gt;getMessagesFor(
+            $element-&gt;getName()
+        );
+
+        if (count($messages)) {
+            // Print each element
+            echo &quot;&lt;div class='messages'&gt;&quot;;
+
+            foreach ($messages as $message) {
+                echo $this-&gt;flash-&gt;error($message);
+            }
+
+            echo '&lt;/div&gt;';
+        }
+
+        echo '&lt;/div&gt;';
+    }
+}</pre>
+        <script type="text/javascript">
+             SyntaxHighlighter.all();
+             jQuery('.gutter div').each(function(key, data){
+                jQuery(data).prepend('<a name="L'+jQuery(data).text()+'"/>');
+             });
+        </script>
+    </body>
+</html>

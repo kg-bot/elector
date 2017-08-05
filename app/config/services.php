@@ -7,9 +7,13 @@ use Phalcon\Mvc\View\Engine\Volt as VoltEngine;
 use Phalcon\Mvc\Model\Metadata\Memory as MetaDataAdapter;
 use Phalcon\Session\Adapter\Files as SessionAdapter;
 use Phalcon\Flash\Direct as Flash;
+use Phalcon\Flash\Session as FlashSessio;
 
 use Phalcon\Tag;
 use Phalcon\Forms\Manager as FormsManager;
+
+// Face detect library
+use PhpKairos\PhpKairos as FaceDetector;
 
 /**
  * Shared configuration service
@@ -104,6 +108,17 @@ $di->set('flash', function () {
         'warning' => 'alert alert-warning'
     ]);
 });
+/**
+ * Register the session flash service with the Twitter Bootstrap classes
+ */
+$di->set('flashSession', function() {
+    return new FlashSession([
+        'error'   => 'alert alert-danger',
+        'success' => 'alert alert-success',
+        'notice'  => 'alert alert-info',
+        'warning' => 'alert alert-warning'
+    ]);
+});
 
 /**
  * Start the session the first time some component request the session service
@@ -140,6 +155,11 @@ $di->setShared('doctrineQB', function() {
     return $qb;
 });
 
-$di['forms'] = function() {
+$di->setShared('forms', function() {
     return new FormsManager();
-};
+});
+
+$di->set('faceDetector', function() {
+    $config = $this->getConfig();
+    return new FaceDetector($config->kairo->url, $config->kairo->app_id, $config->kairo->app_key);
+});

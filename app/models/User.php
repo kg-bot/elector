@@ -1,0 +1,372 @@
+<?php
+
+/**
+ * User
+ *
+ * @Table(name="users", indexes={@Index(name="users_index", columns={"id", "avatar_filepath", "email", "id_card_filepath", "password"})})
+ * @Entity
+ */
+class User
+{
+    /**
+     * @var integer
+     *
+     * @Column(name="id", type="integer", precision=0, scale=0, nullable=false, unique=false, unique=true)
+     * @Id
+     * @GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @Column(name="first_name", type="string", precision=0, scale=0, nullable=false, unique=false)
+     */
+    private $first_name;
+
+    /**
+     * User's last name
+     * @var string
+     * @Column(name="last_name", type="string")
+     */
+    private $last_name;
+
+    /**
+     * @var string
+     *
+     * @Column(name="about", type="text", precision=0, scale=0, nullable=false, unique=false)
+     */
+    private $about;
+
+    /**
+     * @var \DateTime
+     *
+     * @Column(name="created_at", type="datetime", precision=0, scale=0, nullable=true, unique=false, options={"default": 0})
+     */
+    private $created_at;
+
+    /**
+     * Name of the avatar image how it is saved in avatar images directory
+     * @var string
+     *
+     * @Column(name="avatar_filepath", type="string", precision=0, scale=0, unique=true)
+     */
+    private $avatar_name;
+
+    /**
+     * 
+     * @var string
+     * @Column(name="email", type="string", unique=true)
+     */
+    private $email;
+
+    /**
+     * User's City ID
+     * @var int
+     * @Column(name="city", type="integer")
+     */
+    private $city;
+
+    /**
+     * User's Country ID
+     * @var int
+     * @Column(name="country", type="integer")
+     */
+    private $country;
+
+    /**
+     * User's region ID
+     * @var int
+     * @Column(name="region", type="integer")
+     */
+    private $region;
+
+    /**
+     * Name of the ID card image, how it's stored in id cards images directory
+     * @var string
+     * @Column(name="id_card_filepath", type="string", unique=true)
+     */
+    private $id_card;
+
+    /**
+     * User's password, encrypted with bcrypt algo
+     * @var string
+     * @Column(name="password", type="string")
+     */
+    private $password;
+
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set firstName
+     *
+     * @param string $firstName
+     *
+     * @return User
+     */
+    public function setFirstName($firstName)
+    {
+        $this->first_name = $firstName;
+
+        return $this;
+    }
+
+    /**
+     * Get firstName
+     *
+     * @return string
+     */
+    public function getFirstName()
+    {
+        return $this->first_name;
+    }
+
+    /**
+     * Set about
+     *
+     * @param string $about
+     *
+     * @return User
+     */
+    public function setAbout($about)
+    {
+        $this->about = $about;
+
+        return $this;
+    }
+
+    /**
+     * Get about
+     *
+     * @return string
+     */
+    public function getAbout()
+    {
+        return $this->about;
+    }
+
+    /**
+     * Set createdAt
+     *
+     * @param \DateTime $createdAt
+     *
+     * @return User
+     */
+    public function setCreatedAt($createdAt)
+    {
+        $this->created_at = $createdAt;
+
+        return $this;
+    }
+
+    /**
+     * Get createdAt
+     *
+     * @return \DateTime
+     */
+    public function getCreatedAt()
+    {
+        return $this->created_at;
+    }
+
+    /**
+     * Set avatarName
+     *
+     * @param string $avatarName
+     *
+     * @return User
+     */
+    public function setAvatarName($avatarName)
+    {
+        $this->avatar_name = $avatarName;
+
+        return $this;
+    }
+
+    /**
+     * Get avatarName
+     *
+     * @return string
+     */
+    public function getAvatarName()
+    {
+        return $this->avatar_name;
+    }
+
+    /**
+     * Set lastName
+     *
+     * @param string $lastName
+     *
+     * @return User
+     */
+    public function setLastName($lastName)
+    {
+        $this->last_name = $lastName;
+
+        return $this;
+    }
+
+    /**
+     * Get lastName
+     *
+     * @return string
+     */
+    public function getLastName()
+    {
+        return $this->last_name;
+    }
+
+    /**
+     * Set email
+     *
+     * @param string $email
+     *
+     * @return User
+     */
+    public function setEmail($email)
+    {
+        $this->email = $email;
+
+        return $this;
+    }
+
+    /**
+     * Get email
+     *
+     * @return string
+     */
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+    /**
+     * Set city
+     *
+     * @param integer $city
+     *
+     * @return User
+     */
+    public function setCity($city)
+    {
+        $this->city = $city;
+
+        return $this;
+    }
+
+    /**
+     * Get city
+     *
+     * @return integer
+     */
+    public function getCity()
+    {
+        return $this->city;
+    }
+
+    /**
+     * Set country
+     *
+     * @param integer $country
+     *
+     * @return User
+     */
+    public function setCountry($country)
+    {
+        $this->country = $country;
+
+        return $this;
+    }
+
+    /**
+     * Get country
+     *
+     * @return integer
+     */
+    public function getCountry()
+    {
+        return $this->country;
+    }
+
+    /**
+     * Set region
+     *
+     * @param integer $region
+     *
+     * @return User
+     */
+    public function setRegion($region)
+    {
+        $this->region = $region;
+
+        return $this;
+    }
+
+    /**
+     * Get region
+     *
+     * @return integer
+     */
+    public function getRegion()
+    {
+        return $this->region;
+    }
+
+    /**
+     * Set idCard
+     *
+     * @param string $idCard
+     *
+     * @return User
+     */
+    public function setIdCard($idCard)
+    {
+        $this->id_card = $idCard;
+
+        return $this;
+    }
+
+    /**
+     * Get idCard
+     *
+     * @return string
+     */
+    public function getIdCard()
+    {
+        return $this->id_card;
+    }
+
+    /**
+     * Set password
+     *
+     * @param string $password
+     *
+     * @return User
+     */
+    public function setPassword($password)
+    {
+        $this->password = $password;
+
+        return $this;
+    }
+
+    /**
+     * Get password
+     *
+     * @return string
+     */
+    public function getPassword()
+    {
+        return $this->password;
+    }
+}

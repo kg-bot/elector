@@ -21,7 +21,7 @@ class RegionsController extends ControllerBase
         if($this->request->isGet()) {
             if($this->request->isAjax()) {
                 $request_region = $this->request->get('regionID');
-
+                
                 $cities = Regions::getRegionCities($request_region);
 
                 if(!empty($cities)) {

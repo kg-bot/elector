@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <script
+            type="text/javascript"
+            src="../../../js/jquery-1.4.2.min.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../../syntax_highlighter/scripts/shCore.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../../syntax_highlighter/scripts/shBrushJScript.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../../syntax_highlighter/scripts/shBrushPhp.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../../syntax_highlighter/scripts/shBrushXml.js">
+        </script>
+        <link
+            href="../../../syntax_highlighter/styles/shCore.css" rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="../../../syntax_highlighter/styles/shCoreEclipse.css"
+            rel="stylesheet" type="text/css"
+        />
+        <link
+            href="../../../syntax_highlighter/styles/shThemeWordpress.css"
+            rel="stylesheet" type="text/css"
+        />
+    </head>
+    <body>
+        <pre class="brush: php">&lt;?php
+
+namespace Elector\library\Countries;
+
+use Phalcon\Di;
+
+class Countries
+{
+    /**
+     * Method returns list of all countries from database
+     * @return array Countries
+     */
+    public static function getAllCountries()
+    {
+        // Doctrine EntityManager
+        $em = DI::getDefault()-&gt;get('doctrineEM');
+
+        return $em-&gt;getRepository('Countries')-&gt;findAll();
+    }
+
+    /**
+     * Method fatches all regions inside a country
+     * @param  int $countryID 
+     * @return array            Array of regions
+     */
+    public static function getCountryRegions(int $countryID)
+    {
+        // Doctrine EntityManager
+        $em = DI::getDefault()-&gt;get('doctrineEM');
+
+        return $em-&gt;getRepository('Countries')-&gt;find($countryID)-&gt;getRegions();
+    }
+}</pre>
+        <script type="text/javascript">
+             SyntaxHighlighter.all();
+             jQuery('.gutter div').each(function(key, data){
+                jQuery(data).prepend('<a name="L'+jQuery(data).text()+'"/>');
+             });
+        </script>
+    </body>
+</html>

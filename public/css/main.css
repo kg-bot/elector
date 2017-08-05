@@ -8,10 +8,6 @@ html {
 .material-icons.large {
     font-size: 10rem;
 }
-.tab-pane#voters .panel:first-of-type,
-.tab-pane#candidates .panel:first-of-type {
-    padding-top: 10px;
-}
 /* Used to fix footer overlap with intro blocks */
 .intro-blocks {
     padding-bottom: 70px;
@@ -36,4 +32,8 @@ html {
 
 .visible-help-block + p {
     display: block !important;
+}
+/* Used to change validation error color */
+label.has-error {
+    color: #f44336!important;
 }

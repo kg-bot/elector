@@ -1,0 +1,277 @@
+<html>
+    <head>
+        <script
+            type="text/javascript"
+            src="../../js/jquery-1.4.2.min.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shCore.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shBrushJScript.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shBrushPhp.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shBrushXml.js">
+        </script>
+        <link
+            href="../../syntax_highlighter/styles/shCore.css" rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="../../syntax_highlighter/styles/shCoreEclipse.css"
+            rel="stylesheet" type="text/css"
+        />
+        <link
+            href="../../syntax_highlighter/styles/shThemeWordpress.css"
+            rel="stylesheet" type="text/css"
+        />
+    </head>
+    <body>
+        <pre class="brush: php">&lt;?php
+
+use Doctrine\Common\Collections\ArrayCollection;
+
+/**
+ * Regions
+ *
+ * @Table(name=&quot;Regions&quot;)
+ * @Entity
+ */
+class Regions
+{
+    /**
+     * @var integer
+     *
+     * @Column(name=&quot;CountryID&quot;, type=&quot;smallint&quot;, nullable=false)
+     */
+    private $countryid;
+
+    /**
+     * @var string
+     *
+     * @Column(name=&quot;Region&quot;, type=&quot;string&quot;, length=45, nullable=false)
+     */
+    private $region;
+
+    /**
+     * @var string
+     *
+     * @Column(name=&quot;Code&quot;, type=&quot;string&quot;, length=8, nullable=false)
+     */
+    private $code;
+
+    /**
+     * @var string
+     *
+     * @Column(name=&quot;ADM1Code&quot;, type=&quot;string&quot;, length=4, nullable=false)
+     */
+    private $adm1code;
+
+    /**
+     * @var integer
+     *
+     * @Column(name=&quot;RegionID&quot;, type=&quot;smallint&quot;)
+     * @Id
+     * @GeneratedValue(strategy=&quot;IDENTITY&quot;)
+     */
+    private $regionid;
+
+    /**
+     * Many Regions have one Country
+     * @ManyToOne(targetEntity=&quot;Countries&quot;, inversedBy=&quot;regions&quot;)
+     * @JoinColumn(name=&quot;CountryID&quot;, referencedColumnName=&quot;CountryId&quot;)
+     */
+    private $country;
+
+    /**
+     * One Region has many Cities
+     * @OneToMany(targetEntity=&quot;Cities&quot;, mappedBy=&quot;region&quot;)
+     */
+    private $cities;
+
+    public function __construct()
+    {
+        $this-&gt;cities = new ArrayCollection();
+    }
+
+
+    /**
+     * Set countryid
+     *
+     * @param integer $countryid
+     *
+     * @return Regions
+     */
+    public function setCountryid($countryid)
+    {
+        $this-&gt;countryid = $countryid;
+
+        return $this;
+    }
+
+    /**
+     * Get countryid
+     *
+     * @return integer
+     */
+    public function getCountryid()
+    {
+        return $this-&gt;countryid;
+    }
+
+    /**
+     * Set region
+     *
+     * @param string $region
+     *
+     * @return Regions
+     */
+    public function setRegion($region)
+    {
+        $this-&gt;region = $region;
+
+        return $this;
+    }
+
+    /**
+     * Get region
+     *
+     * @return string
+     */
+    public function getRegion()
+    {
+        return $this-&gt;region;
+    }
+
+    /**
+     * Set code
+     *
+     * @param string $code
+     *
+     * @return Regions
+     */
+    public function setCode($code)
+    {
+        $this-&gt;code = $code;
+
+        return $this;
+    }
+
+    /**
+     * Get code
+     *
+     * @return string
+     */
+    public function getCode()
+    {
+        return $this-&gt;code;
+    }
+
+    /**
+     * Set adm1code
+     *
+     * @param string $adm1code
+     *
+     * @return Regions
+     */
+    public function setAdm1code($adm1code)
+    {
+        $this-&gt;adm1code = $adm1code;
+
+        return $this;
+    }
+
+    /**
+     * Get adm1code
+     *
+     * @return string
+     */
+    public function getAdm1code()
+    {
+        return $this-&gt;adm1code;
+    }
+
+    /**
+     * Get regionid
+     *
+     * @return integer
+     */
+    public function getRegionid()
+    {
+        return $this-&gt;regionid;
+    }
+
+    /**
+     * Set country
+     *
+     * @param \Countries $country
+     *
+     * @return Regions
+     */
+    public function setCountry(\Countries $country = null)
+    {
+        $this-&gt;country = $country;
+
+        return $this;
+    }
+
+    /**
+     * Get country
+     *
+     * @return \Countries
+     */
+    public function getCountry()
+    {
+        return $this-&gt;country;
+    }
+
+    /**
+     * Add city
+     *
+     * @param \Cities $city
+     *
+     * @return Regions
+     */
+    public function addCity(\Cities $city)
+    {
+        $this-&gt;cities[] = $city;
+
+        return $this;
+    }
+
+    /**
+     * Remove city
+     *
+     * @param \Cities $city
+     */
+    public function removeCity(\Cities $city)
+    {
+        $this-&gt;cities-&gt;removeElement($city);
+    }
+
+    /**
+     * Get cities
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getCities()
+    {
+        return $this-&gt;cities;
+    }
+}
+</pre>
+        <script type="text/javascript">
+             SyntaxHighlighter.all();
+             jQuery('.gutter div').each(function(key, data){
+                jQuery(data).prepend('<a name="L'+jQuery(data).text()+'"/>');
+             });
+        </script>
+    </body>
+</html>

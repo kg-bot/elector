@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <script
+            type="text/javascript"
+            src="../../js/jquery-1.4.2.min.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shCore.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shBrushJScript.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shBrushPhp.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shBrushXml.js">
+        </script>
+        <link
+            href="../../syntax_highlighter/styles/shCore.css" rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="../../syntax_highlighter/styles/shCoreEclipse.css"
+            rel="stylesheet" type="text/css"
+        />
+        <link
+            href="../../syntax_highlighter/styles/shThemeWordpress.css"
+            rel="stylesheet" type="text/css"
+        />
+    </head>
+    <body>
+        <pre class="brush: php">&lt;?php
+
+use Phalcon\Mvc\Controller;
+use Phalcon\Tag;
+
+class ControllerBase extends Controller
+{
+    public function onConstruct()
+    {
+        $this-&gt;tag-&gt;setTitle('Elector');
+
+        // Material Design fonts
+        $this-&gt;assets-&gt;addCss(&quot;//fonts.googleapis.com/css?family=Roboto:300,400,500,700&quot;, false);
+        $this-&gt;assets-&gt;addCss(&quot;//fonts.googleapis.com/icon?family=Material+Icons&quot;, false);
+        
+        $this-&gt;assets-&gt;addCss('/assets/bootstrap/dist/css/bootstrap.css');
+        $this-&gt;assets-&gt;addCss(&quot;/assets/bootstrap-material-design/dist/css/bootstrap-material-design.css&quot;);
+        $this-&gt;assets-&gt;addCss('/assets/bootstrap-material-design/dist/css/ripples.css');
+        // Main css file, used to overide or fix default Material Design styles
+        $this-&gt;assets-&gt;addCss('/css/main.css');
+
+
+        $this-&gt;assets-&gt;addJs('/assets/jquery/dist/jquery.js');
+        $this-&gt;assets-&gt;addJs('/assets/bootstrap/dist/js/bootstrap.js');
+        $this-&gt;assets-&gt;addJs(&quot;/assets/bootstrap-material-design/scripts/material.js&quot;);
+        $this-&gt;assets-&gt;addJs('/assets/bootstrap-material-design/scripts/ripples.js');
+        // IE10 viewport hack for Surface/desktop Windows 8 bug
+        $this-&gt;assets-&gt;addJs('https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js', false);
+        // Main js file
+        $this-&gt;assets-&gt;addJs('/js/main.js');
+    }
+
+    public function onInitialize()
+    {
+        $this-&gt;setDoctype(Tag::HTML5);
+    }
+}
+</pre>
+        <script type="text/javascript">
+             SyntaxHighlighter.all();
+             jQuery('.gutter div').each(function(key, data){
+                jQuery(data).prepend('<a name="L'+jQuery(data).text()+'"/>');
+             });
+        </script>
+    </body>
+</html>

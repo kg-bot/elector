@@ -1,7 +1,6 @@
 <?php $candidateRegister = $this->forms->get('candidateRegister'); ?>
 
-<?= $this->tag->form([$this->config->application->urls->candidates->register, 'method' => 'post', 'class' => 'form-horizontal']) ?>
-    <fieldset>
+<?= $this->tag->form([$this->config->application->urls->candidates->register, 'method' => 'post', 'class' => 'form-horizontal', 'id' => 'candidateRegisterForm']) ?>
     
         <?= $candidateRegister->renderDecorated('candidateEmail') ?>
 
@@ -21,5 +20,4 @@
         <?= $candidateRegister->renderDecorated('Register') ?>
 
         <?= $this->tag->linkTo([$this->config->application->urls->login, 'Already have an account?']) ?>
-    </fieldset>
 <?= $this->tag->endForm() ?>

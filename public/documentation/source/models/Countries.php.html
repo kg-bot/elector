@@ -1,0 +1,632 @@
+<html>
+    <head>
+        <script
+            type="text/javascript"
+            src="../../js/jquery-1.4.2.min.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shCore.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shBrushJScript.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shBrushPhp.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shBrushXml.js">
+        </script>
+        <link
+            href="../../syntax_highlighter/styles/shCore.css" rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="../../syntax_highlighter/styles/shCoreEclipse.css"
+            rel="stylesheet" type="text/css"
+        />
+        <link
+            href="../../syntax_highlighter/styles/shThemeWordpress.css"
+            rel="stylesheet" type="text/css"
+        />
+    </head>
+    <body>
+        <pre class="brush: php">&lt;?php
+
+use Doctrine\Common\Collections\ArrayCollection;
+
+/**
+ * Countries
+ *
+ * @Table(name=&quot;Countries&quot;)
+ * @Entity
+ */
+class Countries
+{
+    /**
+     * @var string
+     *
+     * @Column(name=&quot;Country&quot;, type=&quot;string&quot;, length=50, nullable=false)
+     */
+    private $country;
+
+    /**
+     * @var string
+     *
+     * @Column(name=&quot;FIPS104&quot;, type=&quot;string&quot;, length=2, nullable=false)
+     */
+    private $fips104;
+
+    /**
+     * @var string
+     *
+     * @Column(name=&quot;ISO2&quot;, type=&quot;string&quot;, length=2, nullable=false)
+     */
+    private $iso2;
+
+    /**
+     * @var string
+     *
+     * @Column(name=&quot;ISO3&quot;, type=&quot;string&quot;, length=3, nullable=false)
+     */
+    private $iso3;
+
+    /**
+     * @var string
+     *
+     * @Column(name=&quot;ISON&quot;, type=&quot;string&quot;, length=4, nullable=false)
+     */
+    private $ison;
+
+    /**
+     * @var string
+     *
+     * @Column(name=&quot;Internet&quot;, type=&quot;string&quot;, length=2, nullable=false)
+     */
+    private $internet;
+
+    /**
+     * @var string
+     *
+     * @Column(name=&quot;Capital&quot;, type=&quot;string&quot;, length=25, nullable=true)
+     */
+    private $capital;
+
+    /**
+     * @var string
+     *
+     * @Column(name=&quot;MapReference&quot;, type=&quot;string&quot;, length=50, nullable=true)
+     */
+    private $mapreference;
+
+    /**
+     * @var string
+     *
+     * @Column(name=&quot;NationalitySingular&quot;, type=&quot;string&quot;, length=35, nullable=true)
+     */
+    private $nationalitysingular;
+
+    /**
+     * @var string
+     *
+     * @Column(name=&quot;NationalityPlural&quot;, type=&quot;string&quot;, length=35, nullable=true)
+     */
+    private $nationalityplural;
+
+    /**
+     * @var string
+     *
+     * @Column(name=&quot;Currency&quot;, type=&quot;string&quot;, length=30, nullable=true)
+     */
+    private $currency;
+
+    /**
+     * @var string
+     *
+     * @Column(name=&quot;CurrencyCode&quot;, type=&quot;string&quot;, length=3, nullable=true)
+     */
+    private $currencycode;
+
+    /**
+     * @var integer
+     *
+     * @Column(name=&quot;Population&quot;, type=&quot;bigint&quot;, nullable=true)
+     */
+    private $population;
+
+    /**
+     * @var string
+     *
+     * @Column(name=&quot;Title&quot;, type=&quot;string&quot;, length=50, nullable=true)
+     */
+    private $title;
+
+    /**
+     * @var string
+     *
+     * @Column(name=&quot;Comment&quot;, type=&quot;string&quot;, length=255, nullable=true)
+     */
+    private $comment;
+
+    /**
+     * @var integer
+     *
+     * @Column(name=&quot;CountryId&quot;, type=&quot;smallint&quot;)
+     * @Id
+     * @GeneratedValue(strategy=&quot;IDENTITY&quot;)
+     */
+    private $countryid;
+
+    /**
+     * @var  array
+     * 
+     * One Country has many Cities
+     * @OneToMany(targetEntity=&quot;Cities&quot;, mappedBy=&quot;country&quot;)
+     */
+    private $cities;
+
+    /**
+     * @var array
+     *
+     * One Country has many Regions
+     * @OneToMany(targetEntity=&quot;Regions&quot;, mappedBy=&quot;country&quot;)
+     */
+    private $regions;
+
+    public function __construct() 
+    {
+        $this-&gt;cities = new ArrayCollection();
+        $this-&gt;regions = new ArrayCollection();
+    }
+
+
+    /**
+     * Set country
+     *
+     * @param string $country
+     *
+     * @return Countries
+     */
+    public function setCountry($country)
+    {
+        $this-&gt;country = $country;
+
+        return $this;
+    }
+
+    /**
+     * Get country
+     *
+     * @return string
+     */
+    public function getCountry()
+    {
+        return $this-&gt;country;
+    }
+
+    /**
+     * Set fips104
+     *
+     * @param string $fips104
+     *
+     * @return Countries
+     */
+    public function setFips104($fips104)
+    {
+        $this-&gt;fips104 = $fips104;
+
+        return $this;
+    }
+
+    /**
+     * Get fips104
+     *
+     * @return string
+     */
+    public function getFips104()
+    {
+        return $this-&gt;fips104;
+    }
+
+    /**
+     * Set iso2
+     *
+     * @param string $iso2
+     *
+     * @return Countries
+     */
+    public function setIso2($iso2)
+    {
+        $this-&gt;iso2 = $iso2;
+
+        return $this;
+    }
+
+    /**
+     * Get iso2
+     *
+     * @return string
+     */
+    public function getIso2()
+    {
+        return $this-&gt;iso2;
+    }
+
+    /**
+     * Set iso3
+     *
+     * @param string $iso3
+     *
+     * @return Countries
+     */
+    public function setIso3($iso3)
+    {
+        $this-&gt;iso3 = $iso3;
+
+        return $this;
+    }
+
+    /**
+     * Get iso3
+     *
+     * @return string
+     */
+    public function getIso3()
+    {
+        return $this-&gt;iso3;
+    }
+
+    /**
+     * Set ison
+     *
+     * @param string $ison
+     *
+     * @return Countries
+     */
+    public function setIson($ison)
+    {
+        $this-&gt;ison = $ison;
+
+        return $this;
+    }
+
+    /**
+     * Get ison
+     *
+     * @return string
+     */
+    public function getIson()
+    {
+        return $this-&gt;ison;
+    }
+
+    /**
+     * Set internet
+     *
+     * @param string $internet
+     *
+     * @return Countries
+     */
+    public function setInternet($internet)
+    {
+        $this-&gt;internet = $internet;
+
+        return $this;
+    }
+
+    /**
+     * Get internet
+     *
+     * @return string
+     */
+    public function getInternet()
+    {
+        return $this-&gt;internet;
+    }
+
+    /**
+     * Set capital
+     *
+     * @param string $capital
+     *
+     * @return Countries
+     */
+    public function setCapital($capital)
+    {
+        $this-&gt;capital = $capital;
+
+        return $this;
+    }
+
+    /**
+     * Get capital
+     *
+     * @return string
+     */
+    public function getCapital()
+    {
+        return $this-&gt;capital;
+    }
+
+    /**
+     * Set mapreference
+     *
+     * @param string $mapreference
+     *
+     * @return Countries
+     */
+    public function setMapreference($mapreference)
+    {
+        $this-&gt;mapreference = $mapreference;
+
+        return $this;
+    }
+
+    /**
+     * Get mapreference
+     *
+     * @return string
+     */
+    public function getMapreference()
+    {
+        return $this-&gt;mapreference;
+    }
+
+    /**
+     * Set nationalitysingular
+     *
+     * @param string $nationalitysingular
+     *
+     * @return Countries
+     */
+    public function setNationalitysingular($nationalitysingular)
+    {
+        $this-&gt;nationalitysingular = $nationalitysingular;
+
+        return $this;
+    }
+
+    /**
+     * Get nationalitysingular
+     *
+     * @return string
+     */
+    public function getNationalitysingular()
+    {
+        return $this-&gt;nationalitysingular;
+    }
+
+    /**
+     * Set nationalityplural
+     *
+     * @param string $nationalityplural
+     *
+     * @return Countries
+     */
+    public function setNationalityplural($nationalityplural)
+    {
+        $this-&gt;nationalityplural = $nationalityplural;
+
+        return $this;
+    }
+
+    /**
+     * Get nationalityplural
+     *
+     * @return string
+     */
+    public function getNationalityplural()
+    {
+        return $this-&gt;nationalityplural;
+    }
+
+    /**
+     * Set currency
+     *
+     * @param string $currency
+     *
+     * @return Countries
+     */
+    public function setCurrency($currency)
+    {
+        $this-&gt;currency = $currency;
+
+        return $this;
+    }
+
+    /**
+     * Get currency
+     *
+     * @return string
+     */
+    public function getCurrency()
+    {
+        return $this-&gt;currency;
+    }
+
+    /**
+     * Set currencycode
+     *
+     * @param string $currencycode
+     *
+     * @return Countries
+     */
+    public function setCurrencycode($currencycode)
+    {
+        $this-&gt;currencycode = $currencycode;
+
+        return $this;
+    }
+
+    /**
+     * Get currencycode
+     *
+     * @return string
+     */
+    public function getCurrencycode()
+    {
+        return $this-&gt;currencycode;
+    }
+
+    /**
+     * Set population
+     *
+     * @param integer $population
+     *
+     * @return Countries
+     */
+    public function setPopulation($population)
+    {
+        $this-&gt;population = $population;
+
+        return $this;
+    }
+
+    /**
+     * Get population
+     *
+     * @return integer
+     */
+    public function getPopulation()
+    {
+        return $this-&gt;population;
+    }
+
+    /**
+     * Set title
+     *
+     * @param string $title
+     *
+     * @return Countries
+     */
+    public function setTitle($title)
+    {
+        $this-&gt;title = $title;
+
+        return $this;
+    }
+
+    /**
+     * Get title
+     *
+     * @return string
+     */
+    public function getTitle()
+    {
+        return $this-&gt;title;
+    }
+
+    /**
+     * Set comment
+     *
+     * @param string $comment
+     *
+     * @return Countries
+     */
+    public function setComment($comment)
+    {
+        $this-&gt;comment = $comment;
+
+        return $this;
+    }
+
+    /**
+     * Get comment
+     *
+     * @return string
+     */
+    public function getComment()
+    {
+        return $this-&gt;comment;
+    }
+
+    /**
+     * Get countryid
+     *
+     * @return integer
+     */
+    public function getCountryid()
+    {
+        return $this-&gt;countryid;
+    }
+
+    /**
+     * Add city
+     *
+     * @param \Cities $city
+     *
+     * @return Countries
+     */
+    public function addCity(\Cities $city)
+    {
+        $this-&gt;cities[] = $city;
+
+        return $this;
+    }
+
+    /**
+     * Remove city
+     *
+     * @param \Cities $city
+     */
+    public function removeCity(\Cities $city)
+    {
+        $this-&gt;cities-&gt;removeElement($city);
+    }
+
+    /**
+     * Get cities
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getCities()
+    {
+        return $this-&gt;cities;
+    }
+
+    /**
+     * Add region
+     *
+     * @param \Regions $region
+     *
+     * @return Countries
+     */
+    public function addRegion(\Regions $region)
+    {
+        $this-&gt;regions[] = $region;
+
+        return $this;
+    }
+
+    /**
+     * Remove region
+     *
+     * @param \Regions $region
+     */
+    public function removeRegion(\Regions $region)
+    {
+        $this-&gt;regions-&gt;removeElement($region);
+    }
+
+    /**
+     * Get regions
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getRegions()
+    {
+        return $this-&gt;regions;
+    }
+}
+</pre>
+        <script type="text/javascript">
+             SyntaxHighlighter.all();
+             jQuery('.gutter div').each(function(key, data){
+                jQuery(data).prepend('<a name="L'+jQuery(data).text()+'"/>');
+             });
+        </script>
+    </body>
+</html>

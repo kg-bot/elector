@@ -1,0 +1,3383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project title="API Documentation" version="2.8.5">
+  <partials/>
+  <file path="controllers/ControllerBase.php" generated-path="controllers.ControllerBase.html" hash="d5c447ac0bee8f2069163087681ef589" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <namespace-alias name="Controller">\Phalcon\Mvc\Controller</namespace-alias>
+    <namespace-alias name="Tag">\Phalcon\Tag</namespace-alias>
+    <class final="false" abstract="false" namespace="" line="6" package="Default">
+      <extends>\Phalcon\Mvc\Controller</extends>
+      <name>ControllerBase</name>
+      <full_name>\ControllerBase</full_name>
+      <docblock line="6">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="6" description="Default"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="8" package="Default">
+        <name>onConstruct</name>
+        <full_name>\ControllerBase::onConstruct()</full_name>
+        <docblock line="8">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="33" package="Default">
+        <name>onInitialize</name>
+        <full_name>\ControllerBase::onInitialize()</full_name>
+        <docblock line="33">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="6" code="PPC:ERR-50005">No summary for class \ControllerBase</error>
+      <error line="8" code="PPC:ERR-50008">No summary for method onConstruct()</error>
+      <error line="33" code="PPC:ERR-50008">No summary for method onInitialize()</error>
+    </parse_markers>
+    <source>eJydVG1r2zAQ/u5fIcIgKYtjl61spFsLawtLWWBsgX3pF0WWHTmKTpPOeenof985rpssL3WYQdg+n5/nuXtO+nRtJzYICi/Z9wnXAszDcC4ebsCgA62lu/zn24hnl0EgNPeebXK+cEqRS5Qm2Q4HfwJGly3GWgmWFkagAsPAUIpHVwjsnK0zqrzyeoMT5cMr5Fl45SWOFGrZad9pKRBc+4y468woYkOO0imu2a30KjMsJWa/C0VKJZb3JLnxvtOKonVaLwPItORW+Z6AWSS8v075TOnV5x8wBoT+uzjuvqd1QetDHLe6LOXaS9LwfwyK+ldT1MrfDijoD0A3cLSjKhCNAZBayW2UKI9lFZtQj97aJ8jdhQpnz+rCZN3XA9C7KSVVq5FqX/VxKqes1dLv1rB2XRlGYZYqLbuMpjNhCAzmBJRIBo4+LFkiU15o3JsRjyuCbRRaSpgRUc0fvPLH/VZl+e9CulVVRvXcyxtMuD9uZ77t5gk4J3jpBXUWy+KqOMG+btxBeUdha9vyXdcGd+cxmyu5sOCQTbiY0nZ17GfhUi5kRDBTBMt+KZPAwrOPbFxkDaomiNb3IyplKRLTexFXvpQbjrqn5Hkc1qwhQYYLcFPuoDBJqXF/49UDllfz1dSY/HlMNvU+BUcOvYFRSB1Tj/LYqUfQtyBwZWWHztl+/+to+O3iBfYp+AuSp9RB</source>
+  </file>
+  <file path="controllers/RegionsController.php" generated-path="controllers.RegionsController.html" hash="7e522c6bbdf2f45b51f29824f9f5ba52" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <namespace-alias name="Cities">\Elector\library\Cities\Cities</namespace-alias>
+    <namespace-alias name="Regions">\Elector\library\Regions\Regions</namespace-alias>
+    <class final="false" abstract="false" namespace="" line="6" package="Default">
+      <extends>\ControllerBase</extends>
+      <name>RegionsController</name>
+      <full_name>\RegionsController</full_name>
+      <docblock line="6">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="6" description="Default"/>
+        <tag name="inherited_from" description="\ControllerBase" refers="\ControllerBase" link="/classes/ControllerBase.html"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="9" package="Default">
+        <name>indexAction</name>
+        <full_name>\RegionsController::indexAction()</full_name>
+        <docblock line="9">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="18" package="Default">
+        <name>getCitiesAction</name>
+        <full_name>\RegionsController::getCitiesAction()</full_name>
+        <docblock line="18">
+          <description>Method used to list all cities in provided region</description>
+          <long-description></long-description>
+          <tag name="return" line="18" description="[description]" type="\[type]">
+            <type>\[type]</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="8" package="Default">
+        <name>onConstruct</name>
+        <full_name>\ControllerBase::onConstruct()</full_name>
+        <docblock line="8">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+        <inherited_from>\ControllerBase</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="33" package="Default">
+        <name>onInitialize</name>
+        <full_name>\ControllerBase::onInitialize()</full_name>
+        <docblock line="33">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+        <inherited_from>\ControllerBase</inherited_from>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="6" code="PPC:ERR-50005">No summary for class \RegionsController</error>
+      <error line="9" code="PPC:ERR-50008">No summary for method indexAction()</error>
+    </parse_markers>
+    <source>eJx1UsFuwjAMvecrPAmJgoS4U+jG2DTtsE3aFdBUWkMzhSZLXKBC/PvSpGUTFKtqnPj5+TnO+F5lirHCIDwLTEjqheArHetyMePE0dRL2Ar5xA2XuWnWkLFExMZAvZ/JnLQUAjXggTBPDfwdPcYG2ZExsKaKleAJrIs8IZsIPE/xMHV+0HOIo/tX5pyTzxv2+/68D29ImUzBqkyBJAhuCGIhIHHyLSMoLXc8tWHt1DWJDxqp0DnMqVS4hHmKJtFcVbWXNWbYKnKD5O/mhtAOZdwMoh3H/SBKuYlXAoNeeI7zdVBDNP4UaGgQcfOCFPR6/1huIqff8eEa6grXqC/fKEzgMttKD7o++vrUtZquOep7mzSzHI1skvd918FFmTYWK/wOt4rKoOZr1esmOYR3uYc9Qo5+gkqqQsSEMJZuGBGgwC3mZGAtdTXXEsYGqxcZtVJ2fF7Vg1fsWrBu+eEDZ1EtyivDJJNnlvAKcmLtu1PzQu33CyXD+L4=</source>
+  </file>
+  <file path="Forms/Candidates/CandidateRegister.php" generated-path="Forms.Candidates.CandidateRegister.html" hash="b82799415f1b4942d42e03f2ef645262" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <namespace-alias name="ElectorForm">\Elector\Forms\ElectorForm</namespace-alias>
+    <class final="false" abstract="false" namespace="Elector\Forms\Candidates" line="6" package="Default">
+      <extends>\Elector\Forms\ElectorForm</extends>
+      <name>CandidateRegister</name>
+      <full_name>\Elector\Forms\Candidates\CandidateRegister</full_name>
+      <docblock line="6">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="6" description="Default"/>
+        <tag name="inherited_from" description="\Elector\Forms\ElectorForm" refers="\Elector\Forms\ElectorForm" link="/classes/Elector.Forms.ElectorForm.html"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Elector\Forms\Candidates" line="8" package="Default">
+        <name>initialize</name>
+        <full_name>\Elector\Forms\Candidates\CandidateRegister::initialize()</full_name>
+        <docblock line="8">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Elector\Forms\Candidates" line="27" package="Default">
+        <name>initializeRegisterForm</name>
+        <full_name>\Elector\Forms\ElectorForm::initializeRegisterForm()</full_name>
+        <docblock line="27">
+          <description>This method creates register Phalcon Form Elements</description>
+          <long-description></long-description>
+          <tag name="param" line="27" description="&lt;p&gt;Used for element id and name generator&lt;/p&gt;" type="string" variable="$userType">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="27" description="&lt;p&gt;Indicates should form be finished with generic submit button&lt;/p&gt;" type="boolean" variable="$finish">
+            <type>boolean</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$userType</name>
+          <default>'voter'</default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$finish</name>
+          <default>false</default>
+          <type>boolean</type>
+        </argument>
+        <inherited_from>\Elector\Forms\ElectorForm</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Elector\Forms\Candidates" line="96" package="Default">
+        <name>submitButton</name>
+        <full_name>\Elector\Forms\ElectorForm::submitButton()</full_name>
+        <docblock line="96">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$name</name>
+          <default>'Register'</default>
+          <type/>
+        </argument>
+        <inherited_from>\Elector\Forms\ElectorForm</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Elector\Forms\Candidates" line="108" package="Default">
+        <name>renderFileChooser</name>
+        <full_name>\Elector\Forms\ElectorForm::renderFileChooser()</full_name>
+        <docblock line="108">
+          <description>Method used to render file chooser input fields</description>
+          <long-description></long-description>
+          <tag name="param" line="108" description="&lt;p&gt;Name of the element&lt;/p&gt;" type="" variable="$name"/>
+          <tag name="param" line="108" description="&lt;p&gt;What description should we show to user&lt;/p&gt;" type="" variable="$placeholder"/>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$name</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$placeholder</name>
+          <default></default>
+          <type/>
+        </argument>
+        <inherited_from>\Elector\Forms\ElectorForm</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Elector\Forms\Candidates" line="142" package="Default">
+        <name>renderDecorated</name>
+        <full_name>\Elector\Forms\ElectorForm::renderDecorated()</full_name>
+        <docblock line="142">
+          <description>Overiding default Phalcon\Forms\Form::renderDecorated()</description>
+          <long-description></long-description>
+          <tag name="param" line="142" description="&lt;p&gt;Name of the element&lt;/p&gt;" type="string" variable="$name">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$name</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <inherited_from>\Elector\Forms\ElectorForm</inherited_from>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="6" code="PPC:ERR-50005">No summary for class \Elector\Forms\Candidates\CandidateRegister</error>
+      <error line="8" code="PPC:ERR-50008">No summary for method initialize()</error>
+    </parse_markers>
+    <source>eJxdTksOgjAQ3fcUsyABEj0BfhZGD+CaTS2DTFJK05kmRsLdLUTU+DaTl/eb3dF3XjndI3ttEM4WjQyhvgyh5/qkXUONFuRKqcj/8pvNJOnGamb4RK54JxYMgA9B1zD8uNWoIMHHmyUDbXRGaHBAjoS0pScW5WIY1XJmZG3KpYoenTDsIZOOeHv4Rta9ub/IzfpGvgEJEctqaZrUpF7L7FJ2</source>
+  </file>
+  <file path="controllers/CountryController.php" generated-path="controllers.CountryController.html" hash="ac470a88dd21c41a2dd0e28125430546" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <namespace-alias name="Countries">\Elector\library\Countries\Countries</namespace-alias>
+    <namespace-alias name="Regions">\Elector\library\Regions\Regions</namespace-alias>
+    <class final="false" abstract="false" namespace="" line="6" package="Default">
+      <extends>\ControllerBase</extends>
+      <name>CountryController</name>
+      <full_name>\CountryController</full_name>
+      <docblock line="6">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="6" description="Default"/>
+        <tag name="inherited_from" description="\ControllerBase" refers="\ControllerBase" link="/classes/ControllerBase.html"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="12" package="Default">
+        <name>getRegionsAction</name>
+        <full_name>\CountryController::getRegionsAction()</full_name>
+        <docblock line="12">
+          <description>Method used to list all cities in provided region</description>
+          <long-description></long-description>
+          <tag name="return" line="12" description="[description]" type="\[type]">
+            <type>\[type]</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="8" package="Default">
+        <name>onConstruct</name>
+        <full_name>\ControllerBase::onConstruct()</full_name>
+        <docblock line="8">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+        <inherited_from>\ControllerBase</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="33" package="Default">
+        <name>onInitialize</name>
+        <full_name>\ControllerBase::onInitialize()</full_name>
+        <docblock line="33">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+        <inherited_from>\ControllerBase</inherited_from>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="6" code="PPC:ERR-50005">No summary for class \CountryController</error>
+    </parse_markers>
+    <source>eJx1UsFuwjAMvecrPAmJFglxp6wbY9O0wzZpV0BTaQ3NFJoscYFq4t+XpilM0FlV7cbP9nNfJncqV4yVBuFJYEpSLwRf6URXi5ksC9IczTmKOoEfuOGyMK2PGEtFYgw0ZdVM2rcUAjXggbDI6kx79JAYZD8MrI0GA+dhAK9IuczADsuAJAhuCBIhIOVkWQAvQGm545lNaze0LbzXSKUuYE6VwiXMMzSp5oosZOkxI+dVuRI8hXVZpHUSNkie/tQdBKGDNcxq61HOzTDecdwP44ybZCUwCKNTnq8DD9H4XaKhYczNM1IQhn+6/IucfiWHa6gb7FGfafM74RYuyy35oO/TL499y6qri9vOVp/UHI9toRfJLx9cTuvqZRe4wa2iKmi7dhJ3mo7gTe5hj1Bgo6WSqhQJIUykkyUGFLjFggyspfZywsRgfcnizqa9prLexdN2mzTxe5M7U+tYoDZMc3nqFF1Bjqz7q4mOjNnnF3yR9HA=</source>
+  </file>
+  <file path="controllers/IndexController.php" generated-path="controllers.IndexController.html" hash="e7b8852e98e265a636229ec7e611d6f3" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <namespace-alias name="VoterLogin">\Elector\Forms\Voters\VoterLogin</namespace-alias>
+    <namespace-alias name="CandidateLogin">\Elector\Forms\Candidates\CandidateLogin</namespace-alias>
+    <namespace-alias name="VoterRegister">\Elector\Forms\Voters\VoterRegister</namespace-alias>
+    <namespace-alias name="CandidateRegister">\Elector\Forms\Candidates\CandidateRegister</namespace-alias>
+    <namespace-alias name="CountryLoader">\Rinvex\Country\CountryLoader</namespace-alias>
+    <namespace-alias name="Cities">\Elector\library\Cities\Cities</namespace-alias>
+    <namespace-alias name="Regions">\Elector\library\Regions\Regions</namespace-alias>
+    <class final="false" abstract="false" namespace="" line="14" package="Default">
+      <extends>\ControllerBase</extends>
+      <name>IndexController</name>
+      <full_name>\IndexController</full_name>
+      <docblock line="14">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="14" description="Default"/>
+        <tag name="inherited_from" description="\ControllerBase" refers="\ControllerBase" link="/classes/ControllerBase.html"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="17" package="Default">
+        <name>indexAction</name>
+        <full_name>\IndexController::indexAction()</full_name>
+        <docblock line="17">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="22" package="Default">
+        <name>loginAction</name>
+        <full_name>\IndexController::loginAction()</full_name>
+        <docblock line="22">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="29" package="Default">
+        <name>registerAction</name>
+        <full_name>\IndexController::registerAction()</full_name>
+        <docblock line="29">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="40" package="Default">
+        <name>regionCitiesAction</name>
+        <full_name>\IndexController::regionCitiesAction()</full_name>
+        <docblock line="40">
+          <description>Method used to list all cities in provided region</description>
+          <long-description></long-description>
+          <tag name="return" line="40" description="[description]" type="\[type]">
+            <type>\[type]</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="8" package="Default">
+        <name>onConstruct</name>
+        <full_name>\ControllerBase::onConstruct()</full_name>
+        <docblock line="8">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+        <inherited_from>\ControllerBase</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="33" package="Default">
+        <name>onInitialize</name>
+        <full_name>\ControllerBase::onInitialize()</full_name>
+        <docblock line="33">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+        <inherited_from>\ControllerBase</inherited_from>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="14" code="PPC:ERR-50005">No summary for class \IndexController</error>
+      <error line="17" code="PPC:ERR-50008">No summary for method indexAction()</error>
+      <error line="22" code="PPC:ERR-50008">No summary for method loginAction()</error>
+      <error line="29" code="PPC:ERR-50008">No summary for method registerAction()</error>
+    </parse_markers>
+    <source>eJylVF1v2jAUfc+vuJMqkaAh3gvN2rEPVeo2iYftoVRTSC7Ek7Ez2wlEFf+9tuOENCQd0izENfa5x/eee8T8Q5ZmnpdLhM8UY8XF6gsXO7n6yRUKFx74lrBZD2gRsYQkkcLW1oH/QbnELZE6Xsp6wtuEJWEFHlYLnjMlyjo+8ChpIDUnJWsRGQxRxDDaMOuFmEc4k3XURDGNpIR7luBhwfUTnFIUgAeFLJFwOvoYSfSePQ/0yvI1JTFschYrTQPEZN/ZvR9YxLP9Nstujv151Ag5kDedwi8EhpiA4iBTvofCyApaL4hr0SoK2BhVm9QrlRI5Ce3hJJSo/FHRDHn0XpPu4TR1Pwhmb6XGr8bu0l97oaEY6FO40f5fqzXLhd3Wfmo3XJ9d3HOH5Mys3c6n43HFO4ZvqFKegHahbYtqPESUQmztqT0DmeAFSfS1sG6sE28FqlwweFRlhk/wmKCMBcmMdE8OMx2UmbPK/gNSu14LgvtJmBAZrSn6LS3IxncQgX9zlGoSEvlVSxIELZZB5N2f6HAOtQ871O+qSLiBbvbWCF/d3n8a6ZrOOZx0N1D1eH2tc5atpv3OK30kuu53uMtU6Tu63nKdLb9rK+5P1sx4llNjxTm34wgBKe6QKWk8aSZbwlyi+c8JeymvqrxOC3pb/qgumqJ6KjcL45Q3LLMzyNHr/3WsPao/Lwxj3g0=</source>
+  </file>
+  <file path="Forms/Elements/Blank/Regions.php" generated-path="Forms.Elements.Blank.Regions.html" hash="8abe34ce58c4c28da3b3f440f00409a2" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <namespace-alias name="ElectorElement">\Elector\Forms\Elements\ElectorElement</namespace-alias>
+    <namespace-alias name="Tag">\Phalcon\Tag</namespace-alias>
+    <class final="false" abstract="false" namespace="Elector\Forms\Elements\Blank" line="8" package="Default">
+      <extends>\Elector\Forms\Elements\ElectorElement</extends>
+      <name>Regions</name>
+      <full_name>\Elector\Forms\Elements\Blank\Regions</full_name>
+      <docblock line="8">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="8" description="Default"/>
+        <tag name="inherited_from" description="\Elector\Forms\Elements\ElectorElement" refers="\Elector\Forms\Elements\ElectorElement" link="/classes/Elector.Forms.Elements.ElectorElement.html"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Elector\Forms\Elements\Blank" line="16" package="Default">
+        <name>render</name>
+        <full_name>\Elector\Forms\Elements\Blank\Regions::render()</full_name>
+        <docblock line="16">
+          <description>Renders the element widget returning html</description>
+          <long-description></long-description>
+          <tag name="param" line="16" description="&lt;p&gt;attributes&lt;/p&gt;" type="array" variable="$attributes">
+            <type>array</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$attributes</name>
+          <default>null</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Elector\Forms\Elements\Blank" line="8" package="Default">
+        <name>label</name>
+        <full_name>\Elector\Forms\Elements\ElectorElement::label()</full_name>
+        <docblock line="8">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$attributes</name>
+          <default>null</default>
+          <type/>
+        </argument>
+        <inherited_from>\Elector\Forms\Elements\ElectorElement</inherited_from>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="8" code="PPC:ERR-50005">No summary for class \Elector\Forms\Elements\Blank\Regions</error>
+    </parse_markers>
+    <source>eJx9U09vgjAUv/dTvBkTxEzZWdBtJtt5WXabHio+pbGUpi3ZFuN3X0uZlATXC9Dfv9e+R/YoC0mIoCVqSXOEF465qdTmtVKl3tivEoXRmzWn4pQSUuublHa7/U4b6ltBeV6JzQc9WnHOqdbwjkdWCQ34bVDsNfR15EwI2JVMp80TplYg9qg0mAIBPQu+2P6IBhSaWgkmjlCYkreCP92TpIqWQJWiP0CNUWxXG9QtnDRPWe84y+FQi9zYqqyhy5qMOzosQdScxw397MV2NQwHjk3B9GwlFdo4fL7qQo84JVchO0yY1mg8rj+jArmc7XiVn6JtHAcRTYxD1w50UQOKtEevxU3njnjpFXPXr8ZNwlAdPbir5WEb+t62Zft/TB0YHM9nDNY7dm22VDtPi4XvVXDjUabRDRNE961ZcGovnS8hWkVDu1kl3QSssqR9GWYlPiJEB1p77dpAQ69WEpofYjnq+jRaRTAPmz53kTJMC27DT7+39IQLufwCk08XPw==</source>
+  </file>
+  <file path="library/Regions/Regions.php" generated-path="library.Regions.Regions.html" hash="be176725ffb94896d58ac7d219fca1ba" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <namespace-alias name="DI">\Phalcon\DI</namespace-alias>
+    <namespace-alias name="Selectable">\Doctrine\Common\Collections\Selectable</namespace-alias>
+    <class final="false" abstract="false" namespace="Elector\library\Regions" line="8" package="Default">
+      <extends/>
+      <name>Regions</name>
+      <full_name>\Elector\library\Regions\Regions</full_name>
+      <docblock line="8">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="8" description="Default"/>
+      </docblock>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Elector\library\Regions" line="10" package="Default">
+        <name>getAllRegions</name>
+        <full_name>\Elector\library\Regions\Regions::getAllRegions()</full_name>
+        <docblock line="10">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Elector\library\Regions" line="22" package="Default">
+        <name>getRegionCities</name>
+        <full_name>\Elector\library\Regions\Regions::getRegionCities()</full_name>
+        <docblock line="22">
+          <description>Method fatchs all cities inside a region</description>
+          <long-description></long-description>
+          <tag name="param" line="22" description="" type="integer" variable="$regionID">
+            <type>integer</type>
+          </tag>
+          <tag name="return" line="22" description="Selectable of all cities" type="\Doctrine\Common\Collections\Selectable">
+            <type>\Doctrine\Common\Collections\Selectable</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$regionID</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Elector\library\Regions" line="35" package="Default">
+        <name>getRegionOptions</name>
+        <full_name>\Elector\library\Regions\Regions::getRegionOptions()</full_name>
+        <docblock line="35">
+          <description>This method is used only to populate &lt;option&gt; elements for region &lt;select&gt; from AJAX call</description>
+          <long-description></long-description>
+          <tag name="param" line="35" description="&lt;p&gt;Selectable of regions&lt;/p&gt;" type="\Doctrine\Common\Collections\Selectable" variable="$regions">
+            <type>\Doctrine\Common\Collections\Selectable</type>
+          </tag>
+          <tag name="return" line="35" description="Generated html of &lt;option&gt; elements" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$regions</name>
+          <default></default>
+          <type>\Doctrine\Common\Collections\Selectable</type>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="8" code="PPC:ERR-50005">No summary for class \Elector\library\Regions\Regions</error>
+      <error line="10" code="PPC:ERR-50008">No summary for method getAllRegions()</error>
+    </parse_markers>
+    <source>eJydVE2L2zAQvftXTJcF24Em93y1IVlKCkvLttAeclHkcSwqS0aSF0LJf+/Ilj826VK6vmikmTdv5s3g5YeqqKJIsRJtxTjCg0TutDlIcTTMnA9PeBJa2UUU1Rbha8Ek1+qw2y+a+05zZ4TCw1aXJb1vtfR4jzh8Q2+yo0QCc8mshZAs+h0BfVV9lIKDdczRkdeqAcIJ3UbKEJqkcxgSNbAW7L97LGEFu/18Tpgd5qyWLknfr+mWxFko7eExThc9pDcMutoon6KJf8JKW0GNn5M4UMeUKRcqo2KSkOESNcdsMmnzTOARXaEzyJnjhQUmJXDhBFoQyooMgRGRz9bFf6yYYSWQ28F969rvoPeGqoaOx6bORwQBMvuHkm0v2waS9ITp24V8g4Aj3iY0VPOqpt8LYaFshSWL9iwDreQZnIZKV7VkDmGpK9/jGkifEpWzkGsTxIalbVRbQ250CZvPm5/ASbpAcD2LV9U2YV2vpmO9HCf4hAoNlZJB4Urp429q+q8hfWnANhnVEISzN/PyjMNSU+fIeNHpTHtoO2g6QjUyz+AHgkKqmtTkBfJfILpOwf8GvOTWn5SE61o5c27fmcoortTPFOI8SLi4DX3BIPKujrAX3kxSeLeC8fu2TR22rL9d19t3C9MVxEFgeGayxtVdDFO45RIZsU0hvlv/3d96l7MwrHjxgvASDdbNrg+yX6LLH4qily0=</source>
+  </file>
+  <file path="models/Candidates.php" generated-path="models.Candidates.html" hash="d6d926c13d78f0f42a4428fb2d57f09c" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="" line="7" package="Default">
+      <extends/>
+      <name>Candidates</name>
+      <full_name>\Candidates</full_name>
+      <docblock line="7">
+        <description></description>
+        <long-description></long-description>
+        <tag name="Entity" line="7" description=""/>
+        <tag name="Table" line="7" description="(name=&quot;candidates&quot;)"/>
+        <tag name="package" line="7" description="Default"/>
+      </docblock>
+      <property static="false" visibility="private" namespace="" line="14" package="Default">
+        <name>$id</name>
+        <full_name>\Candidates::id</full_name>
+        <default></default>
+        <docblock line="14">
+          <description></description>
+          <long-description></long-description>
+          <tag name="Id" line="14" description=""/>
+          <tag name="Column" line="14" description="(type=&quot;integer&quot;)"/>
+          <tag name="GeneratedValue" line="14" description=""/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="19" package="Default">
+        <name>$name</name>
+        <full_name>\Candidates::name</full_name>
+        <default></default>
+        <docblock line="19">
+          <description></description>
+          <long-description></long-description>
+          <tag name="Column" line="19" description="(type=&quot;string&quot;)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="24" package="Default">
+        <name>$about</name>
+        <full_name>\Candidates::about</full_name>
+        <default></default>
+        <docblock line="24">
+          <description></description>
+          <long-description></long-description>
+          <tag name="Column" line="24" description="(type=&quot;text&quot;)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="29" package="Default">
+        <name>$created_at</name>
+        <full_name>\Candidates::created_at</full_name>
+        <default></default>
+        <docblock line="29">
+          <description></description>
+          <long-description></long-description>
+          <tag name="Column" line="29" description="(type=&quot;datetime&quot;, nullable=true, options={&quot;default&quot;:0})"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="35" package="Default">
+        <name>$avatar_name</name>
+        <full_name>\Candidates::avatar_name</full_name>
+        <default></default>
+        <docblock line="35">
+          <description>Holds name of the avatar image, avatars are uploaded to special folder</description>
+          <long-description></long-description>
+          <tag name="Column" line="35" description="(type=&quot;string&quot;, nullable=true)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="147" package="Default">
+        <name>$createdAt</name>
+        <full_name>\Candidates::createdAt</full_name>
+        <default>'CURRENT_TIMESTAMP'</default>
+        <docblock line="147">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="147" description="" type="\DateTime" variable="">
+            <type>\DateTime</type>
+          </tag>
+          <tag name="ORM\Column" line="147" description="(name=&quot;created_at&quot;, type=&quot;datetime&quot;, nullable=true)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="154" package="Default">
+        <name>$avatarName</name>
+        <full_name>\Candidates::avatarName</full_name>
+        <default></default>
+        <docblock line="154">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="154" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+          <tag name="ORM\Column" line="154" description="(name=&quot;avatar_name&quot;, type=&quot;string&quot;, length=255, nullable=true)"/>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="42" package="Default">
+        <name>getId</name>
+        <full_name>\Candidates::getId()</full_name>
+        <docblock line="42">
+          <description>Get id</description>
+          <long-description></long-description>
+          <tag name="return" line="42" description="" type="integer">
+            <type>integer</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="54" package="Default">
+        <name>setName</name>
+        <full_name>\Candidates::setName()</full_name>
+        <docblock line="54">
+          <description>Set name</description>
+          <long-description></long-description>
+          <tag name="param" line="54" description="" type="string" variable="$name">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="54" description="" type="\Candidates">
+            <type>\Candidates</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$name</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="66" package="Default">
+        <name>getName</name>
+        <full_name>\Candidates::getName()</full_name>
+        <docblock line="66">
+          <description>Get name</description>
+          <long-description></long-description>
+          <tag name="return" line="66" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="78" package="Default">
+        <name>setAbout</name>
+        <full_name>\Candidates::setAbout()</full_name>
+        <docblock line="78">
+          <description>Set about</description>
+          <long-description></long-description>
+          <tag name="param" line="78" description="" type="string" variable="$about">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="78" description="" type="\Candidates">
+            <type>\Candidates</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$about</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="90" package="Default">
+        <name>getAbout</name>
+        <full_name>\Candidates::getAbout()</full_name>
+        <docblock line="90">
+          <description>Get about</description>
+          <long-description></long-description>
+          <tag name="return" line="90" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="102" package="Default">
+        <name>setCreatedAt</name>
+        <full_name>\Candidates::setCreatedAt()</full_name>
+        <docblock line="102">
+          <description>Set createdAt</description>
+          <long-description></long-description>
+          <tag name="param" line="102" description="" type="\DateTime" variable="$createdAt">
+            <type>\DateTime</type>
+          </tag>
+          <tag name="return" line="102" description="" type="\Candidates">
+            <type>\Candidates</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$createdAt</name>
+          <default></default>
+          <type>\DateTime</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="114" package="Default">
+        <name>getCreatedAt</name>
+        <full_name>\Candidates::getCreatedAt()</full_name>
+        <docblock line="114">
+          <description>Get createdAt</description>
+          <long-description></long-description>
+          <tag name="return" line="114" description="" type="\DateTime">
+            <type>\DateTime</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="126" package="Default">
+        <name>setAvatarName</name>
+        <full_name>\Candidates::setAvatarName()</full_name>
+        <docblock line="126">
+          <description>Set avatarName</description>
+          <long-description></long-description>
+          <tag name="param" line="126" description="" type="string" variable="$avatarName">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="126" description="" type="\Candidates">
+            <type>\Candidates</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$avatarName</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="138" package="Default">
+        <name>getAvatarName</name>
+        <full_name>\Candidates::getAvatarName()</full_name>
+        <docblock line="138">
+          <description>Get avatarName</description>
+          <long-description></long-description>
+          <tag name="return" line="138" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="7" code="PPC:ERR-50005">No summary for class \Candidates</error>
+      <error line="14" code="PPC:ERR-50007">No summary for property $id</error>
+      <error line="19" code="PPC:ERR-50007">No summary for property $name</error>
+      <error line="24" code="PPC:ERR-50007">No summary for property $about</error>
+      <error line="29" code="PPC:ERR-50007">No summary for property $created_at</error>
+      <error line="147" code="PPC:ERR-50007">No summary for property $createdAt</error>
+      <error line="154" code="PPC:ERR-50007">No summary for property $avatarName</error>
+    </parse_markers>
+    <source>eJydVl1v2jAUfc+vuEKVmqFOTJP6si1bEUOMB1hFsz1VQia5gCXjRI5Trar477Md14SAk1K/EPxx7rnHJ/fm2498mwfBoN8PoA93Yy6pfDaPMVkxDDnZYdRLCE9pSiQWvQ9qcRAkjBQFjNx08BKAGgZGD3V+mrrHUcbKHQ/lc66wKJe4QaGB7PIEOQqFkv4lrEQ7PTC/uaBPagWuaPo1OAlxhFtIQfnGwTbO6zy6ECT+k77zZJWVsgtASyHpDns3wEvGtICRFCXeQJZLmvEieumluCYlk70vn/aeUIlALcaSnIn3K2NpAToZyNYgtwhEHSIC6I5sVJzqXwFEIJQ5y0iKKcgMihwTShis1XkUrQI2uPv0MIGW52WdoAT6ev0umEBZCg72/o9hyxWjCaxLnmidYINymoZV6MpZeliAK7mlxcfv2hF6dn8S/kGF18SaBHIiyA6qNCtHeCjWfN3GskA5VyChgWqStSzNVUVH/mum4ktj4knDnq3y6JLREGwXsqLml9JYv13Ls1suFnOoUcIKzCOnWdN61t/HSwRtY/o2RSuW7ZJadn5N7Ts+9Oj6+FOtxqqSuGpwuvNieUevSOEB1CPzoQRprd3ud+jdRd9l2iX7gX279PXq2eJpU77mnUXCv+9ydzuosAbr8/mhvBq3u/3vsXxXDm/0/YF/h/nrraGi1WB196Q6VvPm3eLvxezRNib79eGuVDWn9k7b3lKH2s7Xoz+LxXgeL+PpbPwQD2f312f6umZ4pIufXi1fx8/1UoZ8I7fR59vbS/qqvelgH/wHxi2Xsg==</source>
+  </file>
+  <file path="config/database.example.php" generated-path="config.database.example.html" hash="10179999f71da6f45b47238425efc6d0" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+    </parse_markers>
+    <source>eJxVjz0OwjAMRveewlsWBCsSfyfgAAh1cBtDKoW62I5Qb09aaCnZ/L3n2N6futAVmw1cOIEGTtED+cbAQqOAdc3im/YOxtBzEvBoWKESKJllkJ3Wg1CLD/r03JpIgz6Z62GAkCVp4VpAfm5CDg7Hbzbm6LEzEjdWGblzr8/oVj8jsJqbqsGIXGMc04WVlGRYyE2WMP8JHaq+8mWzsIS+mns/0Oj/+zqg5PN/aya7bb9CuSrK3RvBj10B</source>
+  </file>
+  <file path="library/Cities/Cities.php" generated-path="library.Cities.Cities.html" hash="08f4b3164a6dd3d52f68e639725daea2" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <namespace-alias name="DI">\Phalcon\DI</namespace-alias>
+    <namespace-alias name="Selectable">\Doctrine\Common\Collections\Selectable</namespace-alias>
+    <class final="false" abstract="false" namespace="Elector\library\Cities" line="12" package="Default">
+      <extends/>
+      <name>Cities</name>
+      <full_name>\Elector\library\Cities\Cities</full_name>
+      <docblock line="12">
+        <description>Class used to get list of all cities in provided country</description>
+        <long-description></long-description>
+        <tag name="package" line="12" description="Default"/>
+      </docblock>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Elector\library\Cities" line="21" package="Default">
+        <name>getCityOptions</name>
+        <full_name>\Elector\library\Cities\Cities::getCityOptions()</full_name>
+        <docblock line="21">
+          <description>This method is used only to populate &lt;option&gt; elements for cities &lt;select&gt; from AJAX call</description>
+          <long-description></long-description>
+          <tag name="param" line="21" description="&lt;p&gt;Selectable of cities&lt;/p&gt;" type="\Elector\library\Cities\Selectable(Interface)" variable="$cities">
+            <type>\Elector\library\Cities\Selectable(Interface)</type>
+          </tag>
+          <tag name="return" line="21" description="Generated html of &lt;option&gt; elements" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$cities</name>
+          <default></default>
+          <type>\Doctrine\Common\Collections\Selectable</type>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="21" code="PPC:ERR-50016">The type hint of the argument is incorrect for the type definition of the @param tag with argument $cities in getCityOptions()</error>
+    </parse_markers>
+    <source>eJxlkMtqwzAQRff6iiEEnAQaf0AebUhKSTcttIsuvFHkcSyQJSHJARPy7x3JzgOijaTRHN07d/lqa8uY5g16ywXCu0IRjCuUPDjuumIrg0S/YKz1CN81V8LoYrdfpPvOiOCkxmJrmobqW6MiLo32xQ/GIz8oJDifzRjMYKu490BkCcHAEQMo6QOYCrhSIJIUSA3WmZMsqUuYVgfXEZszJhLdG2JnxoBW+jiuGfzW0kODoTYlyEHFaNVFKWtsq3hAWBob7a2B3DWog4fKuKvy0ifPa6icaWDzufkDQcYGgavOm+WONwD3ASd7HdBVFN/0oRrH6j++kQ5D6zT4GNoRPlCjI1Ml1KFRsf3J3UDmabftQUlBNA+0Va1OSccYKZPuK6F+8mBg3MtPE33u/6I1TnIryLLFrUYpIBf1ZECA+0R30wfuzs4JHrzCiasWV6MM5j3xsh4M7XeTKRWz0fr5rX9Z5sO8D0Yu7HYc0kqSfcOFXf4BfQbU9Q==</source>
+  </file>
+  <file path="config/doctrine.example.php" generated-path="config.doctrine.example.html" hash="0388fcb3c44d8ef62cd1b936aa44e8b7" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <namespace-alias name="Setup">\Doctrine\ORM\Tools\Setup</namespace-alias>
+    <namespace-alias name="EntityManager">\Doctrine\ORM\EntityManager</namespace-alias>
+    <namespace-alias name="DriverManager">\Doctrine\DBAL\DriverManager</namespace-alias>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+    </parse_markers>
+    <source>eJxlUsFugkAQvfMVE2OCJAZqL02wtrHSQ5OSNtYjCRllFBLYpbuDxr/vAiJiWQ7Lvpm3b97j+bVMS8uqNEEgd6wyQdHXOow2UuY6+iGuyvl/9F1wxucQBR5Ize/ag7flZxSo7EiqrxiXyKmGBaBSeJ7EcfCxjmNwYeS5rlfIhHLtjZy5Nc50QMfQHJhiVhWZZs8DTgl2UgjacSZFvd1nh0ph/WWNk+03Kix6fgvMY6dSs13vYPEC9uzxyX0wa2ZPWzhpNNoXuExkXJz1b97BZijVdzMZrgtSotYnqRK7Qa50W4EF2cN6p569VWvENX76/k4RMi2FkNwMEBJjgoyr26kmrWVT6B2p7aFb6w3lIIqOenJ1xLS3tzutj5s002DegYGwlwrq2KBExSD31zBrazFfdfoFne5yHkpupr10dFEtYPAv+P6BuIcHSvu7nPkfi7TV0g==</source>
+  </file>
+  <file path="models/Cities.php" generated-path="models.Cities.html" hash="932b1f51eac1b24b5ec843fc93832166" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="" line="8" package="Default">
+      <extends/>
+      <name>Cities</name>
+      <full_name>\Cities</full_name>
+      <docblock line="8">
+        <description>Cities</description>
+        <long-description></long-description>
+        <tag name="Entity" line="8" description=""/>
+        <tag name="Table" line="8" description="(name=&quot;Cities&quot;)"/>
+        <tag name="package" line="8" description="Default"/>
+      </docblock>
+      <property static="false" visibility="private" namespace="" line="15" package="Default">
+        <name>$countryid</name>
+        <full_name>\Cities::countryid</full_name>
+        <default></default>
+        <docblock line="15">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="15" description="" type="integer" variable="">
+            <type>integer</type>
+          </tag>
+          <tag name="Column" line="15" description="(name=&quot;CountryID&quot;, type=&quot;smallint&quot;, nullable=false)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="22" package="Default">
+        <name>$regionid</name>
+        <full_name>\Cities::regionid</full_name>
+        <default></default>
+        <docblock line="22">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="22" description="" type="integer" variable="">
+            <type>integer</type>
+          </tag>
+          <tag name="Column" line="22" description="(name=&quot;RegionID&quot;, type=&quot;smallint&quot;, nullable=false)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="29" package="Default">
+        <name>$city</name>
+        <full_name>\Cities::city</full_name>
+        <default></default>
+        <docblock line="29">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="29" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+          <tag name="Column" line="29" description="(name=&quot;City&quot;, type=&quot;string&quot;, length=45, nullable=false)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="36" package="Default">
+        <name>$latitude</name>
+        <full_name>\Cities::latitude</full_name>
+        <default></default>
+        <docblock line="36">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="36" description="" type="float" variable="">
+            <type>float</type>
+          </tag>
+          <tag name="Column" line="36" description="(name=&quot;Latitude&quot;, type=&quot;float&quot;, precision=10, scale=0, nullable=false)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="43" package="Default">
+        <name>$longitude</name>
+        <full_name>\Cities::longitude</full_name>
+        <default></default>
+        <docblock line="43">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="43" description="" type="float" variable="">
+            <type>float</type>
+          </tag>
+          <tag name="Column" line="43" description="(name=&quot;Longitude&quot;, type=&quot;float&quot;, precision=10, scale=0, nullable=false)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="50" package="Default">
+        <name>$timezone</name>
+        <full_name>\Cities::timezone</full_name>
+        <default></default>
+        <docblock line="50">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="50" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+          <tag name="Column" line="50" description="(name=&quot;TimeZone&quot;, type=&quot;string&quot;, length=10, nullable=false)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="57" package="Default">
+        <name>$dmaid</name>
+        <full_name>\Cities::dmaid</full_name>
+        <default></default>
+        <docblock line="57">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="57" description="" type="integer" variable="">
+            <type>integer</type>
+          </tag>
+          <tag name="Column" line="57" description="(name=&quot;DmaId&quot;, type=&quot;smallint&quot;, nullable=true)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="64" package="Default">
+        <name>$code</name>
+        <full_name>\Cities::code</full_name>
+        <default></default>
+        <docblock line="64">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="64" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+          <tag name="Column" line="64" description="(name=&quot;Code&quot;, type=&quot;string&quot;, length=4, nullable=true)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="73" package="Default">
+        <name>$cityid</name>
+        <full_name>\Cities::cityid</full_name>
+        <default></default>
+        <docblock line="73">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="73" description="" type="integer" variable="">
+            <type>integer</type>
+          </tag>
+          <tag name="Column" line="73" description="(name=&quot;CityId&quot;, type=&quot;integer&quot;)"/>
+          <tag name="Id" line="73" description=""/>
+          <tag name="GeneratedValue" line="73" description="(strategy=&quot;IDENTITY&quot;)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="80" package="Default">
+        <name>$country</name>
+        <full_name>\Cities::country</full_name>
+        <default></default>
+        <docblock line="80">
+          <description>Many Cities have One Country.</description>
+          <long-description></long-description>
+          <tag name="ManyToOne" line="80" description="(targetEntity=&quot;Countries&quot;, inversedBy=&quot;cities&quot;)"/>
+          <tag name="JoinColumn" line="80" description="(name=&quot;CountryID&quot;, referencedColumnName=&quot;CountryId&quot;)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="87" package="Default">
+        <name>$region</name>
+        <full_name>\Cities::region</full_name>
+        <default></default>
+        <docblock line="87">
+          <description>Many Cities have One Region.</description>
+          <long-description></long-description>
+          <tag name="ManyToOne" line="87" description="(targetEntity=&quot;Regions&quot;, inversedBy=&quot;cities&quot;)"/>
+          <tag name="JoinColumn" line="87" description="(name=&quot;RegionID&quot;, referencedColumnName=&quot;RegionID&quot;)"/>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="97" package="Default">
+        <name>setCountryid</name>
+        <full_name>\Cities::setCountryid()</full_name>
+        <docblock line="97">
+          <description>Set countryid</description>
+          <long-description></long-description>
+          <tag name="param" line="97" description="" type="integer" variable="$countryid">
+            <type>integer</type>
+          </tag>
+          <tag name="return" line="97" description="" type="\Cities">
+            <type>\Cities</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$countryid</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="109" package="Default">
+        <name>getCountryid</name>
+        <full_name>\Cities::getCountryid()</full_name>
+        <docblock line="109">
+          <description>Get countryid</description>
+          <long-description></long-description>
+          <tag name="return" line="109" description="" type="integer">
+            <type>integer</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="121" package="Default">
+        <name>setRegionid</name>
+        <full_name>\Cities::setRegionid()</full_name>
+        <docblock line="121">
+          <description>Set regionid</description>
+          <long-description></long-description>
+          <tag name="param" line="121" description="" type="integer" variable="$regionid">
+            <type>integer</type>
+          </tag>
+          <tag name="return" line="121" description="" type="\Cities">
+            <type>\Cities</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$regionid</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="133" package="Default">
+        <name>getRegionid</name>
+        <full_name>\Cities::getRegionid()</full_name>
+        <docblock line="133">
+          <description>Get regionid</description>
+          <long-description></long-description>
+          <tag name="return" line="133" description="" type="integer">
+            <type>integer</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="145" package="Default">
+        <name>setCity</name>
+        <full_name>\Cities::setCity()</full_name>
+        <docblock line="145">
+          <description>Set city</description>
+          <long-description></long-description>
+          <tag name="param" line="145" description="" type="string" variable="$city">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="145" description="" type="\Cities">
+            <type>\Cities</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$city</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="157" package="Default">
+        <name>getCity</name>
+        <full_name>\Cities::getCity()</full_name>
+        <docblock line="157">
+          <description>Get city</description>
+          <long-description></long-description>
+          <tag name="return" line="157" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="169" package="Default">
+        <name>setLatitude</name>
+        <full_name>\Cities::setLatitude()</full_name>
+        <docblock line="169">
+          <description>Set latitude</description>
+          <long-description></long-description>
+          <tag name="param" line="169" description="" type="float" variable="$latitude">
+            <type>float</type>
+          </tag>
+          <tag name="return" line="169" description="" type="\Cities">
+            <type>\Cities</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$latitude</name>
+          <default></default>
+          <type>float</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="181" package="Default">
+        <name>getLatitude</name>
+        <full_name>\Cities::getLatitude()</full_name>
+        <docblock line="181">
+          <description>Get latitude</description>
+          <long-description></long-description>
+          <tag name="return" line="181" description="" type="float">
+            <type>float</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="193" package="Default">
+        <name>setLongitude</name>
+        <full_name>\Cities::setLongitude()</full_name>
+        <docblock line="193">
+          <description>Set longitude</description>
+          <long-description></long-description>
+          <tag name="param" line="193" description="" type="float" variable="$longitude">
+            <type>float</type>
+          </tag>
+          <tag name="return" line="193" description="" type="\Cities">
+            <type>\Cities</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$longitude</name>
+          <default></default>
+          <type>float</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="205" package="Default">
+        <name>getLongitude</name>
+        <full_name>\Cities::getLongitude()</full_name>
+        <docblock line="205">
+          <description>Get longitude</description>
+          <long-description></long-description>
+          <tag name="return" line="205" description="" type="float">
+            <type>float</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="217" package="Default">
+        <name>setTimezone</name>
+        <full_name>\Cities::setTimezone()</full_name>
+        <docblock line="217">
+          <description>Set timezone</description>
+          <long-description></long-description>
+          <tag name="param" line="217" description="" type="string" variable="$timezone">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="217" description="" type="\Cities">
+            <type>\Cities</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$timezone</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="229" package="Default">
+        <name>getTimezone</name>
+        <full_name>\Cities::getTimezone()</full_name>
+        <docblock line="229">
+          <description>Get timezone</description>
+          <long-description></long-description>
+          <tag name="return" line="229" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="241" package="Default">
+        <name>setDmaid</name>
+        <full_name>\Cities::setDmaid()</full_name>
+        <docblock line="241">
+          <description>Set dmaid</description>
+          <long-description></long-description>
+          <tag name="param" line="241" description="" type="integer" variable="$dmaid">
+            <type>integer</type>
+          </tag>
+          <tag name="return" line="241" description="" type="\Cities">
+            <type>\Cities</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$dmaid</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="253" package="Default">
+        <name>getDmaid</name>
+        <full_name>\Cities::getDmaid()</full_name>
+        <docblock line="253">
+          <description>Get dmaid</description>
+          <long-description></long-description>
+          <tag name="return" line="253" description="" type="integer">
+            <type>integer</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="265" package="Default">
+        <name>setCode</name>
+        <full_name>\Cities::setCode()</full_name>
+        <docblock line="265">
+          <description>Set code</description>
+          <long-description></long-description>
+          <tag name="param" line="265" description="" type="string" variable="$code">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="265" description="" type="\Cities">
+            <type>\Cities</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$code</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="277" package="Default">
+        <name>getCode</name>
+        <full_name>\Cities::getCode()</full_name>
+        <docblock line="277">
+          <description>Get code</description>
+          <long-description></long-description>
+          <tag name="return" line="277" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="287" package="Default">
+        <name>getCityid</name>
+        <full_name>\Cities::getCityid()</full_name>
+        <docblock line="287">
+          <description>Get cityid</description>
+          <long-description></long-description>
+          <tag name="return" line="287" description="" type="integer">
+            <type>integer</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="299" package="Default">
+        <name>setCountry</name>
+        <full_name>\Cities::setCountry()</full_name>
+        <docblock line="299">
+          <description>Set country</description>
+          <long-description></long-description>
+          <tag name="param" line="299" description="" type="\Country" variable="$country">
+            <type>\Country</type>
+          </tag>
+          <tag name="return" line="299" description="" type="\Cities">
+            <type>\Cities</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$country</name>
+          <default>null</default>
+          <type>\Country</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="311" package="Default">
+        <name>getCountry</name>
+        <full_name>\Cities::getCountry()</full_name>
+        <docblock line="311">
+          <description>Get country</description>
+          <long-description></long-description>
+          <tag name="return" line="311" description="" type="\Country">
+            <type>\Country</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="323" package="Default">
+        <name>setRegion</name>
+        <full_name>\Cities::setRegion()</full_name>
+        <docblock line="323">
+          <description>Set region</description>
+          <long-description></long-description>
+          <tag name="param" line="323" description="" type="\Region" variable="$region">
+            <type>\Region</type>
+          </tag>
+          <tag name="return" line="323" description="" type="\Cities">
+            <type>\Cities</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$region</name>
+          <default>null</default>
+          <type>\Region</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="335" package="Default">
+        <name>getRegion</name>
+        <full_name>\Cities::getRegion()</full_name>
+        <docblock line="335">
+          <description>Get region</description>
+          <long-description></long-description>
+          <tag name="return" line="335" description="" type="\Region">
+            <type>\Region</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="15" code="PPC:ERR-50007">No summary for property $countryid</error>
+      <error line="22" code="PPC:ERR-50007">No summary for property $regionid</error>
+      <error line="29" code="PPC:ERR-50007">No summary for property $city</error>
+      <error line="36" code="PPC:ERR-50007">No summary for property $latitude</error>
+      <error line="43" code="PPC:ERR-50007">No summary for property $longitude</error>
+      <error line="50" code="PPC:ERR-50007">No summary for property $timezone</error>
+      <error line="57" code="PPC:ERR-50007">No summary for property $dmaid</error>
+      <error line="64" code="PPC:ERR-50007">No summary for property $code</error>
+      <error line="73" code="PPC:ERR-50007">No summary for property $cityid</error>
+    </parse_markers>
+    <source>eJy1V01vm0AQvfMrkJUDidImkdJT6raqHUWu2kRKrUqtetnAGiPBYi2LJbfKf+9+QwizC0blYmCHx5u345nH+4+77S4ILs7OgvAsXGQsw5U4+3RLWMYO8nSNnnIcEVTg+UxFzE75wkUQ56iqzEN/g5AfEkgc/Lk9omFGGE4x1ffs0qLM64IYzLImjB5Wy9l5yA47fqcqUJ7zR/kNUue5eP98g/IKn2qEC/m7o9keMRyexAohS26Co1k84jQryQQSVAKAHCpGM5K6heCKN6+X8fwyxyRl2/n1u6FicBSAwyYvEXNS+Ir4ttcJtjTkI/xqR3GcVTzB+dXleVjFiLO4HMgo16DHsypJ+h9oGdTjd2ydFfhXSTC4a1dDyTCO9IcjTajgZYFWibN8Ga2h9ycFmlS6ZQKLcD2MQlyCWzGojfC6b+WvH5md2uhVYk/vMMGUvzT5gfIaR5wwv0gP89lqeXu/Xq1/zhx/rj6dviFy0J0w3KI9Dh8IDnVje2tfK6LWJV+KGKIpZqrJmg4oGus5T3WPaYWTz/x+bLutBvhSZgTsnRRvMMUkxokKuX8RkYApqYCBOak26U9JxY1PqNWG+/OxAc42zLPppvMds9AOim4l7RBFhSmz1kDpxlHMakrsoGwTqJ/yLA43NYkZJxBWmC0MStQAKtZqWIrjhG2z6s0Hux7OX48zcegXy/Abeff5VYZ3rgw1wMt/Uj/1tE29S7hNpMUb4iRUN5PRIzoUNkrzRw0SWThAcbMsBO+M7jF6e0gPlNuydqvd8ITFjqVt6xNatWXVw6bVNQeIJAxUzXxJFnJjRUbVMEzwxSiCq1cQ9BSupAbLaDxLv5TSfjTGZpKaxnJFFg5Q1SwLZTuWaoy6HtJtNwYKbDm7RW5YOoQ2LsytNBQ1TmqDEjWAkNhmXardcYqj5PYwH6a3Je4RvCEKK26sprtLQFGjBF9rkMjCAXKbZaF2xwqPEdtDelj3sKTdWjc0Yamlq/aMvd6YUSovBUKkgAB95ZoQt+3zxyjrYjlwyCmablE1PVhR8ZHgGW89ESNtm2gQAgY0a6ottD5YxkjpIDhwvJXeRqCoOTjI75hp+7mQGAPmrG9HpYXs39Tf2ohaUzxxZyVG9AqV76b4QnWb85Y1P96YA/wNI//WqwwGuXK/JwdEV3bU+OJJkiuoqAPp1tvGNB9zY9V2MtdkfFpr6kMsuaHyHPwDwmXFzg==</source>
+  </file>
+  <file path="Forms/Elements/Countries.php" generated-path="Forms.Elements.Countries.html" hash="82eb7b26ab41b7208c32574d029b00d8" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <namespace-alias name="ElectorElement">\Elector\Forms\Elements\ElectorElement</namespace-alias>
+    <namespace-alias name="Tag">\Phalcon\Tag</namespace-alias>
+    <class final="false" abstract="false" namespace="Elector\Forms\Elements" line="8" package="Default">
+      <extends>\Elector\Forms\Elements\ElectorElement</extends>
+      <name>Countries</name>
+      <full_name>\Elector\Forms\Elements\Countries</full_name>
+      <docblock line="8">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="8" description="Default"/>
+        <tag name="inherited_from" description="\Elector\Forms\Elements\ElectorElement" refers="\Elector\Forms\Elements\ElectorElement" link="/classes/Elector.Forms.Elements.ElectorElement.html"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Elector\Forms\Elements" line="16" package="Default">
+        <name>render</name>
+        <full_name>\Elector\Forms\Elements\Countries::render()</full_name>
+        <docblock line="16">
+          <description>Renders the element widget returning html</description>
+          <long-description></long-description>
+          <tag name="param" line="16" description="&lt;p&gt;attributes&lt;/p&gt;" type="array" variable="$attributes">
+            <type>array</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$attributes</name>
+          <default>null</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Elector\Forms\Elements" line="8" package="Default">
+        <name>label</name>
+        <full_name>\Elector\Forms\Elements\ElectorElement::label()</full_name>
+        <docblock line="8">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$attributes</name>
+          <default>null</default>
+          <type/>
+        </argument>
+        <inherited_from>\Elector\Forms\Elements\ElectorElement</inherited_from>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="8" code="PPC:ERR-50005">No summary for class \Elector\Forms\Elements\Countries</error>
+    </parse_markers>
+    <source>eJx9VE2PmzAQvfMrplEkSNSEnjch/Vil6mErVd2Vemj24MAkWDU28kfTaJX/XhsTMLvsIiSM572ZN8Mz6491WUcRJxWqmuQIW4a5FnL3VchK7exbhVyrVRQZ9Vpw126376sG+qMkLBd890COlpwzohTcCsO1pKgA/2nkhYIhM3qKIrBXOp83T5jDTwtDqUCXCOhRcKLFETVI1EZyyo9Q6oq1hCvvU00kqYBISc5AtK26NxpVG06bZ232jOZwMDzXVHCb0NVKpj0cMuCGsVkDf/JkezUIF5zqkqrFppZoy+HnjhfmmK06XprCL4TKKA1uRBxP8JdISvYMgfACDFe2rwIPxDANgp9gjzlxUGH7lydqVyd7C8MKcCPIu4FSDsJo+Pbw/Q7ut3fbWw2aHF907sT3pKzt5Hfc7cWPvdxGTjICCVqih4SqEFYiqxd7JvI/FjcLhtbUdtEvLhjUDhmrAXwoYJC5B16iUMy7oRrn6zEdg3Cv5cNjmPf1tLR4I6kLBu35GqN6p864FmrPyM2Nd1/goXit0B0PiN+3yYKuPXWZQbyJx3bXonae3qzTdhGgDkIiyUtIAisQdTXG+eVHe5bUmpYZzCYxLK+cxcba0R/vMy2SGSwhnmwsAMYQPj4m7TLWSurnEOJG/NdZa8R1Xaoamj9RNunN1MrsndlIq4equqX/6fiUHnCJLv8BWD2LIg==</source>
+  </file>
+  <file path="models/Dmas.php" generated-path="models.Dmas.html" hash="caa00e5eee0b0f0ac0e260c268833ea3" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="" line="9" package="Default">
+      <extends/>
+      <name>Dmas</name>
+      <full_name>\Dmas</full_name>
+      <docblock line="9">
+        <description>Dmas</description>
+        <long-description></long-description>
+        <tag name="Table" line="9" description="(name=&quot;Dmas&quot;)"/>
+        <tag name="Entity" line="9" description=""/>
+        <tag name="package" line="9" description="Default"/>
+      </docblock>
+      <property static="false" visibility="private" namespace="" line="16" package="Default">
+        <name>$countryid</name>
+        <full_name>\Dmas::countryid</full_name>
+        <default></default>
+        <docblock line="16">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="16" description="" type="integer" variable="">
+            <type>integer</type>
+          </tag>
+          <tag name="Column" line="16" description="(name=&quot;CountryId&quot;, type=&quot;smallint&quot;, nullable=true)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="23" package="Default">
+        <name>$dma</name>
+        <full_name>\Dmas::dma</full_name>
+        <default></default>
+        <docblock line="23">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="23" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+          <tag name="Column" line="23" description="(name=&quot;DMA&quot;, type=&quot;string&quot;, length=3, nullable=true)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="30" package="Default">
+        <name>$market</name>
+        <full_name>\Dmas::market</full_name>
+        <default></default>
+        <docblock line="30">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="30" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+          <tag name="Column" line="30" description="(name=&quot;Market&quot;, type=&quot;string&quot;, length=50, nullable=true)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="39" package="Default">
+        <name>$dmaid</name>
+        <full_name>\Dmas::dmaid</full_name>
+        <default></default>
+        <docblock line="39">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="39" description="" type="integer" variable="">
+            <type>integer</type>
+          </tag>
+          <tag name="Column" line="39" description="(name=&quot;DmaId&quot;, type=&quot;smallint&quot;)"/>
+          <tag name="Id" line="39" description=""/>
+          <tag name="GeneratedValue" line="39" description="(strategy=&quot;IDENTITY&quot;)"/>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="49" package="Default">
+        <name>setCountryid</name>
+        <full_name>\Dmas::setCountryid()</full_name>
+        <docblock line="49">
+          <description>Set countryid</description>
+          <long-description></long-description>
+          <tag name="param" line="49" description="" type="integer" variable="$countryid">
+            <type>integer</type>
+          </tag>
+          <tag name="return" line="49" description="" type="\Dmas">
+            <type>\Dmas</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$countryid</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="61" package="Default">
+        <name>getCountryid</name>
+        <full_name>\Dmas::getCountryid()</full_name>
+        <docblock line="61">
+          <description>Get countryid</description>
+          <long-description></long-description>
+          <tag name="return" line="61" description="" type="integer">
+            <type>integer</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="73" package="Default">
+        <name>setDma</name>
+        <full_name>\Dmas::setDma()</full_name>
+        <docblock line="73">
+          <description>Set dma</description>
+          <long-description></long-description>
+          <tag name="param" line="73" description="" type="string" variable="$dma">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="73" description="" type="\Dmas">
+            <type>\Dmas</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$dma</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="85" package="Default">
+        <name>getDma</name>
+        <full_name>\Dmas::getDma()</full_name>
+        <docblock line="85">
+          <description>Get dma</description>
+          <long-description></long-description>
+          <tag name="return" line="85" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="97" package="Default">
+        <name>setMarket</name>
+        <full_name>\Dmas::setMarket()</full_name>
+        <docblock line="97">
+          <description>Set market</description>
+          <long-description></long-description>
+          <tag name="param" line="97" description="" type="string" variable="$market">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="97" description="" type="\Dmas">
+            <type>\Dmas</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$market</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="109" package="Default">
+        <name>getMarket</name>
+        <full_name>\Dmas::getMarket()</full_name>
+        <docblock line="109">
+          <description>Get market</description>
+          <long-description></long-description>
+          <tag name="return" line="109" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="119" package="Default">
+        <name>getDmaid</name>
+        <full_name>\Dmas::getDmaid()</full_name>
+        <docblock line="119">
+          <description>Get dmaid</description>
+          <long-description></long-description>
+          <tag name="return" line="119" description="" type="integer">
+            <type>integer</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="16" code="PPC:ERR-50007">No summary for property $countryid</error>
+      <error line="23" code="PPC:ERR-50007">No summary for property $dma</error>
+      <error line="30" code="PPC:ERR-50007">No summary for property $market</error>
+      <error line="39" code="PPC:ERR-50007">No summary for property $dmaid</error>
+    </parse_markers>
+    <source>eJyllE9vgjAYxu98ioZ4QLPFJctOjv2JGMPBXWaW7Fihw2alktKakMXvvrZUQKQMZy+Uty9Pf33evjw+Z9vMcaaTiQMmIEhhLp9q+rKGG4I8ClPkuyrujnV4QTnmhZxOnYjAPC+/+XGAHFpFDZm3hwxgylGCmIlVS/MdESk10vOdoJwVYezeAF5kMpKnkBD5qQxQQYjC8DkTaGwEpvqZMbyHHIFRVArgeOZ0QuScYZr0MgSr13p3nS5fCaIJ3/r3wyjiFP5//xVk34hbER7uhjGkWsaCMaQWspRddRhX2WFcTZeIIia3jT8gEciTzPIlKXw3DBZv63D96dqd0rVqU74jDqpatjEzyGB6PEOj5u08hrhg1Nzj5u5iQ3AEvgSNON5RkCM+P2p4tVyJXF5mNUZ8i/Pbp2od+Of3TQ2zrU6f6ejh7HzLvvMZgdMidaMnTfQ2cBOkwW1jUp7LenS7XV5DXbArbJY5npKwWCtXlKl1+1xip53spOmsPiq2fgc1l927suP67evOucDB8u/gGSGLj+WisvLkL3CJm72gwww1qP2eHgF763ptiwRK4u/i1q1xcH4BSj/bCg==</source>
+  </file>
+  <file path="controllers/VotersController.php" generated-path="controllers.VotersController.html" hash="6fbdfc649f661b2be0890ce3045a8363" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <namespace-alias name="VoterLogin">\Elector\Forms\Voters\VoterLogin</namespace-alias>
+    <class final="false" abstract="false" namespace="" line="5" package="Default">
+      <extends>\ControllerBase</extends>
+      <name>VotersController</name>
+      <full_name>\VotersController</full_name>
+      <docblock line="5">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="5" description="Default"/>
+        <tag name="inherited_from" description="\ControllerBase" refers="\ControllerBase" link="/classes/ControllerBase.html"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="8" package="Default">
+        <name>indexAction</name>
+        <full_name>\VotersController::indexAction()</full_name>
+        <docblock line="8">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="13" package="Default">
+        <name>loginAction</name>
+        <full_name>\VotersController::loginAction()</full_name>
+        <docblock line="13">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="8" package="Default">
+        <name>onConstruct</name>
+        <full_name>\ControllerBase::onConstruct()</full_name>
+        <docblock line="8">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+        <inherited_from>\ControllerBase</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="33" package="Default">
+        <name>onInitialize</name>
+        <full_name>\ControllerBase::onInitialize()</full_name>
+        <docblock line="33">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+        <inherited_from>\ControllerBase</inherited_from>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="5" code="PPC:ERR-50005">No summary for class \VotersController</error>
+      <error line="8" code="PPC:ERR-50008">No summary for method indexAction()</error>
+      <error line="13" code="PPC:ERR-50008">No summary for method loginAction()</error>
+    </parse_markers>
+    <source>eJxtUMFOwzAMvecrfODQSkz7ANAQIBBISOwwcdola901UhoHx4UhtH/HabuxISxLcZL37Od3fRPbaEyfEB48VkK8fiTu0vqNBHk6XmjrwpUxlbcpwfhzT0GYvEcG3AmGOsHv051NaL6NAY3Yb7yroOlDJY4CuFDj7naoi3JATMD9/3ifh//BwxTzOTw3IK1LoBkpCXwiBMQahED4C2yoxw6gK/KR6JriItNmC8b3HpPMFi4tlV+U5Un/HIzSs25/uO8Bvbp1DlIhr9KqF0+r1RI6lJbUEMsqhgTsh3XebjyCQvAya2SsHavfg6wstqUOIdotnvU9ikyRQsJcjbyiPFF0sE/zB+r5jCQ=</source>
+  </file>
+  <file path="Forms/Elements/Email.php" generated-path="Forms.Elements.Email.html" hash="239683eda545c53b510e269101786820" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <namespace-alias name="Element">\Phalcon\Forms\Element</namespace-alias>
+    <namespace-alias name="Tag">\Phalcon\Tag</namespace-alias>
+    <class final="false" abstract="false" namespace="Elector\Forms\Elements" line="8" package="Default">
+      <extends>\Phalcon\Forms\Element</extends>
+      <name>Email</name>
+      <full_name>\Elector\Forms\Elements\Email</full_name>
+      <docblock line="8">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="8" description="Default"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Elector\Forms\Elements" line="16" package="Default">
+        <name>render</name>
+        <full_name>\Elector\Forms\Elements\Email::render()</full_name>
+        <docblock line="16">
+          <description>Renders the element widget returning html</description>
+          <long-description></long-description>
+          <tag name="param" line="16" description="&lt;p&gt;attributes&lt;/p&gt;" type="array" variable="$attributes">
+            <type>array</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$attributes</name>
+          <default>null</default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="8" code="PPC:ERR-50005">No summary for class \Elector\Forms\Elements\Email</error>
+    </parse_markers>
+    <source>eJxVjztvwzAMhHf9Cg4ZYgNF9rivDMlcFB2zMDJrCZBkgaTQFkH+exXbfYQLQdx3d+D9U3bZmISRJKMl2AeyOvLxMHKUY70iJZXOmCIELw6DHdOt2N1IbzhU2AYUgX1EH4A+lVIvsODmbAzU2bTttKGF16oTC6gjoJmCD98PpMCkhZNPAziNYTH8+J4zMkZAZvwCVGV/KkqyyJtp53IK3sJ7SVb9mGrgtWu9+sPhAVIJoZnw82yuMzdD/We7pesjB0+hX6/Uebl7zEy1nHa/Kf8Tm6abYi7m8g2i4XGC</source>
+  </file>
+  <file path="Forms/Elements/ElectorElement.php" generated-path="Forms.Elements.ElectorElement.html" hash="6fae64e02c261aa7cc1769689cb0221b" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <namespace-alias name="Element">\Phalcon\Forms\Element</namespace-alias>
+    <class final="false" abstract="true" namespace="Elector\Forms\Elements" line="6" package="Default">
+      <extends>\Phalcon\Forms\Element</extends>
+      <name>ElectorElement</name>
+      <full_name>\Elector\Forms\Elements\ElectorElement</full_name>
+      <docblock line="6">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="6" description="Default"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Elector\Forms\Elements" line="8" package="Default">
+        <name>label</name>
+        <full_name>\Elector\Forms\Elements\ElectorElement::label()</full_name>
+        <docblock line="8">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$attributes</name>
+          <default>null</default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="6" code="PPC:ERR-50005">No summary for class \Elector\Forms\Elements\ElectorElement</error>
+      <error line="8" code="PPC:ERR-50015">Argument $attributes is missing from the Docblock of label</error>
+      <error line="8" code="PPC:ERR-50008">No summary for method label()</error>
+    </parse_markers>
+    <source>eJxVj8FqwzAMhu9+ChEKTmDdHqBJxg7rqYw9QC+Oqy4GxQ6WDIPSd5+rrbDqIqRP+vWrf13n1US3IK/OI7wTekn5uE954WOtFozCO2MKI3zOjnyKj7AyN7Fk5wU8Oea7xh8H/BaMJ23fanMxUGMtEwUP5xK9hBSB3ITUbpxIDlMRZBggFqJOpy9G0y0ySskRbK8bvyeHptqSnGirzQbOKQ+NhWfYyBx4O36hvN2VWxtO9ukf+ajft11Xp20zPi4d1JWi/kW1R7tTK1dz/QEkh2Zl</source>
+  </file>
+  <file path="Forms/Elements/Image.php" generated-path="Forms.Elements.Image.html" hash="15a97d30aba5c13b1e90389c59219dd0" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <namespace-alias name="Element">\Phalcon\Forms\Element</namespace-alias>
+    <namespace-alias name="Tag">\Phalcon\Tag</namespace-alias>
+    <class final="false" abstract="false" namespace="Elector\Forms\Elements" line="7" package="Default">
+      <extends>\Phalcon\Forms\Element</extends>
+      <name>Image</name>
+      <full_name>\Elector\Forms\Elements\Image</full_name>
+      <docblock line="7">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="7" description="Default"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Elector\Forms\Elements" line="9" package="Default">
+        <name>render</name>
+        <full_name>\Elector\Forms\Elements\Image::render()</full_name>
+        <docblock line="9">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$attributes</name>
+          <default>null</default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="7" code="PPC:ERR-50005">No summary for class \Elector\Forms\Elements\Image</error>
+      <error line="9" code="PPC:ERR-50015">Argument $attributes is missing from the Docblock of render</error>
+      <error line="9" code="PPC:ERR-50008">No summary for method render()</error>
+    </parse_markers>
+    <source>eJx9ksFPgzAUxu/8FU+yBDFueB5jxkVNPJh42M3t0HVvo7GUpn0kGrP/3RYYgwTXcAC+7/3e+9ouHnWuA8UKtJpxhBeJnEqzeS1NYTfuq0BFNg2CyiJ85EzyUg3FdCCt2dGZuWTWwlvBjgj4Taj2Flp78BuAW7raScHhUClOolRgnAfN7YQRGbGrCC1koCop49reFPlVO7w4oVzY6VIb1MzgU1fXZ8RulnOhONzeCGuRGoP9jHzqaBvHPfqlw1n2nZofD9u0852uYMX+CtSLF2TbY4ybJLB2AcE9bn/3IBSsypIsGabhnREawSQ8oxVHBTlKDTtZ8q/+XMOxvGdae8bG8+rKi73h+hXpwF6pf8ljWSY5FdKB3eWYz5uT7p1XtBBKVwT0ozELD0JiGN23Q/RwDWSWQcQ4R01ZKPz9Su7CZTQ85jZ3F2kk7Rm10FDf1Sy8hHA8mPV3ZOZ8ifZdLtG6V4NUGdUgG8MpOP0B/cH3zQ==</source>
+  </file>
+  <file path="config/config.php" generated-path="config.config.html" hash="03682de59fb0a6d7807e74d085dd0422" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <constant namespace="" line="6" package="Default">
+      <name>BASE_PATH</name>
+      <full_name>\BASE_PATH</full_name>
+      <value>getenv('BASE_PATH') ?: realpath(dirname(__FILE__) . '/../..')</value>
+      <docblock line="6">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="6" description="Default"/>
+      </docblock>
+    </constant>
+    <constant namespace="" line="7" package="Default">
+      <name>APP_PATH</name>
+      <full_name>\APP_PATH</full_name>
+      <value>BASE_PATH . '/app'</value>
+      <docblock line="7">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="7" description="Default"/>
+      </docblock>
+    </constant>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+    </parse_markers>
+    <source>eJyVVV1v2zAMfPev4JuTIrDfu48iW1OswNYFW7c9rIWh2HSsTZY8SY4XoD9+lOzEVtoOaFE0tcgjjycf8/qiqZooPYvgDD6pgpcci3NoNDYoCyi4xtwqvYeG2QpUCXmrNUoLJRe4gA3mrDXoArbixp+C6iQByxJ94urmO7SyQE3JtkOUsGxYXiEwqp+runafgktMHIWbz7crai+QUVWNtdphX9llUjmXlEYFlgQoZvG75ddVtl7efojn8PAA/fn0eAFbtCh3YerFOdVmws00oxElq3GWZVfXH1dZNocE4jRJ6Deez1+NvZbr9ROtjqcLOHbwFVjTxASPNNpWS5DYwd26YiJX8u69kiXfzn5GQD8a/7QkM2TZ5fWXLPPgglm2IQkSupx44dP8n5iqCp4zy5WM4c1b6EscQpdcx4dnFz2Q8zWHOj6XSFithEBtPOY0dxIPcLUqUJixzSmuj4cQvtWe7wB7BDnGA9iOYzdp9Ajm4wGiEe2WyxFzihjiAUbwjWZ6/yxmiIfaubc3ZBbevE8IIGxH96kDaiGkaTd0rSkzBq1Jh3RXYqxRKl3/T5ArFw8gaQq3zjpMCNUZshGCe6e+aQ5WkRt7WxrrDNho9Yuc7m3uUpkFRu+kVBa49FCt6P/jPpg28eZH6HDTGLI2JtD37bgQsCGj/Qbepwxjcur7173aQI52u0VxWhSEcHYvQOlp9UYZwzdif6hBbcCg3tFC0dhpbolaK9B4vnnF5BaLpCeQM0nDGz8rCeumZkDzWp77QZNR3UGYo3tI3dAx5K7M7YmJ/PFKeDFONP8xNHMMDvuRiO89QXoonKJCWeOEawQJZhZuuI7kRooSy9ot4r1D1e64YrQFc6cVEz0CNN9WFipasSPFVgtzshR6KylL1/xExEc1brmhhNHRZC6PSA+hqRBHnFDkpmDbHHF9KMTch4/kIllwWnP4ImIj6uXkJthnCEbP1fB4/3zabcrSZ420okll/xHd0/fBP+xJESY=</source>
+  </file>
+  <file path="config/router.php" generated-path="config.router.html" hash="ce81974f4307c92a76333d0a3d054d9b" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+    </parse_markers>
+    <source>eJx1j0sKwjAQQPc5xSwKqWDJPmpdVBC33qCYMQmUSckH7O1tYguKun28N5/9cTQjY5V3KaKHA1TKNq3GeC2g3uwYEwJOeLeEMLnkoagBDHpcu6btlTpjrLkYnLYk+Bb4hRQ+pCyAz3O+XY/ahhm96yvLxZ/EUchB5xJFP0mZr13wzzU3Gy2WZNFK0r3oxxrTkxowP/0E0bNbEg==</source>
+  </file>
+  <file path="Forms/Voters/VoterRegister.php" generated-path="Forms.Voters.VoterRegister.html" hash="174fe4190fbe1374f7316c03140259b6" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <namespace-alias name="ElectorForm">\Elector\Forms\ElectorForm</namespace-alias>
+    <class final="false" abstract="false" namespace="Elector\Forms\Voters" line="6" package="Default">
+      <extends>\Elector\Forms\ElectorForm</extends>
+      <name>VoterRegister</name>
+      <full_name>\Elector\Forms\Voters\VoterRegister</full_name>
+      <docblock line="6">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="6" description="Default"/>
+        <tag name="inherited_from" description="\Elector\Forms\ElectorForm" refers="\Elector\Forms\ElectorForm" link="/classes/Elector.Forms.ElectorForm.html"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Elector\Forms\Voters" line="8" package="Default">
+        <name>initialize</name>
+        <full_name>\Elector\Forms\Voters\VoterRegister::initialize()</full_name>
+        <docblock line="8">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Elector\Forms\Voters" line="27" package="Default">
+        <name>initializeRegisterForm</name>
+        <full_name>\Elector\Forms\ElectorForm::initializeRegisterForm()</full_name>
+        <docblock line="27">
+          <description>This method creates register Phalcon Form Elements</description>
+          <long-description></long-description>
+          <tag name="param" line="27" description="&lt;p&gt;Used for element id and name generator&lt;/p&gt;" type="string" variable="$userType">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="27" description="&lt;p&gt;Indicates should form be finished with generic submit button&lt;/p&gt;" type="boolean" variable="$finish">
+            <type>boolean</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$userType</name>
+          <default>'voter'</default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$finish</name>
+          <default>false</default>
+          <type>boolean</type>
+        </argument>
+        <inherited_from>\Elector\Forms\ElectorForm</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Elector\Forms\Voters" line="96" package="Default">
+        <name>submitButton</name>
+        <full_name>\Elector\Forms\ElectorForm::submitButton()</full_name>
+        <docblock line="96">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$name</name>
+          <default>'Register'</default>
+          <type/>
+        </argument>
+        <inherited_from>\Elector\Forms\ElectorForm</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Elector\Forms\Voters" line="108" package="Default">
+        <name>renderFileChooser</name>
+        <full_name>\Elector\Forms\ElectorForm::renderFileChooser()</full_name>
+        <docblock line="108">
+          <description>Method used to render file chooser input fields</description>
+          <long-description></long-description>
+          <tag name="param" line="108" description="&lt;p&gt;Name of the element&lt;/p&gt;" type="" variable="$name"/>
+          <tag name="param" line="108" description="&lt;p&gt;What description should we show to user&lt;/p&gt;" type="" variable="$placeholder"/>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$name</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$placeholder</name>
+          <default></default>
+          <type/>
+        </argument>
+        <inherited_from>\Elector\Forms\ElectorForm</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Elector\Forms\Voters" line="142" package="Default">
+        <name>renderDecorated</name>
+        <full_name>\Elector\Forms\ElectorForm::renderDecorated()</full_name>
+        <docblock line="142">
+          <description>Overiding default Phalcon\Forms\Form::renderDecorated()</description>
+          <long-description></long-description>
+          <tag name="param" line="142" description="&lt;p&gt;Name of the element&lt;/p&gt;" type="string" variable="$name">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$name</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <inherited_from>\Elector\Forms\ElectorForm</inherited_from>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="6" code="PPC:ERR-50005">No summary for class \Elector\Forms\Voters\VoterRegister</error>
+      <error line="8" code="PPC:ERR-50008">No summary for method initialize()</error>
+    </parse_markers>
+    <source>eJxdTksKwjAQ3ecUsyi0BT1B/az0AC5cdRPj1AbSJGQmIpbe3SQoim/zeLzPzGbvRy+snJC8VAgHg4pd6I8uTNSfHWOgTohI/9ZbZZF8ZSQRlPgJb5oSAz4Y7ZXgJylmAQk+XoxWMESrWDsL2mrW0ugnNm0JzKJQRjWkXpqY0DLBFioeNa1338rnXt5v6nt+oV4Bh4htV1YWsYgX2OFOLw==</source>
+  </file>
+  <file path="models/Regions.php" generated-path="models.Regions.html" hash="ca4f7b75194dfbaebe9de4eded8d3807" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <namespace-alias name="ArrayCollection">\Doctrine\Common\Collections\ArrayCollection</namespace-alias>
+    <class final="false" abstract="false" namespace="" line="11" package="Default">
+      <extends/>
+      <name>Regions</name>
+      <full_name>\Regions</full_name>
+      <docblock line="11">
+        <description>Regions</description>
+        <long-description></long-description>
+        <tag name="Table" line="11" description="(name=&quot;Regions&quot;)"/>
+        <tag name="Entity" line="11" description=""/>
+        <tag name="package" line="11" description="Default"/>
+      </docblock>
+      <property static="false" visibility="private" namespace="" line="18" package="Default">
+        <name>$countryid</name>
+        <full_name>\Regions::countryid</full_name>
+        <default></default>
+        <docblock line="18">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="18" description="" type="integer" variable="">
+            <type>integer</type>
+          </tag>
+          <tag name="Column" line="18" description="(name=&quot;CountryID&quot;, type=&quot;smallint&quot;, nullable=false)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="25" package="Default">
+        <name>$region</name>
+        <full_name>\Regions::region</full_name>
+        <default></default>
+        <docblock line="25">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="25" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+          <tag name="Column" line="25" description="(name=&quot;Region&quot;, type=&quot;string&quot;, length=45, nullable=false)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="32" package="Default">
+        <name>$code</name>
+        <full_name>\Regions::code</full_name>
+        <default></default>
+        <docblock line="32">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="32" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+          <tag name="Column" line="32" description="(name=&quot;Code&quot;, type=&quot;string&quot;, length=8, nullable=false)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="39" package="Default">
+        <name>$adm1code</name>
+        <full_name>\Regions::adm1code</full_name>
+        <default></default>
+        <docblock line="39">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="39" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+          <tag name="Column" line="39" description="(name=&quot;ADM1Code&quot;, type=&quot;string&quot;, length=4, nullable=false)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="48" package="Default">
+        <name>$regionid</name>
+        <full_name>\Regions::regionid</full_name>
+        <default></default>
+        <docblock line="48">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="48" description="" type="integer" variable="">
+            <type>integer</type>
+          </tag>
+          <tag name="Column" line="48" description="(name=&quot;RegionID&quot;, type=&quot;smallint&quot;)"/>
+          <tag name="Id" line="48" description=""/>
+          <tag name="GeneratedValue" line="48" description="(strategy=&quot;IDENTITY&quot;)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="55" package="Default">
+        <name>$country</name>
+        <full_name>\Regions::country</full_name>
+        <default></default>
+        <docblock line="55">
+          <description>Many Regions have one Country</description>
+          <long-description></long-description>
+          <tag name="ManyToOne" line="55" description="(targetEntity=&quot;Countries&quot;, inversedBy=&quot;regions&quot;)"/>
+          <tag name="JoinColumn" line="55" description="(name=&quot;CountryID&quot;, referencedColumnName=&quot;CountryId&quot;)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="61" package="Default">
+        <name>$cities</name>
+        <full_name>\Regions::cities</full_name>
+        <default></default>
+        <docblock line="61">
+          <description>One Region has many Cities</description>
+          <long-description></long-description>
+          <tag name="OneToMany" line="61" description="(targetEntity=&quot;Cities&quot;, mappedBy=&quot;region&quot;)"/>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="63" package="Default">
+        <name>__construct</name>
+        <full_name>\Regions::__construct()</full_name>
+        <docblock line="63">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="76" package="Default">
+        <name>setCountryid</name>
+        <full_name>\Regions::setCountryid()</full_name>
+        <docblock line="76">
+          <description>Set countryid</description>
+          <long-description></long-description>
+          <tag name="param" line="76" description="" type="integer" variable="$countryid">
+            <type>integer</type>
+          </tag>
+          <tag name="return" line="76" description="" type="\Regions">
+            <type>\Regions</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$countryid</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="88" package="Default">
+        <name>getCountryid</name>
+        <full_name>\Regions::getCountryid()</full_name>
+        <docblock line="88">
+          <description>Get countryid</description>
+          <long-description></long-description>
+          <tag name="return" line="88" description="" type="integer">
+            <type>integer</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="100" package="Default">
+        <name>setRegion</name>
+        <full_name>\Regions::setRegion()</full_name>
+        <docblock line="100">
+          <description>Set region</description>
+          <long-description></long-description>
+          <tag name="param" line="100" description="" type="string" variable="$region">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="100" description="" type="\Regions">
+            <type>\Regions</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$region</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="112" package="Default">
+        <name>getRegion</name>
+        <full_name>\Regions::getRegion()</full_name>
+        <docblock line="112">
+          <description>Get region</description>
+          <long-description></long-description>
+          <tag name="return" line="112" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="124" package="Default">
+        <name>setCode</name>
+        <full_name>\Regions::setCode()</full_name>
+        <docblock line="124">
+          <description>Set code</description>
+          <long-description></long-description>
+          <tag name="param" line="124" description="" type="string" variable="$code">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="124" description="" type="\Regions">
+            <type>\Regions</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$code</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="136" package="Default">
+        <name>getCode</name>
+        <full_name>\Regions::getCode()</full_name>
+        <docblock line="136">
+          <description>Get code</description>
+          <long-description></long-description>
+          <tag name="return" line="136" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="148" package="Default">
+        <name>setAdm1code</name>
+        <full_name>\Regions::setAdm1code()</full_name>
+        <docblock line="148">
+          <description>Set adm1code</description>
+          <long-description></long-description>
+          <tag name="param" line="148" description="" type="string" variable="$adm1code">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="148" description="" type="\Regions">
+            <type>\Regions</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$adm1code</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="160" package="Default">
+        <name>getAdm1code</name>
+        <full_name>\Regions::getAdm1code()</full_name>
+        <docblock line="160">
+          <description>Get adm1code</description>
+          <long-description></long-description>
+          <tag name="return" line="160" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="170" package="Default">
+        <name>getRegionid</name>
+        <full_name>\Regions::getRegionid()</full_name>
+        <docblock line="170">
+          <description>Get regionid</description>
+          <long-description></long-description>
+          <tag name="return" line="170" description="" type="integer">
+            <type>integer</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="182" package="Default">
+        <name>setCountry</name>
+        <full_name>\Regions::setCountry()</full_name>
+        <docblock line="182">
+          <description>Set country</description>
+          <long-description></long-description>
+          <tag name="param" line="182" description="" type="\Countries" variable="$country">
+            <type>\Countries</type>
+          </tag>
+          <tag name="return" line="182" description="" type="\Regions">
+            <type>\Regions</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$country</name>
+          <default>null</default>
+          <type>\Countries</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="194" package="Default">
+        <name>getCountry</name>
+        <full_name>\Regions::getCountry()</full_name>
+        <docblock line="194">
+          <description>Get country</description>
+          <long-description></long-description>
+          <tag name="return" line="194" description="" type="\Countries">
+            <type>\Countries</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="206" package="Default">
+        <name>addCity</name>
+        <full_name>\Regions::addCity()</full_name>
+        <docblock line="206">
+          <description>Add city</description>
+          <long-description></long-description>
+          <tag name="param" line="206" description="" type="\Cities" variable="$city">
+            <type>\Cities</type>
+          </tag>
+          <tag name="return" line="206" description="" type="\Regions">
+            <type>\Regions</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$city</name>
+          <default></default>
+          <type>\Cities</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="218" package="Default">
+        <name>removeCity</name>
+        <full_name>\Regions::removeCity()</full_name>
+        <docblock line="218">
+          <description>Remove city</description>
+          <long-description></long-description>
+          <tag name="param" line="218" description="" type="\Cities" variable="$city">
+            <type>\Cities</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$city</name>
+          <default></default>
+          <type>\Cities</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="228" package="Default">
+        <name>getCities</name>
+        <full_name>\Regions::getCities()</full_name>
+        <docblock line="228">
+          <description>Get cities</description>
+          <long-description></long-description>
+          <tag name="return" line="228" description="" type="\Doctrine\Common\Collections\Collection">
+            <type>\Doctrine\Common\Collections\Collection</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="63" code="PPC:ERR-50008">No summary for method __construct()</error>
+      <error line="18" code="PPC:ERR-50007">No summary for property $countryid</error>
+      <error line="25" code="PPC:ERR-50007">No summary for property $region</error>
+      <error line="32" code="PPC:ERR-50007">No summary for property $code</error>
+      <error line="39" code="PPC:ERR-50007">No summary for property $adm1code</error>
+      <error line="48" code="PPC:ERR-50007">No summary for property $regionid</error>
+    </parse_markers>
+    <source>eJytV11r2zAUffevEKEPTtkohQ4GXbZlSSkZtIMuDMY6imrdOgZZNrKcEUb/+/TljziWYrfzS2zr6uqc46N7lQ+f8k0eBGUBaJlFgicM7hdZmmZM/lAKkUgyVtzPOce75sVlEJydngboFN1BrALkrXr6vMaPFEKGU5hN7NBkqkeumEjETt6eBRHFRVHP/Bsgeel06pKhW8xRwgTEwO27ekhCKFNmF1hkJRN8t1pO3iCxy+WbIsWUyqnyBSspVWBmT5gWMLUZzvRvzpMtFoBOIpMhIZJQH4pCCRJ7QRgaDQI9Qz5SYLHYzC7eDYTCdZ6X41hkBJwo3g/Wg8DLIcyXN+deGBcDYWCSnnugDPGG+Sx91pjWE1akvr0GBlyuTX5gWkIogcuHeDebrJZXt+vV+ufE+9n6DHSD2a4yOdrgLaCMAbKerRdWUevsG4NQYB6DMNuk8nYChSSQsC3wAsgX+Z43m8pm+JolzLktODwBBxYBMSG3exHExcrui0NSEqjlJCkVKFUcF4mQOGs8MmSdKVpdRjpMYkpxnrfJOEHoCRZDXj7SJEJPJdMFCD08RFIGwctIhGa+qSPqOhGbpHj70cxHM8TgD+oUsHB6qcOfgwOK30Ggui50PZZjjtPKgK360Y3jIErOmurY5tdhUoBYVGnCJqOLVDUueR2UL3XZlXV4zbFD8dpH0SbY32T90OM29C7gNpAWbhcmJbvxQ7/mppZUG+51epuw0OZyKG0Glcx7pXmMxl6sewXVqa+F6he3AuhWVlVTv659EWNdTCDUeZzeJWBsW5f2cY51IhympQZ4zKYKmlvHqjP5tXRFjdNzbrOEdT6HrtWw0rbTOsfoewT1MI1r0H6dG5huPFVrfV2BurNZBm0hf3mK9np359vf1x27rsv/pSmEPYlVT5PnKH+LaDWIl7cHB4UG08D+MKw7uADNCUGR/vfQr7xp9Cd9ISM0x4TITErwVj7v2eLXby2yDBup8B2kmTwQjuPUj5rrVCOBK7+raVcUUmAiNDO8fmgf8g7s4Pvr2Nwf9Ype45hV7KnQQH0O/gGTNAt1</source>
+  </file>
+  <file path="library/Countries/Countries.php" generated-path="library.Countries.Countries.html" hash="8ca86f61424b5f2cc590ffc5789e81cd" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <namespace-alias name="Di">\Phalcon\Di</namespace-alias>
+    <class final="false" abstract="false" namespace="Elector\library\Countries" line="7" package="Default">
+      <extends/>
+      <name>Countries</name>
+      <full_name>\Elector\library\Countries\Countries</full_name>
+      <docblock line="7">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="7" description="Default"/>
+      </docblock>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Elector\library\Countries" line="13" package="Default">
+        <name>getAllCountries</name>
+        <full_name>\Elector\library\Countries\Countries::getAllCountries()</full_name>
+        <docblock line="13">
+          <description>Method returns list of all countries from database</description>
+          <long-description></long-description>
+          <tag name="return" line="13" description="Countries" type="array">
+            <type>array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Elector\library\Countries" line="26" package="Default">
+        <name>getCountryRegions</name>
+        <full_name>\Elector\library\Countries\Countries::getCountryRegions()</full_name>
+        <docblock line="26">
+          <description>Method fatches all regions inside a country</description>
+          <long-description></long-description>
+          <tag name="param" line="26" description="" type="integer" variable="$countryID">
+            <type>integer</type>
+          </tag>
+          <tag name="return" line="26" description="Array of regions" type="array">
+            <type>array</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$countryID</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="7" code="PPC:ERR-50005">No summary for class \Elector\library\Countries\Countries</error>
+    </parse_markers>
+    <source>eJzNkU1rwzAMhu/+FToU4hZG791nWXrooTB67kV1lMTg2MFWDmH0v09N0tDBBjvOF2FLr/Tq8dNrW7dKeWwotWgIdo4Mh3hy9hwx9qf30HmOltKjUl0i+KjRmeBPuZUH4zAlmEvUpwI569VqiLCCA3EdCojEXfQJnE0MoQR0DsxNBWUMDRTIeMZEN+XbqAGMEfu7EWN6PcS2OztrIDGyhLLzhm3wUBFvnZslejkUj94Gf2vIg5Gcl3U9W+4P6LGiOFcsqIFnyPebjfTKqcTOsV4+vMhNZ8Wk3R2ypTC4aSa/Ih3qjtSGZIVkr7PZSiY9SusLsadFe5Vd1C/MSmRTC50rq0iVLJbA+mQLApzg9TOsFiM2IHmGxZTb5/Azy7uzHR7kQ6YBf6Q77tMfR5H+PvX/0dZ35qbq0fj8BZcvr4jtmQ==</source>
+  </file>
+  <file path="config/loader.php" generated-path="config.loader.html" hash="1ce4f17b9ffe71f198c25932d7d6ff4f" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+    </parse_markers>
+    <source>eJyNkLEOgkAMhvd7ig4mApHwACoujg5uDuLQQIHGg5Leqa/vgSGM0qFJ//z/17SH09AOxmysYEUKR+jpA8W1RVtKX1wmNYr3xmRJYiCBG22VAEGpYedJuW/C5MiD1FCxUulFmRx4fFIPtUoHviUItJqbl6JnCTJbCrRs3pvmM+/M6iIDoe5TH2vzC6c5DoPlckKkeRC9irWkLoR2f9ydVGTXGPGNHlcha9Fu8T1MvFwxfuwLTi5t8Q==</source>
+  </file>
+  <file path="models/Countries.php" generated-path="models.Countries.html" hash="f3dc294391f994620959818071ca31ce" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <namespace-alias name="ArrayCollection">\Doctrine\Common\Collections\ArrayCollection</namespace-alias>
+    <class final="false" abstract="false" namespace="" line="11" package="Default">
+      <extends/>
+      <name>Countries</name>
+      <full_name>\Countries</full_name>
+      <docblock line="11">
+        <description>Countries</description>
+        <long-description></long-description>
+        <tag name="Table" line="11" description="(name=&quot;Countries&quot;)"/>
+        <tag name="Entity" line="11" description=""/>
+        <tag name="package" line="11" description="Default"/>
+      </docblock>
+      <property static="false" visibility="private" namespace="" line="18" package="Default">
+        <name>$country</name>
+        <full_name>\Countries::country</full_name>
+        <default></default>
+        <docblock line="18">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="18" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+          <tag name="Column" line="18" description="(name=&quot;Country&quot;, type=&quot;string&quot;, length=50, nullable=false)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="25" package="Default">
+        <name>$fips104</name>
+        <full_name>\Countries::fips104</full_name>
+        <default></default>
+        <docblock line="25">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="25" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+          <tag name="Column" line="25" description="(name=&quot;FIPS104&quot;, type=&quot;string&quot;, length=2, nullable=false)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="32" package="Default">
+        <name>$iso2</name>
+        <full_name>\Countries::iso2</full_name>
+        <default></default>
+        <docblock line="32">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="32" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+          <tag name="Column" line="32" description="(name=&quot;ISO2&quot;, type=&quot;string&quot;, length=2, nullable=false)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="39" package="Default">
+        <name>$iso3</name>
+        <full_name>\Countries::iso3</full_name>
+        <default></default>
+        <docblock line="39">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="39" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+          <tag name="Column" line="39" description="(name=&quot;ISO3&quot;, type=&quot;string&quot;, length=3, nullable=false)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="46" package="Default">
+        <name>$ison</name>
+        <full_name>\Countries::ison</full_name>
+        <default></default>
+        <docblock line="46">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="46" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+          <tag name="Column" line="46" description="(name=&quot;ISON&quot;, type=&quot;string&quot;, length=4, nullable=false)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="53" package="Default">
+        <name>$internet</name>
+        <full_name>\Countries::internet</full_name>
+        <default></default>
+        <docblock line="53">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="53" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+          <tag name="Column" line="53" description="(name=&quot;Internet&quot;, type=&quot;string&quot;, length=2, nullable=false)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="60" package="Default">
+        <name>$capital</name>
+        <full_name>\Countries::capital</full_name>
+        <default></default>
+        <docblock line="60">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="60" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+          <tag name="Column" line="60" description="(name=&quot;Capital&quot;, type=&quot;string&quot;, length=25, nullable=true)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="67" package="Default">
+        <name>$mapreference</name>
+        <full_name>\Countries::mapreference</full_name>
+        <default></default>
+        <docblock line="67">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="67" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+          <tag name="Column" line="67" description="(name=&quot;MapReference&quot;, type=&quot;string&quot;, length=50, nullable=true)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="74" package="Default">
+        <name>$nationalitysingular</name>
+        <full_name>\Countries::nationalitysingular</full_name>
+        <default></default>
+        <docblock line="74">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="74" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+          <tag name="Column" line="74" description="(name=&quot;NationalitySingular&quot;, type=&quot;string&quot;, length=35, nullable=true)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="81" package="Default">
+        <name>$nationalityplural</name>
+        <full_name>\Countries::nationalityplural</full_name>
+        <default></default>
+        <docblock line="81">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="81" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+          <tag name="Column" line="81" description="(name=&quot;NationalityPlural&quot;, type=&quot;string&quot;, length=35, nullable=true)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="88" package="Default">
+        <name>$currency</name>
+        <full_name>\Countries::currency</full_name>
+        <default></default>
+        <docblock line="88">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="88" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+          <tag name="Column" line="88" description="(name=&quot;Currency&quot;, type=&quot;string&quot;, length=30, nullable=true)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="95" package="Default">
+        <name>$currencycode</name>
+        <full_name>\Countries::currencycode</full_name>
+        <default></default>
+        <docblock line="95">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="95" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+          <tag name="Column" line="95" description="(name=&quot;CurrencyCode&quot;, type=&quot;string&quot;, length=3, nullable=true)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="102" package="Default">
+        <name>$population</name>
+        <full_name>\Countries::population</full_name>
+        <default></default>
+        <docblock line="102">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="102" description="" type="integer" variable="">
+            <type>integer</type>
+          </tag>
+          <tag name="Column" line="102" description="(name=&quot;Population&quot;, type=&quot;bigint&quot;, nullable=true)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="109" package="Default">
+        <name>$title</name>
+        <full_name>\Countries::title</full_name>
+        <default></default>
+        <docblock line="109">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="109" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+          <tag name="Column" line="109" description="(name=&quot;Title&quot;, type=&quot;string&quot;, length=50, nullable=true)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="116" package="Default">
+        <name>$comment</name>
+        <full_name>\Countries::comment</full_name>
+        <default></default>
+        <docblock line="116">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="116" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+          <tag name="Column" line="116" description="(name=&quot;Comment&quot;, type=&quot;string&quot;, length=255, nullable=true)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="125" package="Default">
+        <name>$countryid</name>
+        <full_name>\Countries::countryid</full_name>
+        <default></default>
+        <docblock line="125">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="125" description="" type="integer" variable="">
+            <type>integer</type>
+          </tag>
+          <tag name="Column" line="125" description="(name=&quot;CountryId&quot;, type=&quot;smallint&quot;)"/>
+          <tag name="Id" line="125" description=""/>
+          <tag name="GeneratedValue" line="125" description="(strategy=&quot;IDENTITY&quot;)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="133" package="Default">
+        <name>$cities</name>
+        <full_name>\Countries::cities</full_name>
+        <default></default>
+        <docblock line="133">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="133" description="&lt;p&gt;One Country has many Cities&lt;/p&gt;" type="array" variable="">
+            <type>array</type>
+          </tag>
+          <tag name="OneToMany" line="133" description="(targetEntity=&quot;Cities&quot;, mappedBy=&quot;country&quot;)"/>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="" line="141" package="Default">
+        <name>$regions</name>
+        <full_name>\Countries::regions</full_name>
+        <default></default>
+        <docblock line="141">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="141" description="&lt;p&gt;One Country has many Regions&lt;/p&gt;" type="array" variable="">
+            <type>array</type>
+          </tag>
+          <tag name="OneToMany" line="141" description="(targetEntity=&quot;Regions&quot;, mappedBy=&quot;country&quot;)"/>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="143" package="Default">
+        <name>__construct</name>
+        <full_name>\Countries::__construct()</full_name>
+        <docblock line="143">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="157" package="Default">
+        <name>setCountry</name>
+        <full_name>\Countries::setCountry()</full_name>
+        <docblock line="157">
+          <description>Set country</description>
+          <long-description></long-description>
+          <tag name="param" line="157" description="" type="string" variable="$country">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="157" description="" type="\Countries">
+            <type>\Countries</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$country</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="169" package="Default">
+        <name>getCountry</name>
+        <full_name>\Countries::getCountry()</full_name>
+        <docblock line="169">
+          <description>Get country</description>
+          <long-description></long-description>
+          <tag name="return" line="169" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="181" package="Default">
+        <name>setFips104</name>
+        <full_name>\Countries::setFips104()</full_name>
+        <docblock line="181">
+          <description>Set fips104</description>
+          <long-description></long-description>
+          <tag name="param" line="181" description="" type="string" variable="$fips104">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="181" description="" type="\Countries">
+            <type>\Countries</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$fips104</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="193" package="Default">
+        <name>getFips104</name>
+        <full_name>\Countries::getFips104()</full_name>
+        <docblock line="193">
+          <description>Get fips104</description>
+          <long-description></long-description>
+          <tag name="return" line="193" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="205" package="Default">
+        <name>setIso2</name>
+        <full_name>\Countries::setIso2()</full_name>
+        <docblock line="205">
+          <description>Set iso2</description>
+          <long-description></long-description>
+          <tag name="param" line="205" description="" type="string" variable="$iso2">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="205" description="" type="\Countries">
+            <type>\Countries</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$iso2</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="217" package="Default">
+        <name>getIso2</name>
+        <full_name>\Countries::getIso2()</full_name>
+        <docblock line="217">
+          <description>Get iso2</description>
+          <long-description></long-description>
+          <tag name="return" line="217" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="229" package="Default">
+        <name>setIso3</name>
+        <full_name>\Countries::setIso3()</full_name>
+        <docblock line="229">
+          <description>Set iso3</description>
+          <long-description></long-description>
+          <tag name="param" line="229" description="" type="string" variable="$iso3">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="229" description="" type="\Countries">
+            <type>\Countries</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$iso3</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="241" package="Default">
+        <name>getIso3</name>
+        <full_name>\Countries::getIso3()</full_name>
+        <docblock line="241">
+          <description>Get iso3</description>
+          <long-description></long-description>
+          <tag name="return" line="241" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="253" package="Default">
+        <name>setIson</name>
+        <full_name>\Countries::setIson()</full_name>
+        <docblock line="253">
+          <description>Set ison</description>
+          <long-description></long-description>
+          <tag name="param" line="253" description="" type="string" variable="$ison">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="253" description="" type="\Countries">
+            <type>\Countries</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$ison</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="265" package="Default">
+        <name>getIson</name>
+        <full_name>\Countries::getIson()</full_name>
+        <docblock line="265">
+          <description>Get ison</description>
+          <long-description></long-description>
+          <tag name="return" line="265" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="277" package="Default">
+        <name>setInternet</name>
+        <full_name>\Countries::setInternet()</full_name>
+        <docblock line="277">
+          <description>Set internet</description>
+          <long-description></long-description>
+          <tag name="param" line="277" description="" type="string" variable="$internet">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="277" description="" type="\Countries">
+            <type>\Countries</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$internet</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="289" package="Default">
+        <name>getInternet</name>
+        <full_name>\Countries::getInternet()</full_name>
+        <docblock line="289">
+          <description>Get internet</description>
+          <long-description></long-description>
+          <tag name="return" line="289" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="301" package="Default">
+        <name>setCapital</name>
+        <full_name>\Countries::setCapital()</full_name>
+        <docblock line="301">
+          <description>Set capital</description>
+          <long-description></long-description>
+          <tag name="param" line="301" description="" type="string" variable="$capital">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="301" description="" type="\Countries">
+            <type>\Countries</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$capital</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="313" package="Default">
+        <name>getCapital</name>
+        <full_name>\Countries::getCapital()</full_name>
+        <docblock line="313">
+          <description>Get capital</description>
+          <long-description></long-description>
+          <tag name="return" line="313" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="325" package="Default">
+        <name>setMapreference</name>
+        <full_name>\Countries::setMapreference()</full_name>
+        <docblock line="325">
+          <description>Set mapreference</description>
+          <long-description></long-description>
+          <tag name="param" line="325" description="" type="string" variable="$mapreference">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="325" description="" type="\Countries">
+            <type>\Countries</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$mapreference</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="337" package="Default">
+        <name>getMapreference</name>
+        <full_name>\Countries::getMapreference()</full_name>
+        <docblock line="337">
+          <description>Get mapreference</description>
+          <long-description></long-description>
+          <tag name="return" line="337" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="349" package="Default">
+        <name>setNationalitysingular</name>
+        <full_name>\Countries::setNationalitysingular()</full_name>
+        <docblock line="349">
+          <description>Set nationalitysingular</description>
+          <long-description></long-description>
+          <tag name="param" line="349" description="" type="string" variable="$nationalitysingular">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="349" description="" type="\Countries">
+            <type>\Countries</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$nationalitysingular</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="361" package="Default">
+        <name>getNationalitysingular</name>
+        <full_name>\Countries::getNationalitysingular()</full_name>
+        <docblock line="361">
+          <description>Get nationalitysingular</description>
+          <long-description></long-description>
+          <tag name="return" line="361" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="373" package="Default">
+        <name>setNationalityplural</name>
+        <full_name>\Countries::setNationalityplural()</full_name>
+        <docblock line="373">
+          <description>Set nationalityplural</description>
+          <long-description></long-description>
+          <tag name="param" line="373" description="" type="string" variable="$nationalityplural">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="373" description="" type="\Countries">
+            <type>\Countries</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$nationalityplural</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="385" package="Default">
+        <name>getNationalityplural</name>
+        <full_name>\Countries::getNationalityplural()</full_name>
+        <docblock line="385">
+          <description>Get nationalityplural</description>
+          <long-description></long-description>
+          <tag name="return" line="385" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="397" package="Default">
+        <name>setCurrency</name>
+        <full_name>\Countries::setCurrency()</full_name>
+        <docblock line="397">
+          <description>Set currency</description>
+          <long-description></long-description>
+          <tag name="param" line="397" description="" type="string" variable="$currency">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="397" description="" type="\Countries">
+            <type>\Countries</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$currency</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="409" package="Default">
+        <name>getCurrency</name>
+        <full_name>\Countries::getCurrency()</full_name>
+        <docblock line="409">
+          <description>Get currency</description>
+          <long-description></long-description>
+          <tag name="return" line="409" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="421" package="Default">
+        <name>setCurrencycode</name>
+        <full_name>\Countries::setCurrencycode()</full_name>
+        <docblock line="421">
+          <description>Set currencycode</description>
+          <long-description></long-description>
+          <tag name="param" line="421" description="" type="string" variable="$currencycode">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="421" description="" type="\Countries">
+            <type>\Countries</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$currencycode</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="433" package="Default">
+        <name>getCurrencycode</name>
+        <full_name>\Countries::getCurrencycode()</full_name>
+        <docblock line="433">
+          <description>Get currencycode</description>
+          <long-description></long-description>
+          <tag name="return" line="433" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="445" package="Default">
+        <name>setPopulation</name>
+        <full_name>\Countries::setPopulation()</full_name>
+        <docblock line="445">
+          <description>Set population</description>
+          <long-description></long-description>
+          <tag name="param" line="445" description="" type="integer" variable="$population">
+            <type>integer</type>
+          </tag>
+          <tag name="return" line="445" description="" type="\Countries">
+            <type>\Countries</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$population</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="457" package="Default">
+        <name>getPopulation</name>
+        <full_name>\Countries::getPopulation()</full_name>
+        <docblock line="457">
+          <description>Get population</description>
+          <long-description></long-description>
+          <tag name="return" line="457" description="" type="integer">
+            <type>integer</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="469" package="Default">
+        <name>setTitle</name>
+        <full_name>\Countries::setTitle()</full_name>
+        <docblock line="469">
+          <description>Set title</description>
+          <long-description></long-description>
+          <tag name="param" line="469" description="" type="string" variable="$title">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="469" description="" type="\Countries">
+            <type>\Countries</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$title</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="481" package="Default">
+        <name>getTitle</name>
+        <full_name>\Countries::getTitle()</full_name>
+        <docblock line="481">
+          <description>Get title</description>
+          <long-description></long-description>
+          <tag name="return" line="481" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="493" package="Default">
+        <name>setComment</name>
+        <full_name>\Countries::setComment()</full_name>
+        <docblock line="493">
+          <description>Set comment</description>
+          <long-description></long-description>
+          <tag name="param" line="493" description="" type="string" variable="$comment">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="493" description="" type="\Countries">
+            <type>\Countries</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$comment</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="505" package="Default">
+        <name>getComment</name>
+        <full_name>\Countries::getComment()</full_name>
+        <docblock line="505">
+          <description>Get comment</description>
+          <long-description></long-description>
+          <tag name="return" line="505" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="515" package="Default">
+        <name>getCountryid</name>
+        <full_name>\Countries::getCountryid()</full_name>
+        <docblock line="515">
+          <description>Get countryid</description>
+          <long-description></long-description>
+          <tag name="return" line="515" description="" type="integer">
+            <type>integer</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="527" package="Default">
+        <name>addCity</name>
+        <full_name>\Countries::addCity()</full_name>
+        <docblock line="527">
+          <description>Add city</description>
+          <long-description></long-description>
+          <tag name="param" line="527" description="" type="\Cities" variable="$city">
+            <type>\Cities</type>
+          </tag>
+          <tag name="return" line="527" description="" type="\Countries">
+            <type>\Countries</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$city</name>
+          <default></default>
+          <type>\Cities</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="539" package="Default">
+        <name>removeCity</name>
+        <full_name>\Countries::removeCity()</full_name>
+        <docblock line="539">
+          <description>Remove city</description>
+          <long-description></long-description>
+          <tag name="param" line="539" description="" type="\Cities" variable="$city">
+            <type>\Cities</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$city</name>
+          <default></default>
+          <type>\Cities</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="549" package="Default">
+        <name>getCities</name>
+        <full_name>\Countries::getCities()</full_name>
+        <docblock line="549">
+          <description>Get cities</description>
+          <long-description></long-description>
+          <tag name="return" line="549" description="" type="\Doctrine\Common\Collections\Collection">
+            <type>\Doctrine\Common\Collections\Collection</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="561" package="Default">
+        <name>addRegion</name>
+        <full_name>\Countries::addRegion()</full_name>
+        <docblock line="561">
+          <description>Add region</description>
+          <long-description></long-description>
+          <tag name="param" line="561" description="" type="\Regions" variable="$region">
+            <type>\Regions</type>
+          </tag>
+          <tag name="return" line="561" description="" type="\Countries">
+            <type>\Countries</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$region</name>
+          <default></default>
+          <type>\Regions</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="573" package="Default">
+        <name>removeRegion</name>
+        <full_name>\Countries::removeRegion()</full_name>
+        <docblock line="573">
+          <description>Remove region</description>
+          <long-description></long-description>
+          <tag name="param" line="573" description="" type="\Regions" variable="$region">
+            <type>\Regions</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$region</name>
+          <default></default>
+          <type>\Regions</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="583" package="Default">
+        <name>getRegions</name>
+        <full_name>\Countries::getRegions()</full_name>
+        <docblock line="583">
+          <description>Get regions</description>
+          <long-description></long-description>
+          <tag name="return" line="583" description="" type="\Doctrine\Common\Collections\Collection">
+            <type>\Doctrine\Common\Collections\Collection</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="143" code="PPC:ERR-50008">No summary for method __construct()</error>
+      <error line="18" code="PPC:ERR-50007">No summary for property $country</error>
+      <error line="25" code="PPC:ERR-50007">No summary for property $fips104</error>
+      <error line="32" code="PPC:ERR-50007">No summary for property $iso2</error>
+      <error line="39" code="PPC:ERR-50007">No summary for property $iso3</error>
+      <error line="46" code="PPC:ERR-50007">No summary for property $ison</error>
+      <error line="53" code="PPC:ERR-50007">No summary for property $internet</error>
+      <error line="60" code="PPC:ERR-50007">No summary for property $capital</error>
+      <error line="67" code="PPC:ERR-50007">No summary for property $mapreference</error>
+      <error line="74" code="PPC:ERR-50007">No summary for property $nationalitysingular</error>
+      <error line="81" code="PPC:ERR-50007">No summary for property $nationalityplural</error>
+      <error line="88" code="PPC:ERR-50007">No summary for property $currency</error>
+      <error line="95" code="PPC:ERR-50007">No summary for property $currencycode</error>
+      <error line="102" code="PPC:ERR-50007">No summary for property $population</error>
+      <error line="109" code="PPC:ERR-50007">No summary for property $title</error>
+      <error line="116" code="PPC:ERR-50007">No summary for property $comment</error>
+      <error line="125" code="PPC:ERR-50007">No summary for property $countryid</error>
+    </parse_markers>
+    <source>eJy1Wk1v20YQvetXEEYOlJHCqRmfUrVNFSfQwY5hCwWKugjW1FomQK2I5dKFUOS/dz+GFElx9oNsdZGonX18896SHM3qp1+Kl2I2q0oafdqngmeMPi73u92eybc8p6nI9qx8/Mg5ORy/+DCbXZyfz6LzaLmvmJxFS3mgjn9dk6ecxozs6OKsGTyb67FrJjJxkB8vZmlOyrI1+59ZJF8aVL1k8CvhUakIbeGrZkTyqHasc47D2dtIHAp5bKbIw5yyrXhZXL17G7EqzxWtxTPJSzoHoAv9XvDslQgavUkNkExtJJPPq7uHH9+9R5lcehJ5zopS4ownsnr4ejmZRVbuLydRSFAKiT+FZBKFW5TCe38KbAIFJihnVEw3A4DGU1mSIhMkx5lctagIXqFXicEZT+SGFPf0mXLKUup30VrY7EjBa7DxlG6JuqeRXN6bHmRslROOr11PndgRswTM/4TgXV5xi40j6BUaccLKqrjSH78DJ55mpgA0ncpyv8HXVhLGJpVYCCN1VW4pt1K62xfSeyV2Q+gp28qZZ340imb+eFnWmcinX2tCoUzwRhYVlFluhVe+dyADNMETKBlWmyOZHclzZcq8mbHaNB+/UEa5PPfmd5JXNJbM5cH2IO/vn65v16v1H2f2kiLbIGQjosqq+qv6/SujUBgdohdSRjvCDtEyE7rIgtkyZr2/kQOxIHxLhamsZGo6TOYl74wF3fwmvwISKEc9AyHY5meld0+3qk508oO4EILcTAGGRfWUZ2n0XDFdiEbfvqVyUC6XVMRzI6EpJdXrjXjJyh9+NilGi4jRv6NeJRvPP/TD4YT2+O+zE8UeqIggl/7yKwgnO7hKmmXRD+JUVJy1K+q2HL28SyrAhLjGmyPZg1eLfomrXnBOHdok1svrC54XTO9c/sN8t0e+fZ5tDg1djIwSGQpku8hIUKjInw1MXOMhIsOoErlbvoeIbKfsJ3LN1y5ywxEXWdX/doWHIkLlXUmMWCMhwqohpWrr50iIpBaOfnpqgnYxDTWrkolTyZOIEUomWskEVzIBJZNxSmIcvZVM3EomDiWZU8mTiBFKMq0kw5VkoCQbpyTG0VtJ5laSWZWEH5QONZGoYEUBJ24QMWVhWKvb/c0bpLCdt6fKNWmH0g1NXG340eyoCoaDgqsCAxPXeFhVYEZ1VdD5SR+is52yZ1UAfB1VQc0RF7ndC7ArbYsMlfumhRV3kBHh2yFK/YEWRogFHrn4+dBJxG5GlzLuyEAPxG6Mx4RQf25PIeOh8yBuDUQq0/DuToh3/un6WTiUq93JwTy8DDVdI287h8MnmGkA49NzuI00cT0bO12wkSZakwy2EDL0NrDOALevbmk5nkNIVPCDCHDiBhF7FMGwfhZ1e4AhRjh4ez6NatKOx1FD0622aiD6KT4UOVZ1hRV3kB3qq5C2A62+5xgXLLmEOaET8XPDUMYdOfZSh/2A3mG76TrVjmP7N26hIlYcA5QRJ53fEBucGXT7pKgLLf52D9pscQd0D9l+MQyGhMquO96xwULE1mNK53ZfO0RiG1G/JW5Y2nUFdrik0A533GGGg8I7jhomrvHQjqMeNR3HdrM+RF47Zd+Oo+Hr6jgCRxsZaORPu5qWNYxfD1TtGwxz+rjZRKn+K8WQ649mF0D39qc9xslmI7EOcQcRc12H/PmXtl2GBXp+T3f7VxqY1TBrrqECiau+v5p2nVNY42qGdVG0t2T6+j7a/k1z/OxcMfocruUCWzj4WjFbGoiusCdT77RMXTAGLu7DIuLDZotZNuZg3MIZkaJt9YzK4mQNwSTbKuKdnbP/aRlBFo511Oy0GbbfZ/8CgkiC9w==</source>
+  </file>
+  <file path="Forms/Voters/VoterLogin.php" generated-path="Forms.Voters.VoterLogin.html" hash="7e3d49c0c79d2965ea171e948f9b50bc" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <namespace-alias name="Form">\Phalcon\Forms\Form</namespace-alias>
+    <namespace-alias name="Email">\Elector\Forms\Elements\Email</namespace-alias>
+    <namespace-alias name="Text">\Phalcon\Forms\Element\Text</namespace-alias>
+    <namespace-alias name="Password">\Phalcon\Forms\Element\Password</namespace-alias>
+    <namespace-alias name="Submit">\Phalcon\Forms\Element\Submit</namespace-alias>
+    <class final="false" abstract="false" namespace="Elector\Forms\Voters" line="12" package="Default">
+      <extends>\Phalcon\Forms\Form</extends>
+      <name>VoterLogin</name>
+      <full_name>\Elector\Forms\Voters\VoterLogin</full_name>
+      <docblock line="12">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="12" description="Default"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Elector\Forms\Voters" line="14" package="Default">
+        <name>initialize</name>
+        <full_name>\Elector\Forms\Voters\VoterLogin::initialize()</full_name>
+        <docblock line="14">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Elector\Forms\Voters" line="30" package="Default">
+        <name>renderDecorated</name>
+        <full_name>\Elector\Forms\Voters\VoterLogin::renderDecorated()</full_name>
+        <docblock line="30">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$name</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="12" code="PPC:ERR-50005">No summary for class \Elector\Forms\Voters\VoterLogin</error>
+      <error line="14" code="PPC:ERR-50008">No summary for method initialize()</error>
+      <error line="30" code="PPC:ERR-50015">Argument $name is missing from the Docblock of renderDecorated</error>
+      <error line="30" code="PPC:ERR-50008">No summary for method renderDecorated()</error>
+    </parse_markers>
+    <source>eJyNU8GOmzAQvfMVI1TJRFqUD0hCL+3uZVtFatVL04MDE7AENrLNbrer/HvHxoCTbFe1lGA8M++9eWO2H/umTyTv0PS8RPjcYmmVPtwr3ZnDD2VRm02SDAZh3/C2VDKE3P/Gn1+W0FuH0tKm46J9szSkHL7jb7t5J77nxjwrXb2X8204doJQkqRsKR284kdVCwmEjrIy4AqS1wRo9cOxFSWcBllaoSQIKazgrfiD2convCb+4dYHdA3ADiQ+g28mY08O3e/ZHfxknpLBrgB2IpKc5FmtWvZrtbmCyQuD9pEfkUB8PfCq0kjVlLrk9qHjwDoZEIin1//nnvBi+hnlgtl4HwPvaGrGvI/XbEcrgX55r0XH9Yvfay4MVp57gbSNMHlBfWajB7GwKDZp/Ed4FBaC5+TNMWqaM+pPWCrNLVKRu8/TQJdBjFcGqMlAUKMNuZFuLBsFbFuJJ/Bd71Lvb63V0EPrPMxPreJWyDot2CL6GsCnThBhOrk/TIEQdykZO2nyUr6SkGx1B4xgr0Lj6Fxsu/YQjviScMqPBM279Roe0AKXL1CjRG8S0BdveI3GiQHbIJSD1s6fALQYN2fGxn0Jh/R1ZXNq7HPU0xyPfRYnyEo1SBrBRLBaRfMKwvdaOE28bG6Ezb2n0bTYBMaKNGJzixr1OAshcDO3d829ODv2fCL4Ji9Qa+p4Ltpc1JyTW3E0MlIX35TzzWWLM87J+S+JoaUp</source>
+  </file>
+  <file path="config/services.php" generated-path="config.services.html" hash="3742bfdfeeafe826b18e6783836693e8" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <namespace-alias name="View">\Phalcon\Mvc\View</namespace-alias>
+    <namespace-alias name="PhpEngine">\Phalcon\Mvc\View\Engine\Php</namespace-alias>
+    <namespace-alias name="UrlResolver">\Phalcon\Mvc\Url</namespace-alias>
+    <namespace-alias name="VoltEngine">\Phalcon\Mvc\View\Engine\Volt</namespace-alias>
+    <namespace-alias name="MetaDataAdapter">\Phalcon\Mvc\Model\Metadata\Memory</namespace-alias>
+    <namespace-alias name="SessionAdapter">\Phalcon\Session\Adapter\Files</namespace-alias>
+    <namespace-alias name="Flash">\Phalcon\Flash\Direct</namespace-alias>
+    <namespace-alias name="Tag">\Phalcon\Tag</namespace-alias>
+    <namespace-alias name="FormsManager">\Phalcon\Forms\Manager</namespace-alias>
+    <markers>
+      <todo line="51">enable cache</todo>
+    </markers>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+    </parse_markers>
+    <source>eJytVm1P4zgQ/t5fYa2QUhCl3+HoCSirQ1q0XV72C0WVm0wa61In2E4rtOK/34ztpE6bcNLe5UOTet6eGT8ezx9/llk5GFQa2CzjeVzI+f0mnv8UsL3oXJ3fypWQMJ9lJeMaxaVbONR+Vjlp4OsBdJFvQH3u8WeRGzKgd5/P+yKBfH4PhifccPxYF+qdjGhpiktXCS/NfqRH0Frg2wvnX0UOmqy8oNPoa851Np8KBbGFZf9ftEv1xFd7RoVa6/k9l3wFylrRgv+PxuOTkwE7YY8ZV5AwtEjFqlLcIAimQW1EDCgfD44SMZpoME5xGDnN6JSllYyt9vCY/RowfBSYSkkmZJxXCbCr2Wwxu3r6i52xL2Nn5l9nuNNfLgYfxzscTxmw54dvCGRdFhKkYUIzzCdhpmArkIDQgPE8Z38LmbAiZZXKNcZiBi15WeYituA7QaNuJ+Ijh4ddsiOTCT2arMDc2KUhYbMqaItyCduQPySupTbSNdfwrMTQexxNAkijydJJa5++UGTcrsIjGCPkilWlTWuDnNxVpDMzUvnt1Kx/lxvRv0mK1m2U6d3QWh8ISF0jI3vy3XhxK9JoomAlNNLbnSk9fLFCeqKzDZ61iF1OglSs1TGxgNVxjn8NGhvnmI6qT6E5rc7ylNXYD01sEt9LihPCaOBQ0fFoJjNuMouqO8+Yxxlgnqf9Hh6h5MjdQlk30SI61B2P2dP36fdzBpIvc2DWa6/Hq3zL37X1ZlTV1nvdT7ZmGuV80Ug+ToPCl5lZ59Zd00HPz2NsMdq5et1n7cZ25JC21O6I4tRGJLjdw+MbK8BDmzASJfVRpWqsAUmgWQIpBmsk7R6UYqqdjE+Wv813mxVqRHWTnC6bTjxLivk8wl7V7HTis8I9r7uy9WIzIDcBfbNCI3vpCbmy80DyoOhIaSWxDFGPei0PTEqEvi1U0mdSywOTZOli9IFy8sAgxhJjpaM+Ay93tPBFFSkb9peMXVK1MfmVAv2WR/Vu0VNJ9DX05Xxpgr/6ZvMxaPa15pQ7524ba8N9du7UPUdrkt6lHSzTJcQifbcS6jN4r6z9lc7qFGhdGFa4r7W76Au0UFuhuzm6puFA18PBZ5clJbQ3MRBfw9P14LumBandnMBSmgHqi5pthcms+Am/SPW6KIw2ipfMFgt0C+Ywsub/hsvOGWGTBqWoj1l6RDwHheMI/Y4SLnGqCFpbpKs4RqjRgWotCHRlYTCJ6NCtkGkRKm65kng9HjqtBU3Dal2qhqNiWDz6ToXSuCrWuFysIRg8FLxVoNsWn01EXqe7K9UOHHXbU15z33ol9EpQh/uU9uIeVkyL2Cjso+xWGmHe/YTX3Tq96u19ADbY+bcKZ0y2WEzvHhYLbIXRuLagiS3agwVhPAeuF9v0+upbcDt8io50bxrV/wNpsuT5zX5f6Av/4/q/hDx6W9IV1I6IndNehT8qUO/XlcgTt/ktkG/LHbCXKKVpPXpFXx1Qdic0mOlt27gY/AMP/x5b</source>
+  </file>
+  <file path="Forms/Elements/Blank/Cities.php" generated-path="Forms.Elements.Blank.Cities.html" hash="0a52e3cefb03704b88ff16c2a923bf15" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <namespace-alias name="ElectorElement">\Elector\Forms\Elements\ElectorElement</namespace-alias>
+    <namespace-alias name="Tag">\Phalcon\Tag</namespace-alias>
+    <class final="false" abstract="false" namespace="Elector\Forms\Elements\Blank" line="8" package="Default">
+      <extends>\Elector\Forms\Elements\ElectorElement</extends>
+      <name>Cities</name>
+      <full_name>\Elector\Forms\Elements\Blank\Cities</full_name>
+      <docblock line="8">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="8" description="Default"/>
+        <tag name="inherited_from" description="\Elector\Forms\Elements\ElectorElement" refers="\Elector\Forms\Elements\ElectorElement" link="/classes/Elector.Forms.Elements.ElectorElement.html"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Elector\Forms\Elements\Blank" line="16" package="Default">
+        <name>render</name>
+        <full_name>\Elector\Forms\Elements\Blank\Cities::render()</full_name>
+        <docblock line="16">
+          <description>Renders the element widget returning html</description>
+          <long-description></long-description>
+          <tag name="param" line="16" description="&lt;p&gt;attributes&lt;/p&gt;" type="array" variable="$attributes">
+            <type>array</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$attributes</name>
+          <default>null</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Elector\Forms\Elements\Blank" line="8" package="Default">
+        <name>label</name>
+        <full_name>\Elector\Forms\Elements\ElectorElement::label()</full_name>
+        <docblock line="8">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$attributes</name>
+          <default>null</default>
+          <type/>
+        </argument>
+        <inherited_from>\Elector\Forms\Elements\ElectorElement</inherited_from>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="8" code="PPC:ERR-50005">No summary for class \Elector\Forms\Elements\Blank\Cities</error>
+    </parse_markers>
+    <source>eJx9U8Fu2zAMvesr2CKAmyCJe24cb8vW3QYURYEelh4Uh42FypIg0eiGIv9eyfIcBXCmiyzxvUdSfC6+mNowpniDzvAK4V5iRdpuf2rbuK0/NajIbTeSq7cVY627COmv+/Oqgz7UXFZabZ/4wZMryZ2D74IEOsA/hGrv4JzGPhgDv/LZrNthBo8ehtYB1QgYUfAu9gcksEitVUIdoKZG9oR/vK+GW94At5b/BU5kxa4ldH0473bT7qSo4LVVFQmtvGDIdTM5wWENqpVy2sE/ItmvDhGCE6qFW5TGok+H3wZeqjFdsYGY5/CMEN4mEIE0ON9IYaB7nPV1jdIsdlJXb9flfD4vclPCAjZakyPLDfzihFZwCT/QiYMadMXrjXBeKuZ1v7OTUPYynSald+WH6CYEQwsjjNUZvFUXlU/AI0uLuTqvJhhsrI6z8KmW25dU97Ks2P9HNAST9mKO0XonwT4e6m16dxc9kEwyKxwGk0I278WSriN1uYaszMZuC22Cs8oi7z/GUXlMkUZHRjtMbWSgg9SolTJYpkNfhpQmzZa8RvyromQEHNnxE1ABMfQ=</source>
+  </file>
+  <file path="Forms/ElectorForm.php" generated-path="Forms.ElectorForm.html" hash="33c5707e02b9302bab8cd8c481416c4e" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <namespace-alias name="Form">\Phalcon\Forms\Form</namespace-alias>
+    <namespace-alias name="Email">\Phalcon\Forms\Element\Email</namespace-alias>
+    <namespace-alias name="Text">\Phalcon\Forms\Element\Text</namespace-alias>
+    <namespace-alias name="Password">\Phalcon\Forms\Element\Password</namespace-alias>
+    <namespace-alias name="Submit">\Phalcon\Forms\Element\Submit</namespace-alias>
+    <namespace-alias name="Select">\Phalcon\Forms\Element\Select</namespace-alias>
+    <namespace-alias name="Image">\Elector\Forms\Elements\Image</namespace-alias>
+    <namespace-alias name="SelectCountry">\Elector\Forms\Elements\Countries</namespace-alias>
+    <namespace-alias name="SelectCity">\Elector\Forms\Elements\Blank\Cities</namespace-alias>
+    <namespace-alias name="SelectRegion">\Elector\Forms\Elements\Blank\Regions</namespace-alias>
+    <namespace-alias name="Countries">\Elector\library\Countries\Countries</namespace-alias>
+    <class final="false" abstract="false" namespace="Elector\Forms" line="20" package="Default">
+      <extends>\Phalcon\Forms\Form</extends>
+      <name>ElectorForm</name>
+      <full_name>\Elector\Forms\ElectorForm</full_name>
+      <docblock line="20">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="20" description="Default"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Elector\Forms" line="27" package="Default">
+        <name>initializeRegisterForm</name>
+        <full_name>\Elector\Forms\ElectorForm::initializeRegisterForm()</full_name>
+        <docblock line="27">
+          <description>This method creates register Phalcon Form Elements</description>
+          <long-description></long-description>
+          <tag name="param" line="27" description="&lt;p&gt;Used for element id and name generator&lt;/p&gt;" type="string" variable="$userType">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="27" description="&lt;p&gt;Indicates should form be finished with generic submit button&lt;/p&gt;" type="boolean" variable="$finish">
+            <type>boolean</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$userType</name>
+          <default>'voter'</default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$finish</name>
+          <default>false</default>
+          <type>boolean</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Elector\Forms" line="96" package="Default">
+        <name>submitButton</name>
+        <full_name>\Elector\Forms\ElectorForm::submitButton()</full_name>
+        <docblock line="96">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$name</name>
+          <default>'Register'</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Elector\Forms" line="108" package="Default">
+        <name>renderFileChooser</name>
+        <full_name>\Elector\Forms\ElectorForm::renderFileChooser()</full_name>
+        <docblock line="108">
+          <description>Method used to render file chooser input fields</description>
+          <long-description></long-description>
+          <tag name="param" line="108" description="&lt;p&gt;Name of the element&lt;/p&gt;" type="" variable="$name"/>
+          <tag name="param" line="108" description="&lt;p&gt;What description should we show to user&lt;/p&gt;" type="" variable="$placeholder"/>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$name</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$placeholder</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Elector\Forms" line="142" package="Default">
+        <name>renderDecorated</name>
+        <full_name>\Elector\Forms\ElectorForm::renderDecorated()</full_name>
+        <docblock line="142">
+          <description>Overiding default Phalcon\Forms\Form::renderDecorated()</description>
+          <long-description></long-description>
+          <tag name="param" line="142" description="&lt;p&gt;Name of the element&lt;/p&gt;" type="string" variable="$name">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$name</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="20" code="PPC:ERR-50005">No summary for class \Elector\Forms\ElectorForm</error>
+      <error line="96" code="PPC:ERR-50015">Argument $name is missing from the Docblock of submitButton</error>
+      <error line="96" code="PPC:ERR-50008">No summary for method submitButton()</error>
+    </parse_markers>
+    <source>eJztWFtv2zYUfvevOBMCyA6q5t2Jva1pO2Rot6DJUAzLHmiJjojSokBSdt0h/32HpCiR8qUu1g3DMAGJLfJcPp47ffVtXdajUUVWVNUkp/CK01wL+fBayJW6HI0aReG2JDwXlVuz//duIOuKVvrh1YowfnmE4J5+1Mf2b4lSGyGLYzR3zWLFjkq5o+YoLdLoWJ5EPdysyCO9PEZxLZpKS0YVEAVOpFvaHmV7wUn14eGa6ZiT6VPY3tFHJqqAzy0MjsLZQhK57RH235Ay52hET2u0ABqdVoUC8zL6YwT4XJyf2084h/uSKVhRXYoCckmJRtwS1SpNpTewZQUP1nN+VxNJVgAKVVePcIYY5f22pvCLogUshQTqOIAVQKoCTLDBI62oJIhtKGYhBIezJauYKuGmKlhusahSNNyKW8GCgttH+RumSyeM5aBsUMCi0VpUreAL+1lLodEUBlBT5RqtCShBM8LZJ/quPac53rjHP4N0jVwyfdbhmcGScEUnVqazoXnOqAl53K3oBmz4B2KeQ2qXUMxvqXVLCrM5pOYoGVpVS8HT3yeXA2nZXFH9hiwoHzt+IEUhKXIjaU+7ZFLpn4xFnXaTW7Hy157idACd0BCElWOdFyNAgccBvCFfqt+LDNUbKXu0122taLX70hEj8KunI/BiQwSdlL0ArkWFZludhKOl/XI4LWOIyuutQ3QBpxRLxqktdC02+30ALKCyqErK62zBRf7BQXtPkRWzZysaCcwKUwI2FHJSwRqzqMAsBaYfUixbea4bwvnWUD+3B+nxsOIzUG6KU1FgoSLo+L+A5uICvEgtsIpoQELI+5K/xrwjC057/P3mDLp6O50i7/ecdwvj6MwqbBvtyaNWElsg2jJ26CSZ51DAgNOS5a2awWuKkjstzyAWieYimcYNK7Yni6mG3rjllGA/corAK9IlwUpvC/YG7YqF1nrr5qXzVo5F9xOtVMnqdAijs62D0b1GqRAZM0wEZzb41Wjzxhs42zY53402DH2NrYSuar21jakWdcOJ9l3lR3T/XS5ZrYfaXT+OPOmW9jnS7ZzuxzVTDEMu683tfSmd2q/gyoIpE9aFJdKy2RFzwNe2MUBeCoEv1q+t29M9PnIHD1yUhC5yu8nf5CEzacWZhgt70wzXv4ZvcqPwX+UZFy37HGPOfMgtZi9yyplGl2RzHD7GbjA5tNkNDaHCYN839UP8voEdYB+0wINSgk52QFLbgg5JiArMARFhgB8lMeYMFbHluJ0lJ8H8GAZ/O+gSviFbZaI/x56EAW/MFzGgguV06kbeF3biHQdQnkbu/6HpN+I7q9z8lvpJON2ZcNvRuk0p++LYBjPMQleAf1ktsS9jOzDfJWF4FRgMAqGprLgWfAs5uJq8dbeSRrk2LfEWg3cS4+U23nEWqOpG4xLlxc69xB3OTqhiie2J+vqyQ1hzvAGXghvx700bK6iy1cUazPkFhwzT2QwQk8HxJaNZcLyFdDZ2SF8j0GuH01ss1LR7l2irH9q6NRIOF44zNCDFs0N6VbA1WPPPElupHqVoagwWTOxsyQXReCdL5mkfGEMBznSmLs0SjbN7grBJISq+nSVJJLotggkE6GeJrXmh5bC0WoWxIn+sAEhY938ws1e19ddC9PQKrzqYpcreII3X8kZKY5fIe8ZgHWVosLftIt7pxlHaeCCWykTFeNLtx5kKY9vcxp2CyZ6cvcVLL2IiebkDrDt7Engp9cLSeRJoMw8e1MrpFZpfAPzLUHdvWXfmJYovszmVEk/cMV1GPE+jXXDp1QWiCyPkaSfIQord/Px5jZfvwtz9C7okDdd7fjCaTl0yvKS5sP71Vt/9/eAz6Xos1XrpLl3+odSKqnsYXq6/TuAbLK3p0IFRWmRzK3cc1dI24TK7FTXyoYv+z67/THY9/Qm6joA5</source>
+  </file>
+  <file path="Forms/Candidates/CandidateLogin.php" generated-path="Forms.Candidates.CandidateLogin.html" hash="214ce9c5733acb10e4547dc3d408a44c" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <namespace-alias name="Form">\Phalcon\Forms\Form</namespace-alias>
+    <namespace-alias name="Email">\Elector\Forms\Elements\Email</namespace-alias>
+    <namespace-alias name="Text">\Phalcon\Forms\Element\Text</namespace-alias>
+    <namespace-alias name="Password">\Phalcon\Forms\Element\Password</namespace-alias>
+    <namespace-alias name="Submit">\Phalcon\Forms\Element\Submit</namespace-alias>
+    <class final="false" abstract="false" namespace="Elector\Forms\Candidates" line="12" package="Default">
+      <extends>\Phalcon\Forms\Form</extends>
+      <name>CandidateLogin</name>
+      <full_name>\Elector\Forms\Candidates\CandidateLogin</full_name>
+      <docblock line="12">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="12" description="Default"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Elector\Forms\Candidates" line="14" package="Default">
+        <name>initialize</name>
+        <full_name>\Elector\Forms\Candidates\CandidateLogin::initialize()</full_name>
+        <docblock line="14">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Elector\Forms\Candidates" line="30" package="Default">
+        <name>renderDecorated</name>
+        <full_name>\Elector\Forms\Candidates\CandidateLogin::renderDecorated()</full_name>
+        <docblock line="30">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$name</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="12" code="PPC:ERR-50005">No summary for class \Elector\Forms\Candidates\CandidateLogin</error>
+      <error line="14" code="PPC:ERR-50008">No summary for method initialize()</error>
+      <error line="30" code="PPC:ERR-50015">Argument $name is missing from the Docblock of renderDecorated</error>
+      <error line="30" code="PPC:ERR-50008">No summary for method renderDecorated()</error>
+    </parse_markers>
+    <source>eJyNVMtu2zAQvOsrFkIBykAEf4AfPaSPS1oYaG9NDzS1lghIpEBSTdPA/94lRUm0nQYlYJvi7s7MzlLevu+bPlO8Q9tzgfCxReG0efykTWcf77mqZMUd2k2WDRbh0PBWaBXD/nsTzi/L6KlD5WjTcdm+WhpTHr/jb7d5I37g1j5pU72V8204dpJQsky0lA6z6gddSwXEgKqy4Iuylwxo9cOxlQJOgxJOagVSSSd5K/9gsQoJL1n48esd+iZgBwqfIDRUMDExhGd2Bz9YoGaw2wM7EVFJMp3RLfu52lxBlXuL7oEfkYBCPfCqMkjVlLrk9rHzyDwZkZBPR//PP2GmEmaUC3YbPI3co8EFC35esx2dAvqUvZEdN89hb7i0WAXuBdI10pZ76rUYfUiFJbFJ4z/Co7AYPGevjtPQvNF8QKEN2URF/n5Pg12GMV4foCYjQY0u5ia6UTQa2LaSvyB0vcuDv7XRQw+t97A8tZo7qep8zxbR1wAhdYKI0ynDYQ6EuMvJ2ElTkPKVhBSrO2AEexUaR+dj23WA8MSXhFN+ImjerdfwGR1w9Qw1KgwmAf0DWF6j9WLANQhiMMb7E4EW4+bM1Lgv8ZDesmJOTX1Oeprjqc/yBIXQg6IRTASrVTKvKPxgpNfERXMjbO49T6bFJjC2zxM2v6jRgLMQArdze9fci7NjzyeCb8o9GkMdz0Wbi5pzdiuORkbq0ptyvrlsacY5O/8FcV6q3Q==</source>
+  </file>
+  <package name="Default" full_name="Default"/>
+  <package name="global" full_name="global"/>
+  <namespace name="global" full_name="global"/>
+  <namespace name="Elector" full_name="Elector">
+    <namespace name="Forms" full_name="Elector\Forms">
+      <namespace name="Candidates" full_name="Elector\Forms\Candidates"/>
+      <namespace name="Elements" full_name="Elector\Forms\Elements">
+        <namespace name="Blank" full_name="Elector\Forms\Elements\Blank"/>
+      </namespace>
+      <namespace name="Voters" full_name="Elector\Forms\Voters"/>
+    </namespace>
+    <namespace name="library" full_name="Elector\library">
+      <namespace name="Cities" full_name="Elector\library\Cities"/>
+      <namespace name="Countries" full_name="Elector\library\Countries"/>
+      <namespace name="Regions" full_name="Elector\library\Regions"/>
+    </namespace>
+  </namespace>
+  <deprecated count="0"/>
+</project>

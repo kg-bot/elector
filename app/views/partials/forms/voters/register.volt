@@ -1,8 +1,6 @@
 {% set voterRegister = forms.get('voterRegister') %}
 
-{{ form(config.application.urls.voters.register, 'method': 'post', 'class': 'form-horizontal') }}
-    <fieldset>
-    
+{{ form(config.application.urls.voters.register, 'method': 'post', 'class': 'form-horizontal', 'id': 'voterRegisterForm') }}
         {{ voterRegister.renderDecorated('voterEmail') }}
 
         {{ voterRegister.renderDecorated('voterPassword') }}
@@ -20,6 +18,5 @@
 
         {{ voterRegister.renderDecorated('Register') }}
 
-        {{ link_to(config.application.urls.login, "Already have an account?")}}
-    </fieldset>
+        {{ link_to(config.application.urls.login, "Already have an account?") }}
 {{ end_form() }}

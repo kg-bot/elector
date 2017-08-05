@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <script
+            type="text/javascript"
+            src="../../../js/jquery-1.4.2.min.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../../syntax_highlighter/scripts/shCore.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../../syntax_highlighter/scripts/shBrushJScript.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../../syntax_highlighter/scripts/shBrushPhp.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../../syntax_highlighter/scripts/shBrushXml.js">
+        </script>
+        <link
+            href="../../../syntax_highlighter/styles/shCore.css" rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="../../../syntax_highlighter/styles/shCoreEclipse.css"
+            rel="stylesheet" type="text/css"
+        />
+        <link
+            href="../../../syntax_highlighter/styles/shThemeWordpress.css"
+            rel="stylesheet" type="text/css"
+        />
+    </head>
+    <body>
+        <pre class="brush: php">&lt;?php
+namespace Elector\Forms\Voters;
+
+use Phalcon\Forms\Form;
+use Elector\Forms\Elements\Email;
+
+use Phalcon\Forms\Element\Text;
+use Phalcon\Forms\Element\Password;
+use Phalcon\Forms\Element\Submit;
+
+
+class VoterLogin extends Form
+{
+    public function initialize()
+    {
+
+        $email = new Email('voterEmail', ['class' =&gt; 'form-control']);
+        $email-&gt;setLabel('Email address');
+
+        $password = new Password('voterPassword', ['class' =&gt; 'form-control']);
+        $password-&gt;setLabel('Password');
+
+        $submit = new Submit('Login', ['class' =&gt; 'btn btn-primary btn-raised']);
+
+        $this-&gt;add($email);
+        $this-&gt;add($password);
+        $this-&gt;add($submit);
+    }
+
+    public function renderDecorated($name)
+    {
+        $element  = $this-&gt;get($name);
+
+        echo '&lt;div class=&quot;form-group label-floating&quot;&gt;';
+        
+        echo '&lt;label class=&quot;control-label&quot; for=&quot;', $element-&gt;getName(), '&quot;&gt;', $element-&gt;getLabel(), '&lt;/label&gt;';
+
+        echo $element;
+        
+
+        // Get any generated messages for the current element
+        $messages = $this-&gt;getMessagesFor(
+            $element-&gt;getName()
+        );
+
+        if (count($messages)) {
+            // Print each element
+            echo &quot;&lt;div class='messages'&gt;&quot;;
+
+            foreach ($messages as $message) {
+                echo $this-&gt;flash-&gt;error($message);
+            }
+
+            echo '&lt;/div&gt;';
+        }
+
+        echo '&lt;/div&gt;';
+    }
+}</pre>
+        <script type="text/javascript">
+             SyntaxHighlighter.all();
+             jQuery('.gutter div').each(function(key, data){
+                jQuery(data).prepend('<a name="L'+jQuery(data).text()+'"/>');
+             });
+        </script>
+    </body>
+</html>

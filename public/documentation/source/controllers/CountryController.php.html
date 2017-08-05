@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <script
+            type="text/javascript"
+            src="../../js/jquery-1.4.2.min.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shCore.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shBrushJScript.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shBrushPhp.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shBrushXml.js">
+        </script>
+        <link
+            href="../../syntax_highlighter/styles/shCore.css" rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="../../syntax_highlighter/styles/shCoreEclipse.css"
+            rel="stylesheet" type="text/css"
+        />
+        <link
+            href="../../syntax_highlighter/styles/shThemeWordpress.css"
+            rel="stylesheet" type="text/css"
+        />
+    </head>
+    <body>
+        <pre class="brush: php">&lt;?php
+
+use Elector\library\Countries\Countries;
+use Elector\library\Regions\Regions;
+
+class CountryController extends ControllerBase
+{
+    /**
+     * Method used to list all cities in provided region
+     * @return [type] [description]
+     */
+    public function getRegionsAction()
+    {
+        $this-&gt;view-&gt;disable();
+        if($this-&gt;request-&gt;isGet()) {
+            if($this-&gt;request-&gt;isAjax()) {
+                $request_country = $this-&gt;request-&gt;get('countryID');
+
+                $regions = Countries::getCountryRegions($request_country);
+
+                if(!empty($regions)) {
+                    // Now we need to populate &lt;option&gt; elements for region &lt;select&gt;
+                    $options = Regions::getRegionOptions($regions);
+
+                    echo $options;
+                }
+            }
+        }
+    }
+
+}
+
+</pre>
+        <script type="text/javascript">
+             SyntaxHighlighter.all();
+             jQuery('.gutter div').each(function(key, data){
+                jQuery(data).prepend('<a name="L'+jQuery(data).text()+'"/>');
+             });
+        </script>
+    </body>
+</html>

@@ -2,10 +2,10 @@
 
 namespace Elector\Forms\Elements\Blank;
 
-use Phalcon\Forms\Element;
+use Elector\Forms\Elements\ElectorElement;
 use Phalcon\Tag;
 
-class Cities extends Element
+class Cities extends ElectorElement
 {
 
     /**
@@ -17,6 +17,7 @@ class Cities extends Element
     {
         $attrs = $this->prepareAttributes($attributes);
 
+        // We use this to set <p class="help-block">,,,</p> - Bootstrap Material Design
         if(isset($attrs['help-block'])) {
             $helpBlock = $attrs['help-block'];
             unset($attrs['help-block']);

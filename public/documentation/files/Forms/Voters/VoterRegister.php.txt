@@ -1,0 +1,14 @@
+<?php
+namespace Elector\Forms\Voters;
+
+use Elector\Forms\ElectorForm;
+
+class VoterRegister extends ElectorForm
+{
+    public function initialize()
+    {
+
+        $formElements = $this->initializeRegisterForm('voter', true);
+    }
+}
+

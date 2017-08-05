@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Cities" table="Cities">
+    <id name="cityid" type="integer" column="CityId">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="countryid" type="smallint" column="CountryID" nullable="false">
+      <options>
+        <option name="unsigned"/>
+      </options>
+    </field>
+    <field name="regionid" type="smallint" column="RegionID" nullable="false">
+      <options>
+        <option name="unsigned"/>
+      </options>
+    </field>
+    <field name="city" type="string" column="City" length="45" nullable="false">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="latitude" type="float" column="Latitude" precision="10" scale="0" nullable="false"/>
+    <field name="longitude" type="float" column="Longitude" precision="10" scale="0" nullable="false"/>
+    <field name="timezone" type="string" column="TimeZone" length="10" nullable="false">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="dmaid" type="smallint" column="DmaId" nullable="true">
+      <options>
+        <option name="unsigned"/>
+      </options>
+    </field>
+    <field name="code" type="string" column="Code" length="4" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+  </entity>
+</doctrine-mapping>

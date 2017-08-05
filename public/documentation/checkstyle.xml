@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<checkstyle version="1.3.0">
+  <file name="controllers/ControllerBase.php">
+    <error line="0" severity="error" message="No summary was found for this file" source="phpDocumentor.file.PPC:ERR-50000"/>
+    <error line="6" severity="error" message="No summary for class \ControllerBase" source="phpDocumentor.file.PPC:ERR-50005"/>
+    <error line="8" severity="error" message="No summary for method onConstruct()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="33" severity="error" message="No summary for method onInitialize()" source="phpDocumentor.file.PPC:ERR-50008"/>
+  </file>
+  <file name="controllers/RegionsController.php">
+    <error line="0" severity="error" message="No summary was found for this file" source="phpDocumentor.file.PPC:ERR-50000"/>
+    <error line="6" severity="error" message="No summary for class \RegionsController" source="phpDocumentor.file.PPC:ERR-50005"/>
+    <error line="9" severity="error" message="No summary for method indexAction()" source="phpDocumentor.file.PPC:ERR-50008"/>
+  </file>
+  <file name="Forms/Candidates/CandidateRegister.php">
+    <error line="0" severity="error" message="No summary was found for this file" source="phpDocumentor.file.PPC:ERR-50000"/>
+    <error line="6" severity="error" message="No summary for class \Elector\Forms\Candidates\CandidateRegister" source="phpDocumentor.file.PPC:ERR-50005"/>
+    <error line="8" severity="error" message="No summary for method initialize()" source="phpDocumentor.file.PPC:ERR-50008"/>
+  </file>
+  <file name="controllers/CountryController.php">
+    <error line="0" severity="error" message="No summary was found for this file" source="phpDocumentor.file.PPC:ERR-50000"/>
+    <error line="6" severity="error" message="No summary for class \CountryController" source="phpDocumentor.file.PPC:ERR-50005"/>
+  </file>
+  <file name="controllers/IndexController.php">
+    <error line="0" severity="error" message="No summary was found for this file" source="phpDocumentor.file.PPC:ERR-50000"/>
+    <error line="14" severity="error" message="No summary for class \IndexController" source="phpDocumentor.file.PPC:ERR-50005"/>
+    <error line="17" severity="error" message="No summary for method indexAction()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="22" severity="error" message="No summary for method loginAction()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="29" severity="error" message="No summary for method registerAction()" source="phpDocumentor.file.PPC:ERR-50008"/>
+  </file>
+  <file name="Forms/Elements/Blank/Regions.php">
+    <error line="0" severity="error" message="No summary was found for this file" source="phpDocumentor.file.PPC:ERR-50000"/>
+    <error line="8" severity="error" message="No summary for class \Elector\Forms\Elements\Blank\Regions" source="phpDocumentor.file.PPC:ERR-50005"/>
+  </file>
+  <file name="library/Regions/Regions.php">
+    <error line="0" severity="error" message="No summary was found for this file" source="phpDocumentor.file.PPC:ERR-50000"/>
+    <error line="8" severity="error" message="No summary for class \Elector\library\Regions\Regions" source="phpDocumentor.file.PPC:ERR-50005"/>
+    <error line="10" severity="error" message="No summary for method getAllRegions()" source="phpDocumentor.file.PPC:ERR-50008"/>
+  </file>
+  <file name="models/Candidates.php">
+    <error line="0" severity="error" message="No summary was found for this file" source="phpDocumentor.file.PPC:ERR-50000"/>
+    <error line="7" severity="error" message="No summary for class \Candidates" source="phpDocumentor.file.PPC:ERR-50005"/>
+    <error line="14" severity="error" message="No summary for property $id" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="19" severity="error" message="No summary for property $name" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="24" severity="error" message="No summary for property $about" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="29" severity="error" message="No summary for property $created_at" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="147" severity="error" message="No summary for property $createdAt" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="154" severity="error" message="No summary for property $avatarName" source="phpDocumentor.file.PPC:ERR-50007"/>
+  </file>
+  <file name="config/database.example.php">
+    <error line="0" severity="error" message="No summary was found for this file" source="phpDocumentor.file.PPC:ERR-50000"/>
+  </file>
+  <file name="library/Cities/Cities.php">
+    <error line="0" severity="error" message="No summary was found for this file" source="phpDocumentor.file.PPC:ERR-50000"/>
+    <error line="21" severity="error" message="The type hint of the argument is incorrect for the type definition of the @param tag with argument $cities in getCityOptions()" source="phpDocumentor.file.PPC:ERR-50016"/>
+  </file>
+  <file name="config/doctrine.example.php">
+    <error line="0" severity="error" message="No summary was found for this file" source="phpDocumentor.file.PPC:ERR-50000"/>
+  </file>
+  <file name="models/Cities.php">
+    <error line="0" severity="error" message="No summary was found for this file" source="phpDocumentor.file.PPC:ERR-50000"/>
+    <error line="15" severity="error" message="No summary for property $countryid" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="22" severity="error" message="No summary for property $regionid" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="29" severity="error" message="No summary for property $city" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="36" severity="error" message="No summary for property $latitude" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="43" severity="error" message="No summary for property $longitude" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="50" severity="error" message="No summary for property $timezone" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="57" severity="error" message="No summary for property $dmaid" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="64" severity="error" message="No summary for property $code" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="73" severity="error" message="No summary for property $cityid" source="phpDocumentor.file.PPC:ERR-50007"/>
+  </file>
+  <file name="Forms/Elements/Countries.php">
+    <error line="0" severity="error" message="No summary was found for this file" source="phpDocumentor.file.PPC:ERR-50000"/>
+    <error line="8" severity="error" message="No summary for class \Elector\Forms\Elements\Countries" source="phpDocumentor.file.PPC:ERR-50005"/>
+  </file>
+  <file name="models/Dmas.php">
+    <error line="0" severity="error" message="No summary was found for this file" source="phpDocumentor.file.PPC:ERR-50000"/>
+    <error line="16" severity="error" message="No summary for property $countryid" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="23" severity="error" message="No summary for property $dma" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="30" severity="error" message="No summary for property $market" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="39" severity="error" message="No summary for property $dmaid" source="phpDocumentor.file.PPC:ERR-50007"/>
+  </file>
+  <file name="controllers/VotersController.php">
+    <error line="0" severity="error" message="No summary was found for this file" source="phpDocumentor.file.PPC:ERR-50000"/>
+    <error line="5" severity="error" message="No summary for class \VotersController" source="phpDocumentor.file.PPC:ERR-50005"/>
+    <error line="8" severity="error" message="No summary for method indexAction()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="13" severity="error" message="No summary for method loginAction()" source="phpDocumentor.file.PPC:ERR-50008"/>
+  </file>
+  <file name="Forms/Elements/Email.php">
+    <error line="0" severity="error" message="No summary was found for this file" source="phpDocumentor.file.PPC:ERR-50000"/>
+    <error line="8" severity="error" message="No summary for class \Elector\Forms\Elements\Email" source="phpDocumentor.file.PPC:ERR-50005"/>
+  </file>
+  <file name="Forms/Elements/ElectorElement.php">
+    <error line="0" severity="error" message="No summary was found for this file" source="phpDocumentor.file.PPC:ERR-50000"/>
+    <error line="6" severity="error" message="No summary for class \Elector\Forms\Elements\ElectorElement" source="phpDocumentor.file.PPC:ERR-50005"/>
+    <error line="8" severity="error" message="Argument $attributes is missing from the Docblock of label" source="phpDocumentor.file.PPC:ERR-50015"/>
+    <error line="8" severity="error" message="No summary for method label()" source="phpDocumentor.file.PPC:ERR-50008"/>
+  </file>
+  <file name="Forms/Elements/Image.php">
+    <error line="0" severity="error" message="No summary was found for this file" source="phpDocumentor.file.PPC:ERR-50000"/>
+    <error line="7" severity="error" message="No summary for class \Elector\Forms\Elements\Image" source="phpDocumentor.file.PPC:ERR-50005"/>
+    <error line="9" severity="error" message="Argument $attributes is missing from the Docblock of render" source="phpDocumentor.file.PPC:ERR-50015"/>
+    <error line="9" severity="error" message="No summary for method render()" source="phpDocumentor.file.PPC:ERR-50008"/>
+  </file>
+  <file name="config/config.php">
+    <error line="0" severity="error" message="No summary was found for this file" source="phpDocumentor.file.PPC:ERR-50000"/>
+  </file>
+  <file name="config/router.php">
+    <error line="0" severity="error" message="No summary was found for this file" source="phpDocumentor.file.PPC:ERR-50000"/>
+  </file>
+  <file name="Forms/Voters/VoterRegister.php">
+    <error line="0" severity="error" message="No summary was found for this file" source="phpDocumentor.file.PPC:ERR-50000"/>
+    <error line="6" severity="error" message="No summary for class \Elector\Forms\Voters\VoterRegister" source="phpDocumentor.file.PPC:ERR-50005"/>
+    <error line="8" severity="error" message="No summary for method initialize()" source="phpDocumentor.file.PPC:ERR-50008"/>
+  </file>
+  <file name="models/Regions.php">
+    <error line="0" severity="error" message="No summary was found for this file" source="phpDocumentor.file.PPC:ERR-50000"/>
+    <error line="63" severity="error" message="No summary for method __construct()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="18" severity="error" message="No summary for property $countryid" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="25" severity="error" message="No summary for property $region" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="32" severity="error" message="No summary for property $code" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="39" severity="error" message="No summary for property $adm1code" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="48" severity="error" message="No summary for property $regionid" source="phpDocumentor.file.PPC:ERR-50007"/>
+  </file>
+  <file name="library/Countries/Countries.php">
+    <error line="0" severity="error" message="No summary was found for this file" source="phpDocumentor.file.PPC:ERR-50000"/>
+    <error line="7" severity="error" message="No summary for class \Elector\library\Countries\Countries" source="phpDocumentor.file.PPC:ERR-50005"/>
+  </file>
+  <file name="config/loader.php">
+    <error line="0" severity="error" message="No summary was found for this file" source="phpDocumentor.file.PPC:ERR-50000"/>
+  </file>
+  <file name="models/Countries.php">
+    <error line="0" severity="error" message="No summary was found for this file" source="phpDocumentor.file.PPC:ERR-50000"/>
+    <error line="143" severity="error" message="No summary for method __construct()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="18" severity="error" message="No summary for property $country" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="25" severity="error" message="No summary for property $fips104" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="32" severity="error" message="No summary for property $iso2" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="39" severity="error" message="No summary for property $iso3" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="46" severity="error" message="No summary for property $ison" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="53" severity="error" message="No summary for property $internet" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="60" severity="error" message="No summary for property $capital" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="67" severity="error" message="No summary for property $mapreference" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="74" severity="error" message="No summary for property $nationalitysingular" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="81" severity="error" message="No summary for property $nationalityplural" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="88" severity="error" message="No summary for property $currency" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="95" severity="error" message="No summary for property $currencycode" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="102" severity="error" message="No summary for property $population" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="109" severity="error" message="No summary for property $title" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="116" severity="error" message="No summary for property $comment" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="125" severity="error" message="No summary for property $countryid" source="phpDocumentor.file.PPC:ERR-50007"/>
+  </file>
+  <file name="Forms/Voters/VoterLogin.php">
+    <error line="0" severity="error" message="No summary was found for this file" source="phpDocumentor.file.PPC:ERR-50000"/>
+    <error line="12" severity="error" message="No summary for class \Elector\Forms\Voters\VoterLogin" source="phpDocumentor.file.PPC:ERR-50005"/>
+    <error line="14" severity="error" message="No summary for method initialize()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="30" severity="error" message="Argument $name is missing from the Docblock of renderDecorated" source="phpDocumentor.file.PPC:ERR-50015"/>
+    <error line="30" severity="error" message="No summary for method renderDecorated()" source="phpDocumentor.file.PPC:ERR-50008"/>
+  </file>
+  <file name="config/services.php">
+    <error line="0" severity="error" message="No summary was found for this file" source="phpDocumentor.file.PPC:ERR-50000"/>
+  </file>
+  <file name="Forms/Elements/Blank/Cities.php">
+    <error line="0" severity="error" message="No summary was found for this file" source="phpDocumentor.file.PPC:ERR-50000"/>
+    <error line="8" severity="error" message="No summary for class \Elector\Forms\Elements\Blank\Cities" source="phpDocumentor.file.PPC:ERR-50005"/>
+  </file>
+  <file name="Forms/ElectorForm.php">
+    <error line="0" severity="error" message="No summary was found for this file" source="phpDocumentor.file.PPC:ERR-50000"/>
+    <error line="20" severity="error" message="No summary for class \Elector\Forms\ElectorForm" source="phpDocumentor.file.PPC:ERR-50005"/>
+    <error line="96" severity="error" message="Argument $name is missing from the Docblock of submitButton" source="phpDocumentor.file.PPC:ERR-50015"/>
+    <error line="96" severity="error" message="No summary for method submitButton()" source="phpDocumentor.file.PPC:ERR-50008"/>
+  </file>
+  <file name="Forms/Candidates/CandidateLogin.php">
+    <error line="0" severity="error" message="No summary was found for this file" source="phpDocumentor.file.PPC:ERR-50000"/>
+    <error line="12" severity="error" message="No summary for class \Elector\Forms\Candidates\CandidateLogin" source="phpDocumentor.file.PPC:ERR-50005"/>
+    <error line="14" severity="error" message="No summary for method initialize()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="30" severity="error" message="Argument $name is missing from the Docblock of renderDecorated" source="phpDocumentor.file.PPC:ERR-50015"/>
+    <error line="30" severity="error" message="No summary for method renderDecorated()" source="phpDocumentor.file.PPC:ERR-50008"/>
+  </file>
+</checkstyle>

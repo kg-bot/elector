@@ -3,56 +3,43 @@
 namespace Elector\library\Regions;
 
 use Phalcon\DI;
+use Doctrine\Common\Collections\Selectable;
 
 class Regions
 {
-
-    public static $qb;
-    
-    // This method must be called before any of other methods
-    public static function createQueryBuilder()
+    public static function getAllRegions(): Selectable
     {
-        if(is_null(self::$qb)) {
-            self::$qb = DI::getDefault()->get('doctrineQB');
-        }
-    }
-
-    public static function getAllRegions()
-    {
-
-        $regions = self::$qb
-                        ->select('Region', 'RegionID')
-                        ->from('Regions')
-                        ->execute()
-                        ->fetchAll();
-        return $regions;
+        $em = DI::getDefault()->get('doctrineEM');
+        
+        return $em->getRepository('Regions')->findAll();
     }
 
     /**
      * Method fatchs all cities inside a region
      * @param  int $regionID 
-     * @return array           Array of all cities
+     * @return Selectable Selectable of all cities
      */
     public static function getRegionCities($regionID)
     {
-        $sql = "SELECT c.City, c.RegionID, c.CityID FROM Cities c LEFT JOIN Regions r ON c.RegionID = r.RegionID WHERE c.RegionID = ?";
-        $stmt = DI::getDefault()->get('doctrineDBALConnection')->prepare($sql);
-        $stmt->bindValue(1, $regionID);
-        $stmt->execute();
+        $em = DI::getDefault()->get('doctrineEM');
 
-        return $stmt->fetchAll();
+        return $em->find('Regions', $regionID)->getCities();
     }
 
     /**
-     * This method is used only to populate <option> elements for region <select>
+     * This method is used only to populate <option> elements for region <select> from AJAX call
      *
-     * @param  array Array of regions
+     * @param  Selectable Selectable of regions
+     * @return string Generated html of <option> elements
      */
-    public static function getRegionOptions(array $regions)
+    public static function getRegionOptions(Selectable $regions)
     {
         $html = '';
         foreach($regions as $region) {
-            $html .= '<option value="' . $region['RegionID'] . '">' . $region['Region'] . '</option>';
+            // We need to check if region name is same as country name and remove it if it's same
+            if($region->getRegion() != $region->getCountry()->getCountry()) {
+                $html .= '<option value="' . $region->getRegionid() . '">' . $region->getRegion() . '</option>';
+            }
         }
 
         return $html;

@@ -17,60 +17,188 @@ use Elector\Forms\Elements\Blank\Regions as SelectRegion;
 
 use Elector\library\Countries\Countries;
 
+/** Validators */
+use Phalcon\Validation\Validator\PresenceOf;
+use Elector\Validation\EmailRegistered;
+use Phalcon\Validation\Validator\Email as ValidateEmail;
+use Phalcon\Validation\Validator\StringLength;
+use Phalcon\Validation\Validator\Confirmation;
+use Phalcon\Validation\Validator\File;
+use Elector\Validation\FaceDetection;
+
 class ElectorForm extends Form
 {
     /**
      * This method creates register Phalcon Form Elements
-     * @param  string $userType Used for element id and name generator
      * @param  bool $finish Indicates should form be finished with generic submit button
      */
-    protected function initializeRegisterForm($userType = 'voter', $finish = false)
+    protected function initializeRegisterForm($finish = false)
     {
-        $email = new Email($userType . 'Email', ['class' => 'form-control']);
+        /** Email field */
+        $email = new Email('email', ['class' => 'form-control']);
         $email->setLabel('Email address');
+        $email->addValidators([
+            new PresenceOf(
+                [
+                    'message' => 'This field is required.',
+                ]
+            ),
+            new ValidateEmail (
+                [
+                    'message' => 'Please enter a valid email address.'
+                ]
+            ),
+            new EmailRegistered(
+                [
+                    'message' => 'This email is already in use.'
+                ]
+            )
+        ]);
 
-        $firstName = new Text($userType . 'FirstName', ['class' => 'form-control']);
-        $firstName->setLabel('First name');
-
-        $lastName = new Text($userType . 'LastName', ['class' => 'form-control']);
-        $lastName->setLabel('Last name');
-
-        $password = new Password($userType . 'Password', ['class' => 'form-control']);
+        /** Password field */
+        $password = new Password('password', ['class' => 'form-control']);
         $password->setLabel('Password');
+        $password->addValidators([
+            new PresenceOf(
+                [
+                    'message' => 'This field is required.'
+                ]
+            ),
+            new StringLength(
+                [
+                    'min'       => 6,
+                    'messageMinimum'    => 'Please enter at least :min characters.'
+                ]
+            )
+        ]);
 
-        $passwordConfirm = new Password($userType . 'PasswordConfirm', ['class' => 'form-control']);
+        /** Password Confirm field */
+        $passwordConfirm = new Password('PasswordConfirm', ['class' => 'form-control']);
         $passwordConfirm->setLabel('Confirm password');
+        $passwordConfirm->addValidators([
+                new PresenceOf(
+                    [
+                        'message'   => 'This field is required.'
+                    ]
+                ),
+                new Confirmation(
+                    [
+                        'with'  => 'password',
+                        'message'   => 'You must enter same value as in password field.'
+                    ]
+                )
+        ]);
 
+        /** First Name field */
+        $firstName = new Text('FirstName', ['class' => 'form-control']);
+        $firstName->setLabel('First name');
+        $firstName->addValidators([
+            new PresenceOf(
+                [
+                    'message' => 'This field is required.'
+                ]
+            )
+        ]);
+        /** Last Name field */
+        $lastName = new Text('LastName', ['class' => 'form-control']);
+        $lastName->setLabel('Last name');
+        $lastName->addValidators([
+            new PresenceOf(
+                [
+                    'message' => 'This field is required.'
+                ]
+            )
+        ]);
 
-        $profileImage = new Image($userType . 'ProfileImage', ['help-block' => 'We need your image so we can validate it\'s acctually you.']);
+        /** Profile image field */
+        $profileImage = new Image('ProfileImage', ['help-block' => 'We need your image so we can validate it\'s acctually you.']);
+        $profileImage->addValidators([
+            new PresenceOf(
+                [
+                    'message' => 'This field is required.'
+                ]
+            ),
+            new File(
+                [
+                    'allowedTypes' => ['image/jpeg', 'image/png'],
+                    'messageType' => 'Only image files are allowed.',
+                ]
+            ),
+            new FaceDetection(
+                [
+                    'message' => 'We can\'t find face in this image.',
+                    // Data used to enroll images with Kairos API
+                    'gallery_name' => 'profile images'
+                ]
+            )
+        ]);
 
-        $idImage = new Image($userType . 'IdImage', ['help-block' => 'We need your id card image so we can validate it\'s acctually you.']);
+        /** ID Card image field */
+        $idImage = new Image('IdImage', ['help-block' => 'We need your id card image so we can validate it\'s acctually you.']);
+        $idImage->addValidators([
+            new PresenceOf(
+                [
+                    'message' => 'This field is required.'
+                ]
+            ),
+            new File(
+                [
+                    'allowedTypes' => ['image/jpeg', 'image/png'],
+                    'messageType' => 'Only image files are allowed.'
+                ]
+            ),
+            new FaceDetection(
+                [
+                    'message' => 'We can\'t find face in this image.',
+                    // Data used to enroll images with Kairos API
+                    'gallery_name' => 'id card images'
+                ]
+            )
+        ]);
 
         // We need to get all countries available
         $countries = Countries::getAllCountries();
 
-        $selectCountry = new SelectCountry($userType . 'SelectCountry', [
-            'class' => 'form-control select-country select-country ' . $userType, 
-            'data-type' => $userType,
-            'help-block' => 'Please select country that is showed on your ID card citizenship', 
-            'countries' => $countries]);
+        $selectCountry = new SelectCountry('SelectCountry', [
+            'class'         => 'form-control select-country select-country',
+            'help-block'    => 'Please select country that is showed on your ID card citizenship',
+            'countries'     => $countries]);
         $selectCountry->setLabel('Select Your Country');
+        $selectCountry->addValidators([
+            new PresenceOf(
+                [
+                    'message' => 'This field is required.'
+                ]
+            )
+        ]);
 
         // This element will be empty and populated with JavaScript
-        $selectRegion = new SelectRegion($userType . 'SelectRegion', [
-            'class' => 'form-control visible-help-block select-region ' . $userType, 
-            'data-type' => $userType,
-            'disabled' => true, 
-            'help-block' => 'Please first choose your country']);
+        $selectRegion = new SelectRegion('SelectRegion', [
+            'class'         => 'form-control visible-help-block select-region',
+            'disabled'      => true, 
+            'help-block'    => 'Please first choose your country']);
         $selectRegion->setLabel("Select Your Region");
+        $selectRegion->addValidators([
+            new PresenceOf(
+                [
+                    'message' => 'This field is required.'
+                ]
+            )
+        ]);
 
         // This element will be empty and populated with JavaScript
-        $selectCity = new SelectCity($userType . 'SelectCity', [
-            'class' => 'form-control visible-help-block select-city ' . $userType, 
-            'data-type' => $userType,
-            'disabled' => true, 
-            'help-block' => 'Please first choose your region']);
+        $selectCity = new SelectCity('SelectCity', [
+            'class'         => 'form-control visible-help-block select-city',
+            'disabled'      => true, 
+            'help-block'    => 'Please first choose your region']);
         $selectCity->setLabel("Select Your City");
+        $selectCity->addValidators([
+            new PresenceOf(
+                [
+                    'message' => 'This field is required.'
+                ]
+            )
+        ]);
 
         $this->add($email);
 
@@ -88,7 +216,7 @@ class ElectorForm extends Form
         $this->add($selectCity);
 
         if($finish) {
-            // This should always be called last, you can also remove this line
+            // This should always be called last
             self::submitButton();
         }
     }
@@ -121,7 +249,7 @@ class ElectorForm extends Form
             $element->getName()
         );
 
-        if (count($messages)) {
+        if (count($messages) > 0) {
             // Print each element
             echo "<div class='messages'>";
 
@@ -145,7 +273,9 @@ class ElectorForm extends Form
 
         echo '<div class="form-group label-floating">';
 
-        echo '<label class="control-label" for="', $element->getAttribute('id', $element->getName()), '">', $element->getLabel(), '</label>';
+        if($element->getLabel() != '') {
+            echo $element->label(['class' => 'control-label validator']);
+        }
 
         echo $element;
         
@@ -155,7 +285,7 @@ class ElectorForm extends Form
             $element->getName()
         );
 
-        if (count($messages)) {
+        if(count($messages) > 0) {
             // Print each element
             echo "<div class='messages'>";
 

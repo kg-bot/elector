@@ -2,10 +2,10 @@
 
 namespace Elector\Forms\Elements;
 
-use Phalcon\Forms\Element;
+use Elector\Forms\Elements\ElectorElement;
 use Phalcon\Tag;
 
-class Countries extends Element
+class Countries extends ElectorElement
 {
 
     /**
@@ -35,7 +35,7 @@ class Countries extends Element
         $html .= '>';
         $html .= '<option></option>';
         foreach ($countries as $country) {
-            $html .= '<option value="' .$country['CountryID'] . '">' . $country['Country'] . '</option>';
+            $html .= '<option value="' .$country->getCountryid() . '">' . $country->getCountry() . '</option>';
         }
         $html .= '</select>';
         

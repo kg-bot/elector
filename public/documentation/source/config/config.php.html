@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <script
+            type="text/javascript"
+            src="../../js/jquery-1.4.2.min.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shCore.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shBrushJScript.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shBrushPhp.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shBrushXml.js">
+        </script>
+        <link
+            href="../../syntax_highlighter/styles/shCore.css" rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="../../syntax_highlighter/styles/shCoreEclipse.css"
+            rel="stylesheet" type="text/css"
+        />
+        <link
+            href="../../syntax_highlighter/styles/shThemeWordpress.css"
+            rel="stylesheet" type="text/css"
+        />
+    </head>
+    <body>
+        <pre class="brush: php">&lt;?php
+/*
+ * Modified: prepend directory path of current file, because of this file own different ENV under between Apache and command line.
+ * NOTE: please remove this comment.
+ */
+defined('BASE_PATH') || define('BASE_PATH', getenv('BASE_PATH') ?: realpath(dirname(__FILE__) . '/../..'));
+defined('APP_PATH') || define('APP_PATH', BASE_PATH . '/app');
+
+return new \Phalcon\Config([
+    require __DIR__ . '/database.php',
+    
+    'application' =&gt; [
+        'appDir'         =&gt; APP_PATH . '/',
+        'controllersDir' =&gt; APP_PATH . '/controllers/',
+        'modelsDir'      =&gt; APP_PATH . '/models/',
+        'migrationsDir'  =&gt; APP_PATH . '/migrations/',
+        'viewsDir'       =&gt; APP_PATH . '/views/',
+        'pluginsDir'     =&gt; APP_PATH . '/plugins/',
+        'libraryDir'     =&gt; APP_PATH . '/library/',
+        'cacheDir'       =&gt; BASE_PATH . '/cache/',
+        'avatarsDir'     =&gt; BASE_PATH . '/public/assets/avatars/',
+
+        'formsDir'       =&gt; APP_PATH . '/Forms/',
+
+        // This allows the baseUri to be understand project paths that are not in the root directory
+        // of the webpspace.  This will break if the public/index.php entry point is moved or
+        // possibly if the web server rewrite rules are changed. This can also be set to a static path.
+        'baseUri'        =&gt; '/',
+        'app_name'       =&gt; 'Elector',
+
+        // We set this because they are used in lots of places, if we need to modify them we have central place right here
+        'urls' =&gt; [
+            'voters' =&gt; [
+                'register'      =&gt; '/voters/register/',
+                'login'         =&gt; '/voters/login',
+            ],
+            'candidates' =&gt; [
+                'register'      =&gt; '/candidates/register/',
+                'login'         =&gt; '/candidates/login',
+            ],
+
+            'login'     =&gt; '/login/',
+            'register'  =&gt; '/register/'
+        ],
+    ]
+]);
+</pre>
+        <script type="text/javascript">
+             SyntaxHighlighter.all();
+             jQuery('.gutter div').each(function(key, data){
+                jQuery(data).prepend('<a name="L'+jQuery(data).text()+'"/>');
+             });
+        </script>
+    </body>
+</html>

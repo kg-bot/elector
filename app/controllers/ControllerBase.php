@@ -26,6 +26,10 @@ class ControllerBase extends Controller
         $this->assets->addJs('/assets/bootstrap-material-design/scripts/ripples.js');
         // IE10 viewport hack for Surface/desktop Windows 8 bug
         $this->assets->addJs('https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js', false);
+        // Form validation plugin
+        $this->assets->addJs('https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js', false);
+        $this->assets->addJs('https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/additional-methods.min.js', false);
+        $this->assets->addJs('/js/register-validate.js');
         // Main js file
         $this->assets->addJs('/js/main.js');
     }

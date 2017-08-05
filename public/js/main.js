@@ -7,7 +7,7 @@ function getRegions(selectElement)
         method: 'get',
         data: {'countryID': countryID},
         success: function(response) {
-            var selectRegion = $('.select-region[data-type="' + selectElement.data('type') + '"');
+            var selectRegion = $('.select-region');
             selectRegion.attr('disabled', false)
                 .empty()
                 .focus()
@@ -25,12 +25,13 @@ function getRegions(selectElement)
 function getCities(selectElement)
 {
     var regionID = selectElement.val();
+    console.log(selectElement);
     $.ajax({
         url: '/cities',
         method: 'get',
         data: {'regionID': regionID},
         success: function(response) {
-            selectCity = $('.select-city[data-type="' + selectElement.data('type') + '"')
+            selectCity = $('.select-city');
             selectCity.attr('disabled', false)
                 .empty()
                 .focus()
@@ -42,10 +43,16 @@ function getCities(selectElement)
 }
 
 $(function() {
-    $("#voterSelectCountry, #candidateSelectCountry").change(function() {
+    $("#SelectCountry").change(function() {
         getRegions($(this));
     });
-    $("#voterSelectRegion, #candidateSelectRegion").change(function() {
+    $("#SelectRegion").change(function() {
         getCities($(this));
-    })
+    });
+    $("#userRegisterForm").ready(function() {
+        // We need to validate register forms
+        if(window.location.pathname == "/register") {
+            registerValidate("#userRegisterForm");
+        }
+    });
 })

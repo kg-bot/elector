@@ -6,8 +6,7 @@
 defined('BASE_PATH') || define('BASE_PATH', getenv('BASE_PATH') ?: realpath(dirname(__FILE__) . '/../..'));
 defined('APP_PATH') || define('APP_PATH', BASE_PATH . '/app');
 
-return new \Phalcon\Config([
-    require __DIR__ . '/database.php',
+$config = new \Phalcon\Config([
     
     'application' => [
         'appDir'         => APP_PATH . '/',
@@ -22,6 +21,9 @@ return new \Phalcon\Config([
 
         'formsDir'       => APP_PATH . '/Forms/',
 
+        /** Defines if this is development or production */
+        'environment'   => 'development',
+
         // This allows the baseUri to be understand project paths that are not in the root directory
         // of the webpspace.  This will break if the public/index.php entry point is moved or
         // possibly if the web server rewrite rules are changed. This can also be set to a static path.
@@ -30,17 +32,16 @@ return new \Phalcon\Config([
 
         // We set this because they are used in lots of places, if we need to modify them we have central place right here
         'urls' => [
-            'voters' => [
-                'register'      => '/voters/register/',
-                'login'         => '/voters/login',
-            ],
-            'candidates' => [
-                'register'      => '/candidates/register/',
-                'login'         => '/candidates/login',
-            ],
-
-            'login'     => '/login/',
-            'register'  => '/register/'
+            'login'     => '/login',
+            'register'  => '/register'
         ],
     ]
 ]);
+
+$config_kairo = require __DIR__ . '/kairo.php';
+$config_database = require __DIR__ . '/database.php';
+
+$config->merge($config_kairo);
+$config->merge($config_database);
+
+return $config;

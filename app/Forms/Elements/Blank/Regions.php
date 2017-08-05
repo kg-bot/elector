@@ -2,10 +2,10 @@
 
 namespace Elector\Forms\Elements\Blank;
 
-use Phalcon\Forms\Element;
+use Elector\Forms\Elements\ElectorElement;
 use Phalcon\Tag;
 
-class Regions extends Element
+class Regions extends ElectorElement
 {
 
     /**

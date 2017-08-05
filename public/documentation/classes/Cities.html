@@ -1,0 +1,610 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>API Documentation » \Cities</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">API Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Elector.html"><i class="icon-th"></i> Elector</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">115</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div xmlns:php="http://php.net/xsl" class="btn-toolbar">
+<div class="btn-group visibility" data-toggle="buttons-checkbox">
+<button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button>
+</div>
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+</div>
+<ul xmlns:php="http://php.net/xsl" class="side-nav nav nav-list">
+<li class="nav-header">
+<i title="Methods" class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_getCity" title="getCity() :: Get city"><span class="description">Get city</span><pre>getCity()</pre></a></li>
+<li class="method public "><a href="#method_getCityid" title="getCityid() :: Get cityid"><span class="description">Get cityid</span><pre>getCityid()</pre></a></li>
+<li class="method public "><a href="#method_getCode" title="getCode() :: Get code"><span class="description">Get code</span><pre>getCode()</pre></a></li>
+<li class="method public "><a href="#method_getCountry" title="getCountry() :: Get country"><span class="description">Get country</span><pre>getCountry()</pre></a></li>
+<li class="method public "><a href="#method_getCountryid" title="getCountryid() :: Get countryid"><span class="description">Get countryid</span><pre>getCountryid()</pre></a></li>
+<li class="method public "><a href="#method_getDmaid" title="getDmaid() :: Get dmaid"><span class="description">Get dmaid</span><pre>getDmaid()</pre></a></li>
+<li class="method public "><a href="#method_getLatitude" title="getLatitude() :: Get latitude"><span class="description">Get latitude</span><pre>getLatitude()</pre></a></li>
+<li class="method public "><a href="#method_getLongitude" title="getLongitude() :: Get longitude"><span class="description">Get longitude</span><pre>getLongitude()</pre></a></li>
+<li class="method public "><a href="#method_getRegion" title="getRegion() :: Get region"><span class="description">Get region</span><pre>getRegion()</pre></a></li>
+<li class="method public "><a href="#method_getRegionid" title="getRegionid() :: Get regionid"><span class="description">Get regionid</span><pre>getRegionid()</pre></a></li>
+<li class="method public "><a href="#method_getTimezone" title="getTimezone() :: Get timezone"><span class="description">Get timezone</span><pre>getTimezone()</pre></a></li>
+<li class="method public "><a href="#method_setCity" title="setCity() :: Set city"><span class="description">Set city</span><pre>setCity()</pre></a></li>
+<li class="method public "><a href="#method_setCode" title="setCode() :: Set code"><span class="description">Set code</span><pre>setCode()</pre></a></li>
+<li class="method public "><a href="#method_setCountry" title="setCountry() :: Set country"><span class="description">Set country</span><pre>setCountry()</pre></a></li>
+<li class="method public "><a href="#method_setCountryid" title="setCountryid() :: Set countryid"><span class="description">Set countryid</span><pre>setCountryid()</pre></a></li>
+<li class="method public "><a href="#method_setDmaid" title="setDmaid() :: Set dmaid"><span class="description">Set dmaid</span><pre>setDmaid()</pre></a></li>
+<li class="method public "><a href="#method_setLatitude" title="setLatitude() :: Set latitude"><span class="description">Set latitude</span><pre>setLatitude()</pre></a></li>
+<li class="method public "><a href="#method_setLongitude" title="setLongitude() :: Set longitude"><span class="description">Set longitude</span><pre>setLongitude()</pre></a></li>
+<li class="method public "><a href="#method_setRegion" title="setRegion() :: Set region"><span class="description">Set region</span><pre>setRegion()</pre></a></li>
+<li class="method public "><a href="#method_setRegionid" title="setRegionid() :: Set regionid"><span class="description">Set regionid</span><pre>setRegionid()</pre></a></li>
+<li class="method public "><a href="#method_setTimezone" title="setTimezone() :: Set timezone"><span class="description">Set timezone</span><pre>setTimezone()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i title="Properties" class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="property private "><a href="#property_city" title="$city() :: "><span class="description"></span><pre>$city</pre></a></li>
+<li class="property private "><a href="#property_cityid" title="$cityid() :: "><span class="description"></span><pre>$cityid</pre></a></li>
+<li class="property private "><a href="#property_code" title="$code() :: "><span class="description"></span><pre>$code</pre></a></li>
+<li class="property private "><a href="#property_country" title="$country() :: Many Cities have One Country."><span class="description"></span><pre>$country</pre></a></li>
+<li class="property private "><a href="#property_countryid" title="$countryid() :: "><span class="description"></span><pre>$countryid</pre></a></li>
+<li class="property private "><a href="#property_dmaid" title="$dmaid() :: "><span class="description"></span><pre>$dmaid</pre></a></li>
+<li class="property private "><a href="#property_latitude" title="$latitude() :: "><span class="description"></span><pre>$latitude</pre></a></li>
+<li class="property private "><a href="#property_longitude" title="$longitude() :: "><span class="description"></span><pre>$longitude</pre></a></li>
+<li class="property private "><a href="#property_region" title="$region() :: Many Cities have One Region."><span class="description"></span><pre>$region</pre></a></li>
+<li class="property private "><a href="#property_regionid" title="$regionid() :: "><span class="description"></span><pre>$regionid</pre></a></li>
+<li class="property private "><a href="#property_timezone" title="$timezone() :: "><span class="description"></span><pre>$timezone</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a xmlns:php="http://php.net/xsl" id="\Cities"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
+<li>
+<a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Cities.html">Cities</a>
+</li>
+</ul>
+<div xmlns:php="http://php.net/xsl" class="element class">
+<p class="short_description">Cities</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>Entity</th>
+<td></td>
+</tr>
+<tr>
+<th>Table</th>
+<td>(name="Cities")</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr>
+</table>
+<h3>
+<i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_getCity"></a><div class="element clickable method public method_getCity " data-toggle="collapse" data-target=".method_getCity .collapse" title="public">
+<h2>Get city</h2>
+<pre>getCity() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getCityid"></a><div class="element clickable method public method_getCityid " data-toggle="collapse" data-target=".method_getCityid .collapse" title="public">
+<h2>Get cityid</h2>
+<pre>getCityid() : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>integer</code></div>
+</div></div>
+</div>
+<a id="method_getCode"></a><div class="element clickable method public method_getCode " data-toggle="collapse" data-target=".method_getCode .collapse" title="public">
+<h2>Get code</h2>
+<pre>getCode() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getCountry"></a><div class="element clickable method public method_getCountry " data-toggle="collapse" data-target=".method_getCountry .collapse" title="public">
+<h2>Get country</h2>
+<pre>getCountry() : \Country</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Country</code></div>
+</div></div>
+</div>
+<a id="method_getCountryid"></a><div class="element clickable method public method_getCountryid " data-toggle="collapse" data-target=".method_getCountryid .collapse" title="public">
+<h2>Get countryid</h2>
+<pre>getCountryid() : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>integer</code></div>
+</div></div>
+</div>
+<a id="method_getDmaid"></a><div class="element clickable method public method_getDmaid " data-toggle="collapse" data-target=".method_getDmaid .collapse" title="public">
+<h2>Get dmaid</h2>
+<pre>getDmaid() : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>integer</code></div>
+</div></div>
+</div>
+<a id="method_getLatitude"></a><div class="element clickable method public method_getLatitude " data-toggle="collapse" data-target=".method_getLatitude .collapse" title="public">
+<h2>Get latitude</h2>
+<pre>getLatitude() : float</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>float</code></div>
+</div></div>
+</div>
+<a id="method_getLongitude"></a><div class="element clickable method public method_getLongitude " data-toggle="collapse" data-target=".method_getLongitude .collapse" title="public">
+<h2>Get longitude</h2>
+<pre>getLongitude() : float</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>float</code></div>
+</div></div>
+</div>
+<a id="method_getRegion"></a><div class="element clickable method public method_getRegion " data-toggle="collapse" data-target=".method_getRegion .collapse" title="public">
+<h2>Get region</h2>
+<pre>getRegion() : \Region</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Region</code></div>
+</div></div>
+</div>
+<a id="method_getRegionid"></a><div class="element clickable method public method_getRegionid " data-toggle="collapse" data-target=".method_getRegionid .collapse" title="public">
+<h2>Get regionid</h2>
+<pre>getRegionid() : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>integer</code></div>
+</div></div>
+</div>
+<a id="method_getTimezone"></a><div class="element clickable method public method_getTimezone " data-toggle="collapse" data-target=".method_getTimezone .collapse" title="public">
+<h2>Get timezone</h2>
+<pre>getTimezone() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_setCity"></a><div class="element clickable method public method_setCity " data-toggle="collapse" data-target=".method_setCity .collapse" title="public">
+<h2>Set city</h2>
+<pre>setCity(string $city) : \Cities</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$city</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Cities</code></div>
+</div></div>
+</div>
+<a id="method_setCode"></a><div class="element clickable method public method_setCode " data-toggle="collapse" data-target=".method_setCode .collapse" title="public">
+<h2>Set code</h2>
+<pre>setCode(string $code) : \Cities</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$code</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Cities</code></div>
+</div></div>
+</div>
+<a id="method_setCountry"></a><div class="element clickable method public method_setCountry " data-toggle="collapse" data-target=".method_setCountry .collapse" title="public">
+<h2>Set country</h2>
+<pre>setCountry(\Country $country<code> = null</code>) : \Cities</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$country</h4>
+<code>\Country</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Cities</code></div>
+</div></div>
+</div>
+<a id="method_setCountryid"></a><div class="element clickable method public method_setCountryid " data-toggle="collapse" data-target=".method_setCountryid .collapse" title="public">
+<h2>Set countryid</h2>
+<pre>setCountryid(integer $countryid) : \Cities</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$countryid</h4>
+<code>integer</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Cities</code></div>
+</div></div>
+</div>
+<a id="method_setDmaid"></a><div class="element clickable method public method_setDmaid " data-toggle="collapse" data-target=".method_setDmaid .collapse" title="public">
+<h2>Set dmaid</h2>
+<pre>setDmaid(integer $dmaid) : \Cities</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$dmaid</h4>
+<code>integer</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Cities</code></div>
+</div></div>
+</div>
+<a id="method_setLatitude"></a><div class="element clickable method public method_setLatitude " data-toggle="collapse" data-target=".method_setLatitude .collapse" title="public">
+<h2>Set latitude</h2>
+<pre>setLatitude(float $latitude) : \Cities</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$latitude</h4>
+<code>float</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Cities</code></div>
+</div></div>
+</div>
+<a id="method_setLongitude"></a><div class="element clickable method public method_setLongitude " data-toggle="collapse" data-target=".method_setLongitude .collapse" title="public">
+<h2>Set longitude</h2>
+<pre>setLongitude(float $longitude) : \Cities</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$longitude</h4>
+<code>float</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Cities</code></div>
+</div></div>
+</div>
+<a id="method_setRegion"></a><div class="element clickable method public method_setRegion " data-toggle="collapse" data-target=".method_setRegion .collapse" title="public">
+<h2>Set region</h2>
+<pre>setRegion(\Region $region<code> = null</code>) : \Cities</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$region</h4>
+<code>\Region</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Cities</code></div>
+</div></div>
+</div>
+<a id="method_setRegionid"></a><div class="element clickable method public method_setRegionid " data-toggle="collapse" data-target=".method_setRegionid .collapse" title="public">
+<h2>Set regionid</h2>
+<pre>setRegionid(integer $regionid) : \Cities</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$regionid</h4>
+<code>integer</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Cities</code></div>
+</div></div>
+</div>
+<a id="method_setTimezone"></a><div class="element clickable method public method_setTimezone " data-toggle="collapse" data-target=".method_setTimezone .collapse" title="public">
+<h2>Set timezone</h2>
+<pre>setTimezone(string $timezone) : \Cities</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$timezone</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Cities</code></div>
+</div></div>
+</div>
+<h3>
+<i title="Properties" class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_city"> </a><div class="element clickable property private property_city" data-toggle="collapse" data-target=".property_city .collapse" title="private">
+<h2>$city</h2>
+<pre>$city : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>Column</th>
+<td>(name="City", type="string", length=45, nullable=false)</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_cityid"> </a><div class="element clickable property private property_cityid" data-toggle="collapse" data-target=".property_cityid .collapse" title="private">
+<h2>$cityid</h2>
+<pre>$cityid : integer</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>Column</th>
+<td>(name="CityId", type="integer")</td>
+</tr>
+<tr>
+<th>Id</th>
+<td></td>
+</tr>
+<tr>
+<th>GeneratedValue</th>
+<td>(strategy="IDENTITY")</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_code"> </a><div class="element clickable property private property_code" data-toggle="collapse" data-target=".property_code .collapse" title="private">
+<h2>$code</h2>
+<pre>$code : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>Column</th>
+<td>(name="Code", type="string", length=4, nullable=true)</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_country"> </a><div class="element clickable property private property_country" data-toggle="collapse" data-target=".property_country .collapse" title="private">
+<h2>Many Cities have One Country.</h2>
+<pre>$country </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>ManyToOne</th>
+<td>(targetEntity="Countries", inversedBy="cities")</td>
+</tr>
+<tr>
+<th>JoinColumn</th>
+<td>(name="CountryID", referencedColumnName="CountryId")</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_countryid"> </a><div class="element clickable property private property_countryid" data-toggle="collapse" data-target=".property_countryid .collapse" title="private">
+<h2>$countryid</h2>
+<pre>$countryid : integer</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>Column</th>
+<td>(name="CountryID", type="smallint", nullable=false)</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_dmaid"> </a><div class="element clickable property private property_dmaid" data-toggle="collapse" data-target=".property_dmaid .collapse" title="private">
+<h2>$dmaid</h2>
+<pre>$dmaid : integer</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>Column</th>
+<td>(name="DmaId", type="smallint", nullable=true)</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_latitude"> </a><div class="element clickable property private property_latitude" data-toggle="collapse" data-target=".property_latitude .collapse" title="private">
+<h2>$latitude</h2>
+<pre>$latitude : float</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>Column</th>
+<td>(name="Latitude", type="float", precision=10, scale=0, nullable=false)</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_longitude"> </a><div class="element clickable property private property_longitude" data-toggle="collapse" data-target=".property_longitude .collapse" title="private">
+<h2>$longitude</h2>
+<pre>$longitude : float</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>Column</th>
+<td>(name="Longitude", type="float", precision=10, scale=0, nullable=false)</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_region"> </a><div class="element clickable property private property_region" data-toggle="collapse" data-target=".property_region .collapse" title="private">
+<h2>Many Cities have One Region.</h2>
+<pre>$region </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>ManyToOne</th>
+<td>(targetEntity="Regions", inversedBy="cities")</td>
+</tr>
+<tr>
+<th>JoinColumn</th>
+<td>(name="RegionID", referencedColumnName="RegionID")</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_regionid"> </a><div class="element clickable property private property_regionid" data-toggle="collapse" data-target=".property_regionid .collapse" title="private">
+<h2>$regionid</h2>
+<pre>$regionid : integer</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>Column</th>
+<td>(name="RegionID", type="smallint", nullable=false)</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_timezone"> </a><div class="element clickable property private property_timezone" data-toggle="collapse" data-target=".property_timezone .collapse" title="private">
+<h2>$timezone</h2>
+<pre>$timezone : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>Column</th>
+<td>(name="TimeZone", type="string", length=10, nullable=false)</td>
+</tr></table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2017-07-28T00:59:26+02:00.<br></footer></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<html>
+    <head>
+        <script
+            type="text/javascript"
+            src="../../js/jquery-1.4.2.min.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shCore.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shBrushJScript.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shBrushPhp.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../../syntax_highlighter/scripts/shBrushXml.js">
+        </script>
+        <link
+            href="../../syntax_highlighter/styles/shCore.css" rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="../../syntax_highlighter/styles/shCoreEclipse.css"
+            rel="stylesheet" type="text/css"
+        />
+        <link
+            href="../../syntax_highlighter/styles/shThemeWordpress.css"
+            rel="stylesheet" type="text/css"
+        />
+    </head>
+    <body>
+        <pre class="brush: php">&lt;?php
+
+/**
+ * Dmas
+ *
+ * @Table(name=&quot;Dmas&quot;)
+ * @Entity
+ */
+class Dmas
+{
+    /**
+     * @var integer
+     *
+     * @Column(name=&quot;CountryId&quot;, type=&quot;smallint&quot;, nullable=true)
+     */
+    private $countryid;
+
+    /**
+     * @var string
+     *
+     * @Column(name=&quot;DMA&quot;, type=&quot;string&quot;, length=3, nullable=true)
+     */
+    private $dma;
+
+    /**
+     * @var string
+     *
+     * @Column(name=&quot;Market&quot;, type=&quot;string&quot;, length=50, nullable=true)
+     */
+    private $market;
+
+    /**
+     * @var integer
+     *
+     * @Column(name=&quot;DmaId&quot;, type=&quot;smallint&quot;)
+     * @Id
+     * @GeneratedValue(strategy=&quot;IDENTITY&quot;)
+     */
+    private $dmaid;
+
+
+    /**
+     * Set countryid
+     *
+     * @param integer $countryid
+     *
+     * @return Dmas
+     */
+    public function setCountryid($countryid)
+    {
+        $this-&gt;countryid = $countryid;
+
+        return $this;
+    }
+
+    /**
+     * Get countryid
+     *
+     * @return integer
+     */
+    public function getCountryid()
+    {
+        return $this-&gt;countryid;
+    }
+
+    /**
+     * Set dma
+     *
+     * @param string $dma
+     *
+     * @return Dmas
+     */
+    public function setDma($dma)
+    {
+        $this-&gt;dma = $dma;
+
+        return $this;
+    }
+
+    /**
+     * Get dma
+     *
+     * @return string
+     */
+    public function getDma()
+    {
+        return $this-&gt;dma;
+    }
+
+    /**
+     * Set market
+     *
+     * @param string $market
+     *
+     * @return Dmas
+     */
+    public function setMarket($market)
+    {
+        $this-&gt;market = $market;
+
+        return $this;
+    }
+
+    /**
+     * Get market
+     *
+     * @return string
+     */
+    public function getMarket()
+    {
+        return $this-&gt;market;
+    }
+
+    /**
+     * Get dmaid
+     *
+     * @return integer
+     */
+    public function getDmaid()
+    {
+        return $this-&gt;dmaid;
+    }
+}
+</pre>
+        <script type="text/javascript">
+             SyntaxHighlighter.all();
+             jQuery('.gutter div').each(function(key, data){
+                jQuery(data).prepend('<a name="L'+jQuery(data).text()+'"/>');
+             });
+        </script>
+    </body>
+</html>

@@ -12,15 +12,10 @@ class Countries
      */
     public static function getAllCountries()
     {
-        // Doctrine QueryBuilder
-        $qb = DI::getDefault()->get('doctrineQB');
+        // Doctrine EntityManager
+        $em = DI::getDefault()->get('doctrineEM');
 
-        $countries = $qb
-                        ->select('Country, CountryID')
-                        ->from('Countries')
-                        ->execute()
-                        ->fetchAll();
-        return $countries;
+        return $em->getRepository('Countries')->findAll();
     }
 
     /**
@@ -28,13 +23,11 @@ class Countries
      * @param  int $countryID 
      * @return array            Array of regions
      */
-    public static function getCountryRegions($countryID)
+    public static function getCountryRegions(int $countryID)
     {
-        $sql = "SELECT r.Region, r.RegionID, r.CountryID FROM Regions r LEFT JOIN Countries c ON r.CountryID = c.CountryID WHERE r.CountryID = ? AND r.Region != c.Country";
-        $stmt = DI::getDefault()->get('doctrineDBALConnection')->prepare($sql);
-        $stmt->bindValue(1, $countryID);
-        $stmt->execute();
+        // Doctrine EntityManager
+        $em = DI::getDefault()->get('doctrineEM');
 
-        return $stmt->fetchAll();
+        return $em->getRepository('Countries')->find($countryID)->getRegions();
     }
 }

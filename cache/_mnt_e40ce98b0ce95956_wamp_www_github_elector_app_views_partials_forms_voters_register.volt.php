@@ -1,8 +1,6 @@
 <?php $voterRegister = $this->forms->get('voterRegister'); ?>
 
-<?= $this->tag->form([$this->config->application->urls->voters->register, 'method' => 'post', 'class' => 'form-horizontal']) ?>
-    <fieldset>
-    
+<?= $this->tag->form([$this->config->application->urls->voters->register, 'method' => 'post', 'class' => 'form-horizontal', 'id' => 'voterRegisterForm']) ?>
         <?= $voterRegister->renderDecorated('voterEmail') ?>
 
         <?= $voterRegister->renderDecorated('voterPassword') ?>
@@ -21,5 +19,4 @@
         <?= $voterRegister->renderDecorated('Register') ?>
 
         <?= $this->tag->linkTo([$this->config->application->urls->login, 'Already have an account?']) ?>
-    </fieldset>
 <?= $this->tag->endForm() ?>
